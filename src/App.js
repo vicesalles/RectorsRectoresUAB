@@ -3,7 +3,9 @@ import {Switch, Route, withRouter} from 'react-router-dom';
 import { connect } from 'react-redux';
 import './App.css';
 
+//Vistes
 import Home from './views/Home';
+import Rector from './views/Rector';
 
 
 class App extends Component {
@@ -14,6 +16,7 @@ class App extends Component {
         
         <Switch>
           <Route exact path="/" component={Home}/>
+          <Route exact path="/r/:id" component={Rector}/>
         </Switch>
       
       </div>

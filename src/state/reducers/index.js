@@ -1,9 +1,11 @@
 import {combineReducers} from 'redux';
 import rectors from './rectors';
+import videos from './videos';
 
 
 const mainReducer = combineReducers({
-   rectors:rectors
+   rectors,
+   videos
 })
 
 export default mainReducer;
