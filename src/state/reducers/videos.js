@@ -4,6 +4,12 @@ const initialState = {
         {id:"z",yt:"cwQgjq0mCdE",events:[
 
             {
+                sec:24,
+                txt:"Boyfriend"
+            },{
+                sec:57,
+                txt:"Hook"
+            },{
                 sec:77,
                 txt:"I'm a sick fuck"
             },

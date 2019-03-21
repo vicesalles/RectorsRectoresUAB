@@ -3,6 +3,9 @@ import {connect} from 'react-redux';
 import {withRouter} from 'react-router-dom';
 import YouTube from 'react-youtube';
 
+//Components
+import Capcalera from '../components/Reproductor/Capcalera';
+
 class Rector extends Component{
 
     //Ref for the player
@@ -51,8 +54,11 @@ class Rector extends Component{
         //Current Video
         const current = this.props.videos[0];
         return(
-        <div>
-            <YouTube ref={this.reproductor} className="reproductor" videoId={current.yt} opts={this.playerOptions} onReady={this._onReady}/>
+        <div className="rector">
+            <Capcalera/>
+            <div className="reproductor">
+            <YouTube ref={this.reproductor} videoId={current.yt} opts={this.playerOptions} onReady={this._onReady}/>
+            </div>
             <div className="histories">
                 {this.eventsFactory(current.events)}
             </div>

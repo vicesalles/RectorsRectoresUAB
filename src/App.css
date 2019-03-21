@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nom_rector{
+  font-family: sans-serif;
+  text-align: left;
 }
 
 .histories{
@@ -16,10 +25,13 @@
   padding: 2em 1em 2em 1em;
   cursor: pointer;
   margin-top: 2em;
-  width: 67%;
+  width: 100%;
   font-size: 1.2em;
 }
 
-.reproductor{
-  z-index: 99;
+.reproductor{  
+  position: sticky;
+  position: -webkit-sticky;
+  top: 1em;
+
 }
