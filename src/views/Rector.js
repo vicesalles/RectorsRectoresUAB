@@ -2,11 +2,19 @@ import React,{Component} from 'react';
 import {connect} from 'react-redux';
 import {withRouter} from 'react-router-dom';
 import YouTube from 'react-youtube';
+import _ from 'lodash';
 
 //Components
 import Capcalera from '../components/Reproductor/Capcalera';
 
+//Accions
+import {setCurrentRector} from '../state/actions/';
+
 class Rector extends Component{
+
+    state= {
+        current:""
+    }
 
     //Ref for the player
     reproductor = React.createRef();
@@ -47,12 +55,17 @@ class Rector extends Component{
     }
 
     componentDidMount(){
-        console.log('reproductor',this.reproductor);
+        console.log('reproductor',this.props);
+        const id = this.props.match.params.id;
+        this.props.dispatch(setCurrentRector(id));
+        const current = _.find(this.props.videos,{id});
+        this.setState({current})
+        console.log('props did mount',this.props)
     }
 
     render(){
         //Current Video
-        const current = this.props.videos[0];
+        const current = _.find(this.props.videos,{'id':this.props.match.params.id});
         return(
         <div className="rector">
             <Capcalera/>

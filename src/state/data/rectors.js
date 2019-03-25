@@ -1,9 +1,4 @@
-import {SET_CURRENT_RECTOR} from '../actions/types';
-
-
-const initialState ={
-    currentRector: null,
-    rectors:[
+const rectors = [
     {
         id:0,        
         nom:"Antoni",
@@ -34,39 +29,5 @@ const initialState ={
         imatgeHistorica:"",
         vikipedia:"https://ca.wikipedia.org/wiki/Josep_Maria_Vall%C3%A8s_i_Casadevall"
     }]
-}
-
-function rectors(state=initialState,action){
-    
-    const {type,payload} = action;
-
-    
-
-    switch(type){
-        case SET_CURRENT_RECTOR:
-        console.log('Setting current rector');
-            return {
-                ...state,
-                currentRector:payload
-            }
-        default:
-            return state
-    }
-}
 
 export default rectors;
-
-
-/*
-
-{
-        id:"",
-        nom:"",
-        cognoms:"",       
-        mandat:"",
-        imatgeActual:"",
-        imatgeHistorica:"",
-        vikipedia:""
-    }
-
-*/
