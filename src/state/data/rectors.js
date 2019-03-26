@@ -28,6 +28,36 @@ const rectors = [
         imatgeActual:"",
         imatgeHistorica:"",
         vikipedia:"https://ca.wikipedia.org/wiki/Josep_Maria_Vall%C3%A8s_i_Casadevall"
+    },
+    {
+        id:3,        
+        nom:"Carles",
+        cognoms:"Solà Ferrando",  
+        url:"sola",      
+        mandat:"25.3.1994 – 21.3.2002",
+        imatgeActual:"",
+        imatgeHistorica:"",
+        vikipedia:"https://ca.wikipedia.org/wiki/Carles_Sol%C3%A0_i_Ferrando"
+    },
+    {
+        id:4,        
+        nom:"Lluís",
+        cognoms:"Ferrer Caubet",  
+        url:"ferrer",      
+        mandat:"21.3.2002 – 14.1.2009",
+        imatgeActual:"",
+        imatgeHistorica:"",
+        vikipedia:"https://ca.wikipedia.org/wiki/Llu%C3%ADs_Ferrer_i_Caubet"
+    },
+    {
+        id:5,        
+        nom:"Ana",
+        cognoms:"Ripoll Aracil",  
+        url:"ripoll",      
+        mandat:"21.3.2002 – 14.1.2009",
+        imatgeActual:"",
+        imatgeHistorica:"",
+        vikipedia:"https://ca.wikipedia.org/wiki/Ana_Ripoll_Aracil"
     }]
 
 export default rectors;
