@@ -28,8 +28,11 @@ const styles = {
         height: 60,
       },
       wikiBu: {        
-        width: 20,
-        height: 20,
+        width: 15,
+        height: 15,
+      },
+      mandat:{
+          fontFamily:"Roboto"
       }
   };
 
@@ -62,7 +65,7 @@ class Capcalera extends Component{
                                         <Avatar alt="Wikipedia" src={`/img/bu/wiki.png`} className={classes.wikiBu}/>                 
                                     </IconButton>
                                 </Grid> 
-                                <Typography variant="h7" color="inherit" align="left">
+                                <Typography component="h7" color="inherit" align="left">
                                     {this.props.currentRector.mandat}
                                 </Typography>
                             </Grid>      

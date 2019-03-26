@@ -54,13 +54,11 @@ class Rector extends Component{
         })
     }
 
-    componentDidMount(){
-        console.log('reproductor',this.props);
+    componentDidMount(){       
         const id = this.props.match.params.id;
         this.props.dispatch(setCurrentRector(id));
         const current = _.find(this.props.videos,{id});
-        this.setState({current})
-        console.log('props did mount',this.props)
+        this.setState({current})        
     }
 
     render(){
@@ -77,9 +75,7 @@ class Rector extends Component{
             </div>
         </div>
         )
-    }
-
-  
+    } 
 
 
 }
