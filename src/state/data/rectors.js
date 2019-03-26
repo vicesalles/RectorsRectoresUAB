@@ -58,6 +58,16 @@ const rectors = [
         imatgeActual:"",
         imatgeHistorica:"",
         vikipedia:"https://ca.wikipedia.org/wiki/Ana_Ripoll_Aracil"
+    },
+    {
+        id:6,        
+        nom:"Ferran",
+        cognoms:"Sancho Pifarré",  
+        url:"sancho",      
+        mandat:"22.6.2012 – 6.6.2016",
+        entrevista:"",
+        events:[],
+        vikipedia:"https://ca.wikipedia.org/wiki/Ferran_Sancho_Pifarr%C3%A9"
     }]
 
 export default rectors;

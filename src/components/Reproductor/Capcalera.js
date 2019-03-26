@@ -65,7 +65,7 @@ class Capcalera extends Component{
                                         <Avatar alt="Wikipedia" src={`/img/bu/wiki.png`} className={classes.wikiBu}/>                 
                                     </IconButton>
                                 </Grid> 
-                                <Typography component="h7" color="inherit" align="left">
+                                <Typography component="p" color="inherit" align="left">
                                     {this.props.currentRector.mandat}
                                 </Typography>
                             </Grid>      
@@ -84,8 +84,7 @@ class Capcalera extends Component{
 
 function mapStateToProps(state){
    
-    const {currentRector} = state.rectors;
-    console.log('rector',state);
+    const {currentRector} = state.rectors;    
     return {currentRector};
 
 }
