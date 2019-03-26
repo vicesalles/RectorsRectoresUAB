@@ -47,7 +47,7 @@ class Capcalera extends Component{
                 <AppBar position="static">
                     <Toolbar variant="dense">   
 
-                            <IconButton href="/" target="_blank">
+                            <IconButton href="/">
                                 <HomeIcon className={classes.bigAvatar}/>             
                             </IconButton>
                    
