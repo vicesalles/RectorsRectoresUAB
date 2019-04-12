@@ -43,23 +43,118 @@ const initialState = {
       ]
     },
     {
-      id: "sola",
-      yt: "cu9kqyb11gA",
+      id:"sola", 
+      nom:"Carles",
+      cognoms:"Solà Ferrando",
+      mandat:"25.3.1994 – 21.3.2002",
+      anys:[1994,2002],
+      bio:"",
+      vikipedia:"https://ca.wikipedia.org/wiki/Carles_Sol%C3%A0_i_Ferrando",
+      yt: "AfhBkUCSTWc",
       events: [
-        {
-          sec: 15,
-          txt: "Gamble"
-        },
-        {
-          sec: 30,
-          txt: "Lottery"
-        },
-        {
-          sec: 50,
-          txt: "Before"
-        }
-      ]
-    },
+          {
+            id:0,
+            sec: 5,
+            txt: "Fundació Escola Enginyeria",
+            tags:["enginyeria"]
+          },{
+            id:1,
+            sec: 86,
+            txt: "Innovacions acadèmiques",
+            tags:["titulacions","innovació"]
+          },{
+            id:2,
+            sec: 286,
+            txt: "Escola de doctorat i de formació contínua",
+            tags:["doctorat","formació"]
+          },{
+            id:3,
+            sec: 385,
+            txt: "Recursos per a la recerca",
+            tags:["recerca","finançament"]
+          },{
+            id:4,
+            sec: 512,
+            txt: "Nous centres de recerca",
+            tags:["recerca","centres"]
+          },{
+            id:5,
+            sec: 644,
+            txt: "Creació de la Institució Catalana de Recerca i Estudis Avançats (ICREA)",
+            tags:["recerca","ICREA"]
+          },{
+            id:6,
+            sec: 733,
+            txt: "Tensions pressupostàries",
+            tags:["finançament","pressupostos"]
+          },{
+            id:7,
+            sec: 1035,
+            txt: "Informe Universitat 2000",
+            tags:["informe","protestes"]
+          },{
+            id:8,
+            sec: 1266,
+            txt: "Llei Orgànica d'Universitats (LOU)",
+            tags:["LOU","PP"]
+          },{
+            id:9,
+            sec: 1344,
+            txt: "Crisi institucional: la visita de José María Aznar",
+            tags:["Aznar","càrregues"]
+          },{
+            id:10,
+            sec: 1713,
+            txt: "Inauguració de les columnes de la UAB",
+            tags:["columnes","monument"]
+          },{
+            id:11,
+            sec: 1957,
+            txt: "El camí cap al Pla Bolonya",
+            tags:["Bolonya","ensenyament"]
+          },{
+            id:12,
+            sec: 2190,
+            txt: "La universitat de l'Estat amb més programes d'intercanvi europeus",
+            tags:["intercanvi","mobilitat"]
+          },{
+            id:13,
+            sec: 2374,
+            txt: "Creació del programa 'Universitat a l'Abast'",
+            tags:["formació","integració"]
+          },{
+            id:14,
+            sec: 2424,
+            txt: "Nous espais per a biblioteques",
+            tags:["biblioteques"]
+          },{
+            id:15,
+            sec: 2483,
+            txt: "Els Doctors 'Honoris Causa'",
+            tags:["doctors","honoris"]
+          },{
+            id:16,
+            sec: 2521,
+            txt: "Connexió ferroviària amb Sabadell",
+            tags:["connexió","Sabadell"]
+          },{
+            id:17,
+            sec: 2726,
+            txt: "Accident mortal a França d'un autocar amb estudiants de Psicologia",
+            tags:["accident","estudiants"]
+          },{
+            id:18,
+            sec: 2745,
+            txt: "Balanç del mandat",
+            tags:["balanç","mandat"]
+          },{
+            id:19,
+            sec: 2872,
+            txt: "L'anècdota",
+            tags:["anècdota","migrants"]
+          }
+        ]
+      },
     {
       id: "ripoll",
       yt: "rK62UIZOvGM",
