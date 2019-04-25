@@ -6,6 +6,7 @@ import _ from 'lodash';
 
 //Components
 import Capcalera from '../components/Reproductor/Capcalera';
+import Searcher from '../components/Searcher/Searcher';
 
 //Accions
 import {setCurrentRector} from '../state/actions/';
@@ -69,7 +70,8 @@ class Rector extends Component{
             <Capcalera/>
             <div className="reproductor">
             <YouTube ref={this.reproductor} videoId={current.yt} opts={this.playerOptions} onReady={this._onReady}/>
-            </div>
+            <Searcher/>
+            </div>            
             <div className="histories">
                 {this.eventsFactory(current.events)}
             </div>

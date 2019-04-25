@@ -52,7 +52,7 @@ class Home extends Component{
                     <AppBar position="fixed">
                         <Toolbar variant="regular">   
                             <Typography variant="h5" color="inherit" align="left">
-                                50è Aniversari de la Universitat Autònoma de Barcelona
+                                Rectors i Rectores de la UAB: 50 anys.
                             </Typography>                                      
                         </Toolbar>
                     </AppBar>               

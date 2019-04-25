@@ -50,7 +50,7 @@ const initialState = {
       anys:[1994,2002],
       bio:"",
       vikipedia:"https://ca.wikipedia.org/wiki/Carles_Sol%C3%A0_i_Ferrando",
-      yt: "AfhBkUCSTWc",
+      yt: "rmes_G5iwnY",
       events: [
           {
             id:0,
