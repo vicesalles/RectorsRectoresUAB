@@ -4,16 +4,143 @@ const initialState = {
   currentVideo: "z",
   videos: [
     {
-      id: "valles",
-      yt: "1zy3QoW8ohM",
-      events: [
-        {
-          sec: 1069,
-          txt: "Comença a parlar el rector"
-        },
-        { sec: 1693, txt: "Doctor Laporte" }
-      ]
-    },
+        id: "ferrer",        
+        yt: "esbrXKHGrl8",
+          temes: [
+            {
+              id:00,
+              sec: 5,
+              txt: "Primer rector escollit en vigència de la LOU",
+              tags:["LOU","PP"]
+            },{
+              id:01,
+              sec: 84,
+              txt: "Conseqüències de l'aprovació de la LOU",
+              tags:["LOU","conseqüències"]
+            },{
+              id:02,
+              sec: 184,
+              txt: "Modificacions del marc legal",
+              tags:["LOU","LUC"]
+            },{
+              id:03,
+              sec: 243,
+              txt: "Aprovació de nous estatuts",
+              tags:["estatuts","LOU"]
+            },{
+              id:04,
+              sec: 323,
+              txt: "Aprovació d'un nou pla director",
+              tags:["pla director","canvis"]
+            },{
+              id:05,
+              sec: 486,
+              txt: "Interacció amb la Conselleria d'Universitats",
+              tags:["conselleria","Solà"]
+            },{
+              id:06,
+              sec: 569,
+              txt: "Adaptació al Pla Bolonya",
+              tags:["Bolonya","homologació"]
+            },{
+              id:07,
+              sec: 946,
+              txt: "Pla pilot de titulacions adaptades",
+              tags:["reestructuració","flexibilitat"]
+            },{
+              id:08,
+              sec: 1211,
+              txt: "Noves titulacions",
+              tags:["innovació","titulacions"]
+            },{
+              id:09,
+              sec: 1389,
+              txt: "Creació de la facultat de Biociències i reestructuració d'altres facultats",
+              tags:["Biociències","reestructuració"]
+            },{
+              id:10,
+              sec: 1714,
+              txt: "Ampliació de la unitat docent Germans Trias i Pujol",
+              tags:["Ampliació","Can Ruti"]
+            },{
+              id:11,
+              sec: 1804,
+              txt: "Internacionalització i creació de l'Aliança 4 Universitats",
+              tags:["internacionalització","aliança"]
+            },{
+              id:12,
+              sec: 2140,
+              txt: "Programa 'Study Abroad'",
+              tags:["internacionalització","intercanvi"]
+            },{
+              id:13,
+              sec: 2220,
+              txt: "Impulsos a la recerca",
+              tags:["recerca","innovació"]
+            },{
+              id:14,
+              sec: 2422,
+              txt: "Nous centres de recerca",
+              tags:["recerca","CReSA"]
+            },{
+              id:15,
+              sec: 2509,
+              txt: "Parc de Recerca i Esfera UAB",
+              tags:["recerca","Esfera"]
+            },{
+              id:16,
+              sec: 2855,
+              txt: "Fòrum de la Recerca UAB 2006",
+              tags:["recerca","fòrum"]
+            },{
+              id:17,
+              sec: 3016,
+              txt: "Creació de l'Observatori per la Igualtat",
+              tags:["observatori","igualtat","drets","gènere"]
+            },{
+              id:18,
+              sec: 3220,
+              txt: "Primers actes institucionals del Dia de la Dona Treballadora",
+              tags:["Institucional","dona","8M","transparència"]
+            },{
+              id:19,
+              sec: 3306,
+              txt: "Campus Ítaca",
+              tags:["Ítaca","integració","igualtat","talent"]
+            },{
+              id:20,
+              sec: 3688,
+              txt: "Els 'Anys Temàtics'",
+              tags:["cultura","participació"]
+            },{
+              id:21,
+              sec: 3861,
+              txt: "Compromís amb el medi ambient",
+              tags:["compromís","medi ambient"]
+            },{
+              id:22,
+              sec: 4037,
+              txt: "Moviment contra la Guerra d'Iraq",
+              tags:["protestes","guerra","Iraq"]
+            },{
+              id:23,
+              sec: 4162,
+              txt: "Els doctors 'Honoris Causa'",
+              tags:["doctors","honoris"]
+            },{
+              id:24,
+              sec: 4317,
+              txt: "Ocupacions de les facultats",
+              tags:["ocupacions","protestes","Bolonya"]
+            },{
+              id:25,
+              sec: 4538,
+              txt: "Balanç del mandat",
+              tags:["balanç","mandat"]
+            }
+          ]
+        }
+   ,
     {
       id: "pascual",
       yt: "cwQgjq0mCdE",
