@@ -7,6 +7,10 @@ import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import SearchIcon from '@material-ui/icons/Search';
 
+
+//Accions
+import {searchCurrentVideoText} from '../../state/actions';
+
 const styles = theme => ({
   container: {
     display: 'flex',
@@ -30,10 +34,11 @@ class Searcher extends Component{
       };
     
       handleChange = (event) => {
+        const text = event.target.value;
         this.setState({
-          cercador: event.target.value,
+          cercador: text
         });
-        console.log(event.target.value)
+        this.props.dispatch(searchCurrentVideoText(text))
       };
 
     render(){
@@ -49,12 +54,7 @@ class Searcher extends Component{
                 variant="filled"
                 autoFocus
                 onChange={(event)=>{this.handleChange(event)}}
-                style={{backgroundColor:'white'}}
-                startAdornment={
-                    <InputAdornment position="start">
-                      <SearchIcon/>
-                    </InputAdornment>
-                  }
+                style={{backgroundColor:'white'}}               
                 InputLabelProps={{
                     shrink: true,
           }}

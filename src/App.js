@@ -34,8 +34,7 @@ class App extends Component {
   }
 }
 
-function mapStateToProps(state){
-  console.log('state',state);
+function mapStateToProps(state){  
   return state;
 }
 

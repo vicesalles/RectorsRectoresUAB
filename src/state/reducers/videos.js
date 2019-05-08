@@ -186,8 +186,7 @@ const initialState = {
 function videos(state = initialState, action) {
   const { type, payload } = action;
   switch (type) {
-    case SET_CURRENT_VIDEO:
-      console.log("Setting current video");
+    case SET_CURRENT_VIDEO:      
       return {
         ...state,
         currentVideo: payload

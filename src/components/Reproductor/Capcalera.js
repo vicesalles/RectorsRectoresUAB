@@ -56,7 +56,7 @@ class Capcalera extends Component{
                    
                             <Avatar alt={this.props.currentRector.cognoms} src={`/img/l/${this.props.currentRector.url}.jpg`} className={classes.bigAvatar}/>
                             
-                            <Grid direction="column" justify="flex-start" alignItems="flex-start" alignContent="flex-start" className={classes.cap}>
+                            <Grid className={classes.cap}>
                                 <Grid container direction="row" justify="flex-start">
                                     <Typography variant="h4" color="inherit" align="left">
                                         {`${this.props.currentRector.nom} ${this.props.currentRector.cognoms}`}

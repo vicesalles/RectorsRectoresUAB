@@ -64,7 +64,7 @@ class Rector extends Component{
 
     render(){
         //Current Video
-        const current = _.find(this.props.videos,{'id':this.props.match.params.id});
+        const current = _.find(this.props.videos.videos,{'id':this.props.match.params.id});
         return(
         <div className="rector">
             <Capcalera/>
@@ -73,7 +73,7 @@ class Rector extends Component{
             <Searcher/>
             </div>            
             <div className="histories">
-                {this.eventsFactory(current.events)}
+                {this.eventsFactory(this.props.histories.filtrades)}
             </div>
         </div>
         )
@@ -83,8 +83,8 @@ class Rector extends Component{
 }
 
 function mapStateToProps(state){
-    const {videos} = state;
-    return videos;
+    const {videos,histories} = state;
+    return {videos,histories};
 }
 
 export default withRouter(connect(mapStateToProps)(Rector))
