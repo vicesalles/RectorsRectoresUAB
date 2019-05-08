@@ -46,13 +46,13 @@ const initialState ={
         },
         {
             id:4,        
+            url: "ferrer", 
             nom:"Lluís",
-            cognoms:"Ferrer Caubet",  
-            url:"ferrer",      
+            cognoms:"Ferrer Caubet",
             mandat:"21.3.2002 – 14.1.2009",
-            entrevista:"",
-            events:[],
-            vikipedia:"https://ca.wikipedia.org/wiki/Llu%C3%ADs_Ferrer_i_Caubet"
+            anys:[2002,2009],
+            bio:"",
+            vikipedia:"https://ca.wikipedia.org/wiki/Llu%C3%ADs_Ferrer_i_Caubet",
         },
         {
             id:5,        
