@@ -46,12 +46,21 @@ export function searchCurrentVideoText(txt){
 
     const histories = store.getState().histories.histories;
 
-    
-   
+       
     const resultat = histories.filter((h)=>{
         const text = h.txt;
-        return text.includes(txt)
+
+        const titols = text.toLowerCase().includes(txt.toLowerCase())
+        const tags = h.tags.filter((t)=>t.toLowerCase().includes(txt.toLowerCase()))
+
+        console.log(tags)
+        
+        const resposta = titols || tags.length>0
+
+        return resposta
     })
+
+    //Cerca entre els tags
 
     return {type:SET_FILTRADES, payload:resultat}
 
