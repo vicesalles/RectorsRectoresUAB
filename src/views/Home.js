@@ -2,13 +2,17 @@ import React,{Component} from 'react';
 import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
+
+
+
+//Components
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
-
 import CartaRector from '../components/Home/CartaRector';
+import HistoriesGeneral from '../components/HistoriesGeneral/HistoriesGeneral';
+import Searcher from '../components/Searcher/Searcher';
 
 
 //Estil
@@ -26,10 +30,21 @@ const styles = {
         marginTop:90,
         minWidth:400
       },
-        bigAvatar: {
+      bigAvatar: {
         margin: 10,
         width: 90,
         height: 90,
+      },
+      histories:{
+        marginTop:20
+      },
+      cercador:{
+          display: 'flex',
+          flexWrap: 'wrap',
+          marginTop:30,
+          marginLeft: 0,
+          width:"100%",
+          
       }
   
      
@@ -46,6 +61,10 @@ class Home extends Component{
 
     }
 
+    componentDidMount(){
+        //Estableix es histories
+    }
+
     render(){
         const { classes } = this.props;
         return (<Grid container>
@@ -59,6 +78,21 @@ class Home extends Component{
                     <Grid container spacing={24} direction="row" justify="center" alignItems="center" alignContent="center" className={classes.graellaRectors}>
                         {this.factory(this.props.rectors)}
                     </Grid>
+                    <Grid container direction="column" justify="center" alignItems="center" alignContent="center" className={classes.cercador}>
+                            <Typography variant="h2" color={"primary"} align="left">
+                                Cerca per temes
+                            </Typography> 
+                        <Searcher cercaGlobal={true}/>
+                    </Grid>
+                    <Grid container className={classes.histories}                    
+                    direction="column"
+                    alignItems="center"
+                    justify="center"
+                    >
+                       
+                        <HistoriesGeneral/>
+                    </Grid>
+
                 </Grid>)
     }
 

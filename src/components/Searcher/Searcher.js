@@ -38,7 +38,14 @@ class Searcher extends Component{
         this.setState({
           cercador: text
         });
-        this.props.dispatch(searchCurrentVideoText(text))
+
+        //Cal validar si es tracta d'una cerca global o específica de vídeo
+        if(this.props.cercaGlobal){
+
+        }else{
+          this.props.dispatch(searchCurrentVideoText(text))
+        }
+        
       };
 
     render(){
