@@ -15,10 +15,11 @@ export const setCurrentRector = (r) => (dispatch) =>{
     dispatch({type:SET_CURRENT_RECTOR,payload})       
         
 }
- 
 
-// Sets Current Video
-
+/**
+ * @description Sets the current video for playing
+ * @param {String} v 
+ */
 export function setCurrentVideo(v) {     
     
     return dispatch => {   
@@ -31,9 +32,7 @@ export function setCurrentVideo(v) {
 
 }
 
-
-//SET all the histories
-
+//SET all the histories: Starting state.
 export function globalHistories(){
 
     //Get all the videos and its events
@@ -62,33 +61,40 @@ export function globalHistories(){
     return{type:INITIAL_HISTORIES,payload:histories}
 }
 
-//Global Search
 
-export function globalSearch(txt){
-    
-}
-
-
-//Search text within current video
-export function searchCurrentVideoText(txt){
+/**
+ * @description Searches for a given text.
+ * @param {String} txt queried text
+ * @param {Boolean} isGlobal defines the search scope
+ */
+export function searchText(txt,isGlobal=false){
 
     const histories = store.getState().histories.histories;
 
-       
-    const resultat = histories.filter((h)=>{
+    //Checks if we're on global search scope and if the query is empty
+    if(isGlobal&&txt.length===0){
+        //Returns an empty array for cleaning the list
+        return {type:SET_FILTRADES, payload:[]}
+
+    }else{
+
+        const resultat = histories.filter((h)=>{
         
-        const text = h.txt;
-        //Search for titles
-        const titols = text.toLowerCase().includes(txt.toLowerCase())
-        //Search for tags
-        const tags = h.tags.filter((t)=>t.toLowerCase().includes(txt.toLowerCase()))
-        const resposta = titols || tags.length>0   
-        return resposta
+            //Historia text
+            const text = h.txt;            
+            //Search for titles
+            const titols = text.toLowerCase().includes(txt.toLowerCase())
+            //Search for tags
+            const tags = h.tags.filter((t)=>t.toLowerCase().includes(txt.toLowerCase()))
+            //Checks if there's result either in the titols or the tags
+            const resposta = titols || tags.length>0   
+            return resposta
+    
+        })
+    
+        return {type:SET_FILTRADES, payload:resultat}
 
-    })
-
-    //Cerca entre els tags
-
-    return {type:SET_FILTRADES, payload:resultat}
+    }
+    
 
 }

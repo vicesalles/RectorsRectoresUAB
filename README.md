@@ -9,7 +9,6 @@ Documental Web on es recullen els testimonis de tots els rectors, en vida, de la
 - Estil pàgina principal. (sobretot histories)
 - Estil pàgina rector. (sobretot histories)
 - Scroll del cercador al cap d'amunt quan l'usuari escriu alguna cosa.
-- Funció de borrar les filtrades quan no hi ha text al cercador
 - Component de compartir
 - Crear footer
 - Crear pàgina de crèdits

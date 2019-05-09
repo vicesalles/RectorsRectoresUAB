@@ -84,7 +84,7 @@ class Home extends Component{
                             <Typography variant="h2" color={"primary"} align="left">
                                 Cerca per temes
                             </Typography> 
-                        <Searcher/>
+                        <Searcher isGlobal={true}/>
                     </Grid>
                     <Grid container className={classes.histories}                    
                     direction="column"

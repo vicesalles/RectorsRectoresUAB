@@ -2,12 +2,13 @@ import React,{Component} from 'react';
 import {connect} from 'react-redux';
 import {withRouter} from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
+
+
+//Components
 import TextField from '@material-ui/core/TextField';
 
-
-
 //Accions
-import {searchCurrentVideoText} from '../../state/actions';
+import {searchText} from '../../state/actions';
 
 const styles = theme => ({
   container: {
@@ -33,11 +34,18 @@ class Searcher extends Component{
     
       handleChange = (event) => {
         const text = event.target.value;
+        
         this.setState({
           cercador: text
         });
 
-        this.props.dispatch(searchCurrentVideoText(text))
+        if(this.props.isGlobal){
+          this.props.dispatch(searchText(text,true))
+        }else{
+          this.props.dispatch(searchText(text))
+        }
+
+        
        
         
       };
@@ -58,7 +66,7 @@ class Searcher extends Component{
                 style={{backgroundColor:'white'}}               
                 InputLabelProps={{
                     shrink: true,
-          }}
+                }}
         />
             </div>)
     }

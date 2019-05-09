@@ -161,6 +161,19 @@ const initialState = {
         { sec: 76, txt: "I'm a sick..",
         tags:[] }
       ]
+    },{
+      id: "valles",
+      nom:"Josep Maria",
+      cognoms:"Vallès Casadevall",        
+      anys:[1986,1990],
+      yt: "3-BIS1HEtrQ",
+      events: [
+        {
+          sec: 32,
+          txt: "We're retired",
+          tags:[]
+        }
+      ]
     },
     {
       id: "serra",

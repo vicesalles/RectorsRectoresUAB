@@ -32,6 +32,7 @@ const initialState ={
             cognoms:"Vallès Casadevall",  
             url:"valles",      
             mandat:"20.3.1990 – 25.3.1994",
+            anys:[1986,1990],
             entrevista:"",
             events:[],
             vikipedia:"https://ca.wikipedia.org/wiki/Josep_Maria_Vall%C3%A8s_i_Casadevall"
