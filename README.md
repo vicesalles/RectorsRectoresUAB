@@ -12,6 +12,7 @@ Documental Web on es recullen els testimonis de tots els rectors, en vida, de la
 - Funció de borrar les filtrades quan no hi ha text al cercador
 - Component de compartir
 - Crear footer
+- Crear pàgina de crèdits
 
 ## Nice to have
 

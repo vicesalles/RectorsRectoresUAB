@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Switch, Route, withRouter} from 'react-router-dom';
 import { connect } from 'react-redux';
-import './App.css';
+import './App.scss';
 
 //Estil Material
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
@@ -9,6 +9,7 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 //Vistes
 import Home from './views/Home';
 import Rector from './views/Rector';
+import Credits from './views/Credits';
 
 const theme = createMuiTheme({
     palette:{
@@ -27,6 +28,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route exact path="/r/:id/:secs?" component={Rector}/>
+            <Route exact path="/credits" component={Credits}/>
           </Switch>
         </MuiThemeProvider>
       </div>
