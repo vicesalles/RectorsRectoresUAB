@@ -14,6 +14,7 @@ import Searcher from '../components/Searcher/Searcher';
 
 //Accions
 import {globalHistories} from '../state/actions';
+import Footer from '../components/Footer/Footer';
 
 //Estil
 
@@ -93,7 +94,7 @@ class Home extends Component{
                        
                         <HistoriesGeneral/>
                     </Grid>
-
+                    <Footer/>
                 </Grid>)
     }
 

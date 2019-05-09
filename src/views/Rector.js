@@ -10,6 +10,7 @@ import Searcher from '../components/Searcher/Searcher';
 
 //Accions
 import {setCurrentRector} from '../state/actions/';
+import Footer from '../components/Footer/Footer';
 
 class Rector extends Component{
 
@@ -78,6 +79,7 @@ class Rector extends Component{
             <div className="histories">
                 {this.eventsFactory(this.props.histories.filtrades)}
             </div>
+            <Footer/>
         </div>
         )
     } 
