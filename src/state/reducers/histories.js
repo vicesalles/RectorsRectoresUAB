@@ -1,4 +1,4 @@
-import {SET_HISTORIES,SET_FILTRADES} from '../actions/types';
+import {SET_HISTORIES,SET_FILTRADES,INITIAL_HISTORIES} from '../actions/types';
 
 const initialState = {
     histories:[],
@@ -6,12 +6,20 @@ const initialState = {
 };
 
 function histories(state = initialState, action) {
+  
   const { type, payload } = action;
+  
   switch (type) {
+
+    case INITIAL_HISTORIES:
+
+        return {
+            histories:payload,
+            filtrades:payload
+        };
    
     case SET_HISTORIES:
-
-        console.log('SETTING_HISTORIES',payload);
+        
         return {
             filtrades:payload,
             histories:payload

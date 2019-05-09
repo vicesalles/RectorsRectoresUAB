@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -14,26 +13,36 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.paper,
   },
   inline: {
-    display: 'inline',
+    display: 'inline',    
+  },
+  principal: {
+    display: 'inline',    
+    fontWeight:"bold"
   },
 });
 
-function Historia(props) {
-  const { classes } = props;
+function Historia(props){
+  
+  const { classes,historia } = props;
+
   return (
     
-      <ListItem alignItems="flex-start">
+      <ListItem button alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Remy Sharp" src="/img/s/ferrer.jpg" />
+          <Avatar alt={historia.nom} src={`/img/s/${historia.url}.jpg`} />
         </ListItemAvatar>
         <ListItemText
-          primary="Ocupació del Rectorat"
+          primary= {<React.Fragment>
+              <Typography component="span" className={classes.principal} color="textPrimary">
+                {historia.txt}
+              </Typography>
+            </React.Fragment>}
           secondary={
             <React.Fragment>
               <Typography component="span" className={classes.inline} color="textPrimary">
-               Lluís Ferrer
+              {historia.nom}
               </Typography>
-              {" — 2002-2009"}
+              {` ${historia.anys}`}
             </React.Fragment>
           }
         />

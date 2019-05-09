@@ -4,56 +4,59 @@ const initialState = {
   currentVideo: "z",
   videos: [
     {
-        id: "ferrer",        
+        id: "ferrer",      
+        nom:"Lluís",
+        cognoms:"Ferrer Caubet",
+        anys:[2002,2009],  
         yt: "esbrXKHGrl8",
-          temes: [
+          events: [
             {
-              id:00,
+              id:0,
               sec: 5,
               txt: "Primer rector escollit en vigència de la LOU",
               tags:["LOU","PP"]
             },{
-              id:01,
+              id:1,
               sec: 84,
               txt: "Conseqüències de l'aprovació de la LOU",
               tags:["LOU","conseqüències"]
             },{
-              id:02,
+              id:2,
               sec: 184,
               txt: "Modificacions del marc legal",
               tags:["LOU","LUC"]
             },{
-              id:03,
+              id:3,
               sec: 243,
               txt: "Aprovació de nous estatuts",
               tags:["estatuts","LOU"]
             },{
-              id:04,
+              id:4,
               sec: 323,
               txt: "Aprovació d'un nou pla director",
               tags:["pla director","canvis"]
             },{
-              id:05,
+              id:5,
               sec: 486,
               txt: "Interacció amb la Conselleria d'Universitats",
               tags:["conselleria","Solà"]
             },{
-              id:06,
+              id:6,
               sec: 569,
               txt: "Adaptació al Pla Bolonya",
               tags:["Bolonya","homologació"]
             },{
-              id:07,
+              id:7,
               sec: 946,
               txt: "Pla pilot de titulacions adaptades",
               tags:["reestructuració","flexibilitat"]
             },{
-              id:08,
+              id:8,
               sec: 1211,
               txt: "Noves titulacions",
               tags:["innovació","titulacions"]
             },{
-              id:09,
+              id:9,
               sec: 1389,
               txt: "Creació de la facultat de Biociències i reestructuració d'altres facultats",
               tags:["Biociències","reestructuració"]
@@ -143,40 +146,48 @@ const initialState = {
    ,
     {
       id: "pascual",
+      nom:"Ramon",
+      cognoms:"Pascual de Sans",   
+      anys:[1986,1990],
       yt: "cwQgjq0mCdE",
       events: [
         {
           sec: 24,
-          txt: "Dork"
+          txt: "Dork",
+          tags:[]
         },
-        { sec: 58, txt: "You such a.." },
-        ,
-        { sec: 76, txt: "I'm a sick.." }
+        { sec: 58, txt: "You such a..",
+        tags:[] },
+        { sec: 76, txt: "I'm a sick..",
+        tags:[] }
       ]
     },
     {
       id: "serra",
+      nom:"Antoni",
+      cognoms:"Serra Ramoneda",
+      anys:[1980,1985],
       yt: "bSXbW2a4IIk",
       events: [
         {
           sec: 21,
-          txt: "Back to this..."
+          txt: "Back to this...",
+          tags:[]
         },
         {
           sec: 82,
-          txt: "Back to this...(2)"
+          txt: "Back to this...(2)",
+          tags:[]
         },
-        { sec: 93, txt: "Oh my God" }
+        { sec: 93, txt: "Oh my God",
+        tags:[] }
       ]
     },
     {
       id:"sola", 
       nom:"Carles",
-      cognoms:"Solà Ferrando",
-      mandat:"25.3.1994 – 21.3.2002",
-      anys:[1994,2002],
-      bio:"",
-      vikipedia:"https://ca.wikipedia.org/wiki/Carles_Sol%C3%A0_i_Ferrando",
+      cognoms:"Solà Ferrando",      
+      anys:[1994,2002],      
       yt: "rmes_G5iwnY",
       events: [
           {
@@ -284,26 +295,29 @@ const initialState = {
       },
     {
       id: "ripoll",
+      nom:"Ana",
+      cognoms:"Ripoll Aracil",  
+      anys:[2009,2012], 
       yt: "rK62UIZOvGM",
       events: [
         {
           sec: 15,
-          txt: "Gamble"
+          txt: "Gamble",
+          tags:[]
         }
       ]
     },
     {
-      id: "ferrer",
-      yt: "CQqf4GgZ-Is",
-      events: []
-    },
-    {
       id: "sancho",
+      nom:"Ferran",
+      cognoms:"Sancho Pifarré",  
+      anys:[2012,2016], 
       yt: "Ev5nFBN9xHI",
       events: [
         {
           sec: 15,
-          txt: "Gamble"
+          txt: "Gamble",
+          tags:[]
         }
       ]
     }

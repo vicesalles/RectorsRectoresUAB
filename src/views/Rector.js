@@ -70,7 +70,7 @@ class Rector extends Component{
             <Capcalera/>
             <div className="reproductor">
             <YouTube ref={this.reproductor} videoId={current.yt} opts={this.playerOptions} onReady={this._onReady}/>
-            <Searcher cercaGlobal={false}/>
+            <Searcher/>
             </div>            
             <div className="histories">
                 {this.eventsFactory(this.props.histories.filtrades)}

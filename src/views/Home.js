@@ -3,8 +3,6 @@ import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
 
-
-
 //Components
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -14,6 +12,8 @@ import CartaRector from '../components/Home/CartaRector';
 import HistoriesGeneral from '../components/HistoriesGeneral/HistoriesGeneral';
 import Searcher from '../components/Searcher/Searcher';
 
+//Accions
+import {globalHistories} from '../state/actions';
 
 //Estil
 
@@ -63,6 +63,7 @@ class Home extends Component{
 
     componentDidMount(){
         //Estableix es histories
+        this.props.dispatch(globalHistories());
     }
 
     render(){
@@ -82,7 +83,7 @@ class Home extends Component{
                             <Typography variant="h2" color={"primary"} align="left">
                                 Cerca per temes
                             </Typography> 
-                        <Searcher cercaGlobal={true}/>
+                        <Searcher/>
                     </Grid>
                     <Grid container className={classes.histories}                    
                     direction="column"

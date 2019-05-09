@@ -10,6 +10,7 @@ const initialState ={
             cognoms:"Serra Ramoneda",
             url:"serra",
             mandat:"28.3.1980 – 18.4.1985",
+            anys:[1980,1985],
             entrevista:"",
             events:[],
             vikipedia:"https://ca.wikipedia.org/wiki/Antoni_Serra_i_Ramoneda"
@@ -20,6 +21,7 @@ const initialState ={
             cognoms:"Pascual de Sans",   
             url:"pascual",     
             mandat:"13.2.1986 – 20.3.1990",
+            anys:[1986,1990],
             entrevista:"",
             events:[],
             vikipedia:"https://ca.wikipedia.org/wiki/Ramon_Pascual_de_Sans"
@@ -41,6 +43,7 @@ const initialState ={
             url:"sola",      
             mandat:"25.3.1994 – 21.3.2002",
             entrevista:"",
+            anys:[1994,2002],
             events:[],
             vikipedia:"https://ca.wikipedia.org/wiki/Carles_Sol%C3%A0_i_Ferrando"
         },
@@ -58,7 +61,8 @@ const initialState ={
             id:5,        
             nom:"Ana",
             cognoms:"Ripoll Aracil",  
-            url:"ripoll",      
+            url:"ripoll",
+            anys:[2009,2012],      
             mandat:"14.1.2009 – 22.6.2012",
             entrevista:"",
             events:[],
@@ -68,7 +72,8 @@ const initialState ={
             id:6,        
             nom:"Ferran",
             cognoms:"Sancho Pifarré",  
-            url:"sancho",      
+            url:"sancho", 
+            anys:[2012,2016],     
             mandat:"22.6.2012 – 6.6.2016",
             entrevista:"",
             events:[],

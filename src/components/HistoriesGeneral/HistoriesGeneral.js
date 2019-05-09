@@ -10,7 +10,6 @@ import Historia from './Historia';
 
 const styles = theme => ({
     root: {    
-      display: "flex",  
       width: '100%',
       maxWidth: 560,
       backgroundColor: theme.palette.background.paper,
@@ -20,20 +19,32 @@ const styles = theme => ({
     },
   });
 
+
 class HistoriesGeneral extends Component {
 
-    render(){
+    //Fàbrica d'histories
+    /**
+     * @description Crea la llista de components d'Història a publicar 
+     * @param {array} hs 
+     */
+    fabricaHistories = (hs) =>{
 
+        return hs.map((h,i)=><Historia key={i} historia={h}/>)
+
+    }
+
+    render(){
+        
         const { classes } = this.props;
+        
         return (
             <List 
             spacing={0}
-            direction="column"
-            alignItems="center"
+            direction="column"            
             justify="center"
             className={classes.root} 
             >
-                <Historia/>
+                {this.fabricaHistories(this.props.filtrades)}            
             </List>
         );
 

@@ -1,11 +1,9 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux';
-import classNames from 'classnames';
 import {withRouter} from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
-import InputAdornment from '@material-ui/core/InputAdornment';
-import SearchIcon from '@material-ui/icons/Search';
+
 
 
 //Accions
@@ -39,17 +37,13 @@ class Searcher extends Component{
           cercador: text
         });
 
-        //Cal validar si es tracta d'una cerca global o específica de vídeo
-        if(this.props.cercaGlobal){
-
-        }else{
-          this.props.dispatch(searchCurrentVideoText(text))
-        }
+        this.props.dispatch(searchCurrentVideoText(text))
+       
         
       };
 
     render(){
-        const { classes } = this.props;
+        
         return(<div className="Searcher">
             <TextField
                 id="outlined-full-width"
