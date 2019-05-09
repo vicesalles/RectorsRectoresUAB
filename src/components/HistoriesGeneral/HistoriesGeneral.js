@@ -35,18 +35,31 @@ class HistoriesGeneral extends Component {
 
     render(){
         
-        const { classes } = this.props;
+        const { classes,filtrades } = this.props;
         
-        return (
-            <List 
-            spacing={0}
-            direction="column"            
-            justify="center"
-            className={classes.root} 
-            >
-                {this.fabricaHistories(this.props.filtrades)}            
-            </List>
-        );
+
+        // Mira si l'usuari ha fet alguna cerca
+        if(filtrades.length===0){
+
+            return(<div></div>)
+
+        }else{
+
+            return (
+                <List 
+                spacing={0}
+                direction="column"            
+                justify="center"
+                className={classes.root} 
+                >
+                    {this.fabricaHistories(filtrades)}            
+                </List>
+            );
+
+        }
+        
+
+       
 
     }
 

@@ -46,8 +46,7 @@ class Rector extends Component{
         return amplada*9/16
 
     }
-
-
+    
     //Generates an event list for the current video
     eventsFactory = (evs) => {
         return evs.map((ev,i)=>{
@@ -57,9 +56,13 @@ class Rector extends Component{
 
     componentDidMount(){       
         const id = this.props.match.params.id;
+        const secs = this.props.match.params.secs;
         this.props.dispatch(setCurrentRector(id));
         const current = _.find(this.props.videos,{id});
         this.setState({current})        
+        if(secs!==0 && secs!==undefined){
+            this.navigateTo(secs);
+        }
     }
 
     render(){

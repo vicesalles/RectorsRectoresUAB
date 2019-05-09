@@ -1,5 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import {withRouter,Link} from 'react-router-dom';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
@@ -26,8 +27,8 @@ function Historia(props){
   const { classes,historia } = props;
 
   return (
-    
-      <ListItem button alignItems="flex-start">
+
+      <ListItem button component={Link} to={`./r/${historia.url}/${historia.sec}`} alignItems="flex-start">
         <ListItemAvatar>
           <Avatar alt={historia.nom} src={`/img/s/${historia.url}.jpg`} />
         </ListItemAvatar>
@@ -52,4 +53,4 @@ function Historia(props){
 }
 
 
-export default withStyles(styles)(Historia);
+export default withRouter(withStyles(styles)(Historia));

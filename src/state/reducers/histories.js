@@ -15,7 +15,7 @@ function histories(state = initialState, action) {
 
         return {
             histories:payload,
-            filtrades:payload
+            filtrades:[]
         };
    
     case SET_HISTORIES:
