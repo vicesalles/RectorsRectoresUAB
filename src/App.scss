@@ -37,12 +37,14 @@ body{
 .reproductor{  
   position: sticky;
   position: -webkit-sticky;
-  top: 1em;
+  top: 0em;
   background-color: darkslategrey;
 
 }
 
 .Searcher{
+  position: sticky;
+  position: -webkit-sticky;
   width: 100%;
 }
 

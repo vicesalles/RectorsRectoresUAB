@@ -43,8 +43,8 @@ const styles = {
           display: 'flex',
           flexWrap: 'wrap',
           marginTop:30,
-          marginLeft: 0,
-          width:"100%",
+          marginLeft: "2.5%",
+          width:"95%",
           
       }
   
