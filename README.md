@@ -4,10 +4,15 @@ Documental Web on es recullen els testimonis de tots els rectors, en vida, de la
 
 ## Bugs
 
+- Comportament de la cerca en la pàgina principal
+
 ## Tasques
 
 - Estil pàgina principal. (sobretot histories)
+    - Barra del cercador
 - Estil pàgina rector. (sobretot histories)
+    - Capçalera
+    - Player
 - Scroll del cercador al cap d'amunt quan l'usuari escriu alguna cosa.
 - Component de compartir
 - Crear footer
