@@ -74,7 +74,10 @@ class Home extends Component{
                         <Toolbar variant="regular">   
                             <Typography variant="h5" color="inherit" align="left">
                                 Rectors i Rectores de la UAB: 50 anys.
-                            </Typography>                                      
+                            </Typography>      
+                            <Typography variant="h6" color="inherit" align="left">
+                                La història de la UAB explicada pels seus rectors i
+                            </Typography>                                  
                         </Toolbar>
                     </AppBar>               
                     <Grid container spacing={24} direction="row" justify="center" alignItems="center" alignContent="center" className={classes.graellaRectors}>

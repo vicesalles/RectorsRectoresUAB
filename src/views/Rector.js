@@ -1,16 +1,55 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux';
 import {withRouter} from 'react-router-dom';
+import { withStyles } from '@material-ui/core/styles';
 import YouTube from 'react-youtube';
 import _ from 'lodash';
 
 //Components
 import Capcalera from '../components/Reproductor/Capcalera';
 import Searcher from '../components/Searcher/Searcher';
+import Grid from '@material-ui/core/Grid';
 
 //Accions
 import {setCurrentRector} from '../state/actions/';
 import Footer from '../components/Footer/Footer';
+
+
+// Estil
+
+const styles = {
+    
+    cap:{
+        marginLeft:25
+    },
+    menuButton: {
+      marginLeft: -18,
+      marginRight: 10,
+    },
+    graellaRector:{   
+      flex:4,    
+      marginTop:90,
+      minWidth:400
+    },
+    bigAvatar: {
+      margin: 10,
+      width: 90,
+      height: 90,
+    },
+    histories:{
+      marginTop:20
+    },
+    cercador:{
+        display: 'flex',
+        flexWrap: 'wrap',
+        marginTop:30,
+        marginLeft: "2.5%",
+        width:"95%",
+        
+    }
+
+   
+};
 
 class Rector extends Component{
 
@@ -67,18 +106,25 @@ class Rector extends Component{
     }
 
     render(){
+
+        //Classes
+        const { classes } = this.props;
+
         //Current Video
         const current = _.find(this.props.videos.videos,{'id':this.props.match.params.id});
         return(
         <div className="rector">
             <Capcalera/>
-            <div className="reproductor">
-            <YouTube ref={this.reproductor} videoId={current.yt} opts={this.playerOptions} onReady={this._onReady}/>
-            <Searcher/>
-            </div>            
-            <div className="histories">
-                {this.eventsFactory(this.props.histories.filtrades)}
-            </div>
+            <Grid container spacing={24} direction="row" justify="space-between" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRector}>
+                <div className="reproductor">
+                    <YouTube ref={this.reproductor} videoId={current.yt} opts={this.playerOptions} onReady={this._onReady}></YouTube>
+                    <Searcher w={window.innerWidth/1.5}/>
+                </div>            
+                <div className="histories">
+                    {this.eventsFactory(this.props.histories.filtrades)}
+                </div>
+            </Grid>
+           
             <Footer/>
         </div>
         )
@@ -92,4 +138,4 @@ function mapStateToProps(state){
     return {videos,histories};
 }
 
-export default withRouter(connect(mapStateToProps)(Rector))
+export default withRouter(connect(mapStateToProps)(withStyles(styles)(Rector)))

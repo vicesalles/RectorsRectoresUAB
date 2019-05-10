@@ -52,6 +52,8 @@ class Searcher extends Component{
 
     render(){
         
+        const wi = this.props.w ? this.props.w : "100%";
+
         return(<div className="Searcher">
             <TextField
                 id="outlined-full-width"
@@ -63,7 +65,8 @@ class Searcher extends Component{
                 variant="filled"
                 autoFocus
                 onChange={(event)=>{this.handleChange(event)}}
-                style={{backgroundColor:'white'}}               
+                style={{backgroundColor:'white', width:wi}}   
+                            
                 InputLabelProps={{
                     shrink: true,
                 }}
