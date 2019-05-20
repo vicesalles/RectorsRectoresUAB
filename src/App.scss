@@ -4,8 +4,11 @@ body{
   background-color: darkslategrey;
 }
 
-.App {
-  width: "100vw";
+#root{
+  width: 99%;
+}
+
+.App { 
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -88,7 +91,7 @@ body{
     justify-content: center;
     align-items: center;
     img{
-      width: 360px;
+      max-width: 360px;
     }  
   } 
   a{
