@@ -9,6 +9,7 @@ import _ from 'lodash';
 import Capcalera from '../components/Reproductor/Capcalera';
 import Searcher from '../components/Searcher/Searcher';
 import Grid from '@material-ui/core/Grid';
+import {CardMedia} from '@material-ui/core/CardMedia';
 
 //Accions
 import {setCurrentRector} from '../state/actions/';
@@ -57,13 +58,15 @@ class Rector extends Component{
         current:""
     }
 
+    //REFS
+
+    //Ref for the player's container
+    containerReproductor = React.createRef();
+
     //Ref for the player
     reproductor = React.createRef();
-    
-    //Player Options
-    playerOptions = {
-        width:window.innerWidth/1.5,
-        height:(window.innerWidth*9/16)/1.5,
+
+    playerOptions = {             
         playerVars:{
             autoplay: 1,
             modestbranding:1,
@@ -75,16 +78,12 @@ class Rector extends Component{
 
     //Navigate to a given second of the video
     navigateTo = (s) => {
-
-        this.reproductor.current.internalPlayer.seekTo(s);
-    
+        this.reproductor.current.internalPlayer.seekTo(s);    
     }
 
     //Returns the 16:9 height for a given width
     setzeNou = (amplada) =>{
-
         return amplada*9/16
-
     }
     
     //Generates an event list for the current video
@@ -95,6 +94,22 @@ class Rector extends Component{
     }
 
     componentDidMount(){       
+
+        console.log('Amplada container',this.containerReproductor.current.clientWidth);
+       const ampladaPare = this.containerReproductor.current.clientWidth;
+        //Setting the player size
+         //Player Options
+        this.playerOptions = {
+            width: ampladaPare,        
+            height: this.setzeNou(ampladaPare),
+            playerVars:{
+                autoplay: 1,
+                modestbranding:1,
+                rel: 0,
+                color:'white',
+                iv_load_policy:3
+            }
+        }
         const id = this.props.match.params.id;
         const secs = this.props.match.params.secs;
         this.props.dispatch(setCurrentRector(id));
@@ -116,7 +131,7 @@ class Rector extends Component{
         <div className="rector">
             <Capcalera/>
             <Grid container spacing={24} direction="row" justify="space-between" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRector}>
-                <div className="reproductor">
+                <div ref={this.containerReproductor} className="reproductor">
                     <YouTube ref={this.reproductor} videoId={current.yt} opts={this.playerOptions} onReady={this._onReady}></YouTube>
                     <Searcher w={window.innerWidth/1.5}/>
                 </div>            
