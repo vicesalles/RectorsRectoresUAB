@@ -327,6 +327,11 @@ const videos =[
         sec: 15,
         txt: "Gamble",
         tags:[]
+      },
+      {
+        sec:26,
+        txt:"Average Avenger",
+        tags:[]
       }
     ]
   }
