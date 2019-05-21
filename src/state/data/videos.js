@@ -199,109 +199,109 @@ const videos =[
     anys:[1994,2002],      
     yt: "rmes_G5iwnY",
     events: [
-        {
-          id:0,
-          sec: 5,
-          txt: "Fundació Escola Enginyeria",
-          tags:["enginyeria"]
-        },{
-          id:1,
-          sec: 86,
-          txt: "Innovacions acadèmiques",
-          tags:["titulacions","innovació"]
-        },{
-          id:2,
-          sec: 286,
-          txt: "Escola de doctorat i de formació contínua",
-          tags:["doctorat","formació"]
-        },{
-          id:3,
-          sec: 385,
-          txt: "Recursos per a la recerca",
-          tags:["recerca","finançament"]
-        },{
-          id:4,
-          sec: 512,
-          txt: "Nous centres de recerca",
-          tags:["recerca","centres"]
-        },{
-          id:5,
-          sec: 644,
-          txt: "Creació de la Institució Catalana de Recerca i Estudis Avançats (ICREA)",
-          tags:["recerca","ICREA"]
-        },{
-          id:6,
-          sec: 733,
-          txt: "Tensions pressupostàries",
-          tags:["finançament","pressupostos"]
-        },{
-          id:7,
-          sec: 1035,
-          txt: "Informe Universitat 2000",
-          tags:["informe","protestes"]
-        },{
-          id:8,
-          sec: 1266,
-          txt: "Llei Orgànica d'Universitats (LOU)",
-          tags:["LOU","PP"]
-        },{
-          id:9,
-          sec: 1344,
-          txt: "Crisi institucional: la visita de José María Aznar",
-          tags:["Aznar","càrregues"]
-        },{
-          id:10,
-          sec: 1713,
-          txt: "Inauguració de les columnes de la UAB",
-          tags:["columnes","monument"]
-        },{
-          id:11,
-          sec: 1957,
-          txt: "El camí cap al Pla Bolonya",
-          tags:["Bolonya","ensenyament"]
-        },{
-          id:12,
-          sec: 2190,
-          txt: "La universitat de l'Estat amb més programes d'intercanvi europeus",
-          tags:["intercanvi","mobilitat"]
-        },{
-          id:13,
-          sec: 2374,
-          txt: "Creació del programa 'Universitat a l'Abast'",
-          tags:["formació","integració"]
-        },{
-          id:14,
-          sec: 2424,
-          txt: "Nous espais per a biblioteques",
-          tags:["biblioteques"]
-        },{
-          id:15,
-          sec: 2483,
-          txt: "Els Doctors 'Honoris Causa'",
-          tags:["doctors","honoris"]
-        },{
-          id:16,
-          sec: 2521,
-          txt: "Connexió ferroviària amb Sabadell",
-          tags:["connexió","Sabadell"]
-        },{
-          id:17,
-          sec: 2726,
-          txt: "Accident mortal a França d'un autocar amb estudiants de Psicologia",
-          tags:["accident","estudiants"]
-        },{
-          id:18,
-          sec: 2745,
-          txt: "Balanç del mandat",
-          tags:["balanç","mandat"]
-        },{
-          id:19,
-          sec: 2872,
-          txt: "L'anècdota",
-          tags:["anècdota","migrants"]
-        }
-      ]
-    },
+      {
+        id:00,
+        sec: 5,
+        txt: "Fundació Escola Enginyeria",
+        tags:["escola d'enginyeria","facultats"]
+      },{
+        id:01,
+        sec: 85,
+        txt: "Innovacions acadèmiques",
+        tags:["titulacions","innovació"]
+      },{
+        id:02,
+        sec: 286,
+        txt: "Escola de doctorat i de formació contínua",
+        tags:["escola de doctorat","formació"]
+      },{
+        id:03,
+        sec: 384,
+        txt: "Recursos per a la recerca",
+        tags:["recerca","finançament"]
+      },{
+        id:04,
+        sec: 511,
+        txt: "Nous centres de recerca",
+        tags:["recerca","centres"]
+      },{
+        id:05,
+        sec: 643,
+        txt: "Creació de la Institució Catalana de Recerca i Estudis Avançats (ICREA)",
+        tags:["recerca","ICREA"]
+      },{
+        id:06,
+        sec: 720,
+        txt: "Tensions pressupostàries",
+        tags:["finançament","pressupostos","tensions"]
+      },{
+        id:07,
+        sec: 1020,
+        txt: "Informe Universitat 2000",
+        tags:["informe","estudi","finançament","universitat","PP","protestes","estudiants"] 
+      },{
+        id:08,
+        sec: 1252,
+        txt: "Llei Orgànica d'Universitats (LOU)",
+        tags:["LOU","PP","marc legal"]
+      },{
+        id:09,
+        sec: 1330,
+        txt: "Crisi institucional: la visita de José María Aznar",
+        tags:["Aznar","càrregues","policia","estudiants","protestes","campus"]
+      },{
+        id:10,
+        sec: 1699,
+        txt: "Inauguració de les columnes de la UAB",
+        tags:["columnes","monument","campus"]
+      },{
+        id:11,
+        sec: 1932,
+        txt: "El camí cap al Pla Bolonya",
+        tags:["Pla Bolonya","marc legal","reforma","Europa","ensenyament"]
+      },{
+        id:12,
+        sec: 2165,
+        txt: "La universitat de l'Estat amb més programes d'intercanvi europeus",
+        tags:["intercanvi","mobilitat","internacionalització"]
+      },{
+        id:13,
+        sec: 2350,
+        txt: "Creació del programa 'Universitat a l'Abast'",
+        tags:["Abast","formació","integració"]
+      },{
+        id:14,
+        sec: 2399,
+        txt: "Nous espais per a biblioteques",
+        tags:["biblioteques","coneixement","campus","estudiants"]
+      },{
+        id:15,
+        sec: 2458,
+        txt: "Els Doctors 'Honoris Causa'",
+        tags:["doctors","honoris causa"]
+      },{
+        id:16,
+        sec: 2496,
+        txt: "Connexió ferroviària amb Sabadell",
+        tags:["connexió","Sabadell","transport","tren","FGC"]
+      },{
+        id:17,
+        sec: 2701,
+        txt: "Accident mortal a França d'un autocar amb estudiants de Psicologia",
+        tags:["accident","estudiants","psicologia","França"]
+      },{
+        id:18,
+        sec: 2720,
+        txt: "Balanç del mandat",
+        tags:["balanç","mandat","rector"]
+      },{
+        id:19,
+        sec: 2847,
+        txt: "L'anècdota",
+        tags:["anècdota","migrants"]
+      }
+    ]
+ },
   {
     id: "ripoll",
     nom:"Ana",
