@@ -1,10 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+//Components
+import AppBar from '@material-ui/core/AppBar';
+
 //Pàgina de Crèdits
 export default function Credits(){
     return(<div id="credits">
-
+        <AppBar/>
         <p>Una producció de la Unitat d'Audiovisuals i Multimèdia.</p>
         <ul>
             <li>Direcció: Vicenç Sallés</li>           
