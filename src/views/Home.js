@@ -72,19 +72,10 @@ class Home extends Component{
                         <Toolbar variant="regular">   
                             <Typography variant="h5" color="inherit" align="left">
                                 Rectors i Rectores de la UAB 
-                            </Typography>      
-                            <Typography variant="h6" color="inherit" align="left">
-                                : La història de la UAB explicada pels seus rectors i rectores.
-                            </Typography>                                  
+                            </Typography>                     
                         </Toolbar>
                     </AppBar>               
-                    <Grid container spacing={24} direction="row" justify="center" alignItems="center" alignContent="center" className={classes.graellaRectors}>
-                        {this.factory(this.props.rectors)}
-                    </Grid>
                     <Grid container direction="column" justify="center" alignItems="center" alignContent="center" className={classes.cercador}>
-                            <Typography variant="h2" color={"primary"} align="left">
-                                Cerca per temes
-                            </Typography> 
                         <Searcher isGlobal={true}/>
                     </Grid>
                     <Grid container className={classes.histories}                    
@@ -94,6 +85,10 @@ class Home extends Component{
                     >                       
                         <HistoriesGeneral/>
                     </Grid>
+                    <Grid container spacing={24} direction="row" justify="center" alignItems="center" alignContent="center" className={classes.graellaRectors}>
+                        {this.factory(this.props.rectors)}
+                    </Grid>
+                 
                     <Footer/>
                 </Grid>)
     }
