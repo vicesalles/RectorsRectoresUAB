@@ -200,17 +200,17 @@ const videos =[
     yt: "rmes_G5iwnY",
     events: [
       {
-        id:00,
+        id:0,
         sec: 5,
         txt: "Fundació Escola Enginyeria",
         tags:["escola d'enginyeria","facultats"]
       },{
-        id:01,
+        id:1,
         sec: 85,
         txt: "Innovacions acadèmiques",
         tags:["titulacions","innovació"]
       },{
-        id:02,
+        id:2,
         sec: 286,
         txt: "Escola de doctorat i de formació contínua",
         tags:["escola de doctorat","formació"]
@@ -220,32 +220,32 @@ const videos =[
         txt: "Recursos per a la recerca",
         tags:["recerca","finançament"]
       },{
-        id:04,
+        id:4,
         sec: 511,
         txt: "Nous centres de recerca",
         tags:["recerca","centres"]
       },{
-        id:05,
+        id:5,
         sec: 643,
         txt: "Creació de la Institució Catalana de Recerca i Estudis Avançats (ICREA)",
         tags:["recerca","ICREA"]
       },{
-        id:06,
+        id:6,
         sec: 720,
         txt: "Tensions pressupostàries",
         tags:["finançament","pressupostos","tensions"]
       },{
-        id:07,
+        id:7,
         sec: 1020,
         txt: "Informe Universitat 2000",
         tags:["informe","estudi","finançament","universitat","PP","protestes","estudiants"] 
       },{
-        id:08,
+        id:8,
         sec: 1252,
         txt: "Llei Orgànica d'Universitats (LOU)",
         tags:["LOU","PP","marc legal"]
       },{
-        id:09,
+        id:9,
         sec: 1330,
         txt: "Crisi institucional: la visita de José María Aznar",
         tags:["Aznar","càrregues","policia","estudiants","protestes","campus"]
