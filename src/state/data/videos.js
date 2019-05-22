@@ -10,22 +10,22 @@ const videos =[
             id:0,
             sec: 5,
             txt: "Primer rector escollit en vigència de la LOU",
-            tags:["LOU","PP"]
+            tags:["LOU","PP","marc legal"]
           },{
             id:1,
             sec: 84,
             txt: "Conseqüències de l'aprovació de la LOU",
-            tags:["LOU","conseqüències"]
+            tags:["LOU","conseqüències","marc legal"]
           },{
             id:2,
             sec: 184,
             txt: "Modificacions del marc legal",
-            tags:["LOU","LUC"]
+            tags:["LOU","LUC","marc legal"]
           },{
             id:3,
             sec: 243,
             txt: "Aprovació de nous estatuts",
-            tags:["estatuts","LOU"]
+            tags:["estatuts","LOU","marc legal"]
           },{
             id:4,
             sec: 323,
@@ -35,17 +35,17 @@ const videos =[
             id:5,
             sec: 486,
             txt: "Interacció amb la Conselleria d'Universitats",
-            tags:["conselleria","Solà"]
+            tags:["conselleria","universitats","Carles Solà","Generalitat"]
           },{
             id:6,
             sec: 569,
             txt: "Adaptació al Pla Bolonya",
-            tags:["Bolonya","homologació"]
+            tags:["Pla Bolonya","homologació","Espai Europeu","reforma","universitats"]
           },{
             id:7,
             sec: 946,
             txt: "Pla pilot de titulacions adaptades",
-            tags:["reestructuració","flexibilitat"]
+            tags:["titulacions","reestructuració","flexibilitat","pla pilot"]
           },{
             id:8,
             sec: 1211,
@@ -55,22 +55,22 @@ const videos =[
             id:9,
             sec: 1389,
             txt: "Creació de la facultat de Biociències i reestructuració d'altres facultats",
-            tags:["Biociències","reestructuració"]
+            tags:["facultats","Biociències","reestructuració"]
           },{
             id:10,
             sec: 1714,
             txt: "Ampliació de la unitat docent Germans Trias i Pujol",
-            tags:["Ampliació","Can Ruti"]
+            tags:["unitat docent","Can Ruti","Germans Trias i Pujol"]
           },{
             id:11,
             sec: 1804,
             txt: "Internacionalització i creació de l'Aliança 4 Universitats",
-            tags:["internacionalització","aliança"]
+            tags:["internacionalització","Aliança 4 Universitats"]
           },{
             id:12,
             sec: 2140,
             txt: "Programa 'Study Abroad'",
-            tags:["internacionalització","intercanvi"]
+            tags:["internacionalització","intercanvi","Study Abroad","estudiants"]
           },{
             id:13,
             sec: 2220,
@@ -80,12 +80,12 @@ const videos =[
             id:14,
             sec: 2422,
             txt: "Nous centres de recerca",
-            tags:["recerca","CReSA"]
+            tags:["recerca","CReSA","campus"]
           },{
             id:15,
             sec: 2509,
             txt: "Parc de Recerca i Esfera UAB",
-            tags:["recerca","Esfera"]
+            tags:["recerca","Esfera UAB","campus"]
           },{
             id:16,
             sec: 2855,
@@ -95,47 +95,47 @@ const videos =[
             id:17,
             sec: 3016,
             txt: "Creació de l'Observatori per la Igualtat",
-            tags:["observatori","igualtat","drets","gènere"]
+            tags:["observatori","igualtat","drets","gènere","campus"]
           },{
             id:18,
             sec: 3220,
             txt: "Primers actes institucionals del Dia de la Dona Treballadora",
-            tags:["Institucional","dona","8M","transparència"]
+            tags:["Institucional","dona","8M","transparència","drets","igualtat"]
           },{
             id:19,
             sec: 3306,
             txt: "Campus Ítaca",
-            tags:["Ítaca","integració","igualtat","talent"]
+            tags:["Campus Ítaca","integració","igualtat","talent"]
           },{
             id:20,
             sec: 3688,
             txt: "Els 'Anys Temàtics'",
-            tags:["cultura","participació"]
+            tags:["cultura","participació","campus"]
           },{
             id:21,
             sec: 3861,
             txt: "Compromís amb el medi ambient",
-            tags:["compromís","medi ambient"]
+            tags:["compromís","medi ambient","sostenibilitat"]
           },{
             id:22,
             sec: 4037,
             txt: "Moviment contra la Guerra d'Iraq",
-            tags:["protestes","guerra","Iraq"]
+            tags:["protestes","mobilitzacions","guerra","Iraq"]
           },{
             id:23,
             sec: 4162,
             txt: "Els doctors 'Honoris Causa'",
-            tags:["doctors","honoris"]
+            tags:["doctors","honoris causa","reconeixement","talent"]
           },{
             id:24,
             sec: 4317,
             txt: "Ocupacions de les facultats",
-            tags:["ocupacions","protestes","Bolonya"]
+            tags:["ocupacions","protestes","estudiants","Pla Bolonya"]
           },{
             id:25,
             sec: 4538,
             txt: "Balanç del mandat",
-            tags:["balanç","mandat"]
+            tags:["balanç","mandat","rector"]
           }
         ]
       }
@@ -151,7 +151,7 @@ const videos =[
         id:0,
         sec: 5,
         txt: "Breu període com a rector en funcions (1980)",
-        tags:["rector en funcions","Laporte","Serra Ramoneda"]
+        tags:["rector","Josep Laporte","Serra Ramoneda"]
       },{
         id:1,
         sec: 68,
@@ -166,47 +166,47 @@ const videos =[
         id:3,
         sec: 304,
         txt: "Augment notable del finançament per a les universitats",
-        tags:["finançament","universitats"]
+        tags:["finançament","universitats","progrés"]
       },{
         id:4,
         sec: 458,
         txt: "Noves facultats",
-        tags:["facultat","polítiques","campus Sabadell"]
+        tags:["facultat","polítiques","campus Sabadell","progrés","campus"]
       },{
         id:5,
         sec: 603,
         txt: "Un pressupost 'expansiu'",
-        tags:["finançament","recerca","biblioteques","rehabilitació"]
+        tags:["finançament","pressupost","recerca","biblioteques","rehabilitació","progrés"]
       },{
         id:6,
         sec: 841,
         txt: "Nous centres de recerca",
-        tags:["recerca","CSIC","CNM","consorcis"]
+        tags:["recerca","CSIC","CNM","consorcis","campus"]
       },{
         id:7,
         sec: 1022,
         txt: "Impuls a les unitats docents hospitalàries",
-        tags:["unitats docents hospitalàries","Germans Trias","Hospital del Mar","Sant Pau"]
+        tags:["unitats docents","Germans Trias","Hospital del Mar","Sant Pau"]
       },{
         id:8,
         sec: 1170,
         txt: "El programa Erasmus",
-        tags:["Erasmus","intercanvi","Unió Europea"]
+        tags:["Erasmus","intercanvi","Unió Europea","estudiants","internacionalització"]
       },{
         id:9,
         sec: 1265,
         txt: "Orígens del sincrotró Alba",
-        tags:["sincrotró","Alba","accelerador de partícules","CERN"]
+        tags:["sincrotró Alba","accelerador de partícules","CELLS","CERN"]
       },{
         id:10,
         sec: 1531,
         txt: "El sincrotró dins del campus, una ubicació inviable",
-        tags:["sincrotró","Alba","accelerador de partícules","campus"]
+        tags:["sincrotró Alba","accelerador de partícules","campus","CELLS"]
       },{
         id:11,
         sec: 1650,
         txt: "Protestes estudiantils",
-        tags:["protestes","mobilitzacions","servei social substitutori","ocupació","rectorat"]
+        tags:["protestes","mobilitzacions","estudiants","servei social substitutori","ocupació","rectorat"]
       },{
         id:12,
         sec: 1819,
@@ -216,27 +216,27 @@ const videos =[
         id:13,
         sec: 2010,
         txt: "Celebració del 20è aniversari",
-        tags:["20è aniversari","UAM","festa major","exposició"]
+        tags:["20è aniversari","UAM","festa major","exposició","campus"]
       },{
         id:14,
         sec: 2132,
         txt: "Introducció de la Festa Major",
-        tags:["festa major","campus"]
+        tags:["festa major","campus","cultura"]
       },{
         id:15,
         sec: 2174,
         txt: "Efectes de la fundació d'altres universitats catalanes",
-        tags:["UDL","UDG","URV","UPF","URL"]
+        tags:["UDL","UDG","URV","UPF","URL","universitats"]
       },{
         id:16,
         sec: 2393,
         txt: "Balanç del mandat",
-        tags:["balanç","mandat"]
+        tags:["balanç","mandat","rector"]
       },{
         id:17,
         sec: 2489,
         txt: "Bons records del mandat",
-        tags:["urbanització","campus","reformes","biblioteques","recerca"]
+        tags:["records","urbanització","campus","reformes","biblioteques","recerca","mandat"]
       }
     ]
   },{
@@ -250,27 +250,27 @@ const videos =[
         id:00,
         sec: 5,
         txt: "Les adversitats de l'inici del mandat",
-        tags:["finançament","docència"]
+        tags:["finançament","docència","mandat"]
       },{
         id:01,
         sec: 130,
         txt: "Noves facultats",
-        tags:["polítiques","sociologia","traduccio","educació"]
+        tags:["polítiques","sociologia","traducció","educació","facultats","campus","progrés"]
       },{
         id:02,
         sec: 410,
         txt: "Noves titulacions",
-        tags:["titulacions","innovació"]
+        tags:["titulacions","innovació","docència"]
       },{
         id:03,
         sec: 515,
         txt: "Una forta restricció financera",
-        tags:["finançament","crisi"]
+        tags:["finançament","crisi","retallades","pressupost"]
       },{
         id:04,
         sec: 597,
         txt: "Edificació de la Vila Universitària",
-        tags:["Vila","residència","policia"]
+        tags:["Vila Universitària","residència","estudiants","policia"]
       },{
         id:05,
         sec: 904,
@@ -285,37 +285,37 @@ const videos =[
         id:07,
         sec: 1030,
         txt: "Conveni amb l'Hospital Parc Taulí",
-        tags:["conveni","hospital","Sabadell"]
+        tags:["conveni","Parc Taulí","Sabadell"]
       },{
         id:08,
         sec: 1163,
         txt: "Desenvolupament de la xarxa de biblioteques",
-        tags:["biblioteques","xarxa","catàleg"]
+        tags:["biblioteques","xarxa","coneixement","campus","progrés"]
       },{
         id:09,
         sec: 1296,
         txt: "Revisió integral dels plans d'estudis",
-        tags:["reformes","docència"]
+        tags:["reformes","plans d'estudis","docència"]
       },{
         id:10,
         sec: 1381,
         txt: "Reducció de les llicenciatures de 5 a 4 anys",
-        tags:["reformes","llicenciatures"]
+        tags:["reformes","llicenciatures","titulacions"]
       },{
         id:11,
         sec: 1701,
         txt: "Presencia de la UAB als rankings internacionals",
-        tags:["rankings","classificacio"]
+        tags:["rankings","classificació","qualitat"]
       },{
         id:12,
         sec: 1729,
         txt: "Creació de Cultura en Viu i origen de la Fundació Autònoma Solidària",
-        tags:["cultura","FAS","voluntariat"]
+        tags:["cultura","FAS","voluntariat","campus","igualtat"]
       },{
         id:13,
         sec: 1931,
         txt: "Una matrícula un 0,5% més cara per millorar la docència",
-        tags:["matrícula","cost","docència","ocupació"]
+        tags:["matrícula","cost","docència","ocupació","estudiants","protestes"]
       },{
         id:14,
         sec: 2294,
@@ -325,12 +325,12 @@ const videos =[
         id:15,
         sec: 2415,
         txt: "Balanç del mandat",
-        tags:["balanç","mandat"]
+        tags:["balanç","mandat","rector"]
       },{
         id:16,
         sec: 2667,
         txt: "El lligam personal amb la UAB",
-        tags:["vincles"]
+        tags:["records","vincles"]
       }
     ]
   },
@@ -350,21 +350,21 @@ const videos =[
         id:1,
         sec: 148,
         txt: "Participació en el Manifest de Bellaterra (1975)",
-        tags:["manifest","Bellaterra","universitat"]
+        tags:["Manifest de Bellaterra","UAB"]
       },{
         id:2,
         sec: 304,
         txt: "Entrega de la medalla UAB a l'exrector Josep Laporte",
-        tags:["medalla","UAB","Josep Laporte","rector","fundació"]
+        tags:["medalla","UAB","Josep Laporte","rector","fundació","homenatge"]
       },{
         id:3,
         sec: 326,
         txt: "Efectes de l'aprovació de la Llei de Reforma Universitària (LRU)",
-        tags:["LRU","reforma universitària","marc legal"]
+        tags:["LRU","reformes","marc legal"]
       },{
         id:4,
         sec: 449,
-        txt: "Estabilització personal numerari",
+        txt: "Estabilització del personal numerari",
         tags:["personal numerari","docència","condicions laborals"]
       },{
         id:5,
@@ -375,22 +375,22 @@ const videos =[
         id:6,
         sec: 567,
         txt: "Disconformitat dels estudiants i el PAS amb els nous estatuts",
-        tags:["protestes","estatuts","marc legal","govern","estudiants","PAS"]
+        tags:["protestes","estatuts","marc legal","estudiants","PAS"]
       },{
         id:7,
         sec: 597,
         txt: "Creixement progressiu de la universitat",
-        tags:["creixement","campus","estudiants","professors","marc legal","protestes","tren","FGC"]
+        tags:["creixement","progrés","campus","estudiants","professors","marc legal","protestes","tren","FGC"]
       },{
         id:8,
         sec: 847,
         txt: "Creació de la facultat de Veterinària",
-        tags:["facultat","veterinària","conferència de rectors"]
+        tags:["facultat","veterinària","conferència de rectors","campus"]
       },{
         id:9,
         sec: 1025,
         txt: "Inauguració del pavelló poliesportiu",
-        tags:["inauguració","poliesportiu","campus"]
+        tags:["inauguració","poliesportiu","campus","esports"]
       },{
         id:10,
         sec: 1110,
@@ -410,17 +410,17 @@ const videos =[
         id:13,
         sec: 1422,
         txt: "Creació de l'Institut de Ciències de l'Educació (ICE)",
-        tags:["ICE","Josep Laporte","formació","innovació","coneixement"]
+        tags:["ICE","Josep Laporte","formació","educació","innovació","coneixement"]
       },{
         id:14,
         sec: 1458,
         txt: "Nous centres de recerca",
-        tags:["centres","recerca","CED","CNM","microelectrònica","IAE","CSIC"]
+        tags:["centres","recerca","CED","CNM","microelectrònica","IAE","CSIC","progrés"]
       },{
         id:15,
         sec: 1599,
         txt: "Relació amb la Direcció General d'Ensenyament Universitari de Ramon Pascual",
-        tags:["Ramon Pascual","Generalitat","Jordi Pujol","UAB"]
+        tags:["Ramon Pascual","Generalitat","Jordi Pujol"]
       },{
         id:16,
         sec: 1615,
@@ -430,7 +430,7 @@ const videos =[
         id:17,
         sec: 1678,
         txt: "Protestes estudiantils",
-        tags:["LRU","mobilitzacions","protestes","estudiants","ocupació","rectorat"]
+        tags:["LRU","mobilitzacions","protestes","estudiants","ocupació","rectorat","campus"]
       },{
         id:18,
         sec: 1813,
@@ -450,7 +450,7 @@ const videos =[
         id:21,
         sec: 2001,
         txt: "Records del cop d'Estat del 23-F",
-        tags:["anècdota","cop d'Estat","23-F","Tejero","marxa sobre Cerdanyola"]
+        tags:["anècdota","records","cop d'Estat","23-F","Tejero","marxa sobre Cerdanyola","campus"]
       }
     ]
   },
@@ -465,17 +465,17 @@ const videos =[
         id:0,
         sec: 5,
         txt: "Fundació Escola Enginyeria",
-        tags:["escola d'enginyeria","facultats"]
+        tags:["escola d'enginyeria","facultats","campus","progrés"]
       },{
         id:1,
         sec: 85,
         txt: "Innovacions acadèmiques",
-        tags:["titulacions","innovació"]
+        tags:["titulacions","innovació","progrés"]
       },{
         id:2,
         sec: 286,
         txt: "Escola de doctorat i de formació contínua",
-        tags:["escola de doctorat","formació"]
+        tags:["escola de doctorat","formació","campus"]
       },{
         id:03,
         sec: 384,
@@ -485,7 +485,7 @@ const videos =[
         id:4,
         sec: 511,
         txt: "Nous centres de recerca",
-        tags:["recerca","centres"]
+        tags:["recerca","centres","campus","progrés"]
       },{
         id:5,
         sec: 643,
@@ -495,57 +495,57 @@ const videos =[
         id:6,
         sec: 720,
         txt: "Tensions pressupostàries",
-        tags:["finançament","pressupostos","tensions"]
+        tags:["finançament","pressupost","tensions"]
       },{
         id:7,
         sec: 1020,
         txt: "Informe Universitat 2000",
-        tags:["informe","estudi","finançament","universitat","PP","protestes","estudiants"] 
+        tags:["informe","estudi","finançament","PP","protestes","estudiants"] 
       },{
         id:8,
         sec: 1252,
         txt: "Llei Orgànica d'Universitats (LOU)",
-        tags:["LOU","PP","marc legal"]
+        tags:["LOU","PP","universitats","marc legal"]
       },{
         id:9,
         sec: 1330,
         txt: "Crisi institucional: la visita de José María Aznar",
-        tags:["Aznar","càrregues","policia","estudiants","protestes","campus"]
+        tags:["crisi","Aznar","càrregues","policia","estudiants","protestes","campus"]
       },{
         id:10,
         sec: 1699,
         txt: "Inauguració de les columnes de la UAB",
-        tags:["columnes","monument","campus"]
+        tags:["columnes","monument","campus","UAB","Andreu Alfaro"]
       },{
         id:11,
         sec: 1932,
         txt: "El camí cap al Pla Bolonya",
-        tags:["Pla Bolonya","marc legal","reforma","Europa","ensenyament"]
+        tags:["Pla Bolonya","marc legal","reforma","Espai europeu","ensenyament","universitats"]
       },{
         id:12,
         sec: 2165,
         txt: "La universitat de l'Estat amb més programes d'intercanvi europeus",
-        tags:["intercanvi","mobilitat","internacionalització"]
+        tags:["intercanvi","mobilitat","internacionalització","estudiants"]
       },{
         id:13,
         sec: 2350,
         txt: "Creació del programa 'Universitat a l'Abast'",
-        tags:["Abast","formació","integració"]
+        tags:["Universitat a l'Abast","formació","integració","igualtat"]
       },{
         id:14,
         sec: 2399,
         txt: "Nous espais per a biblioteques",
-        tags:["biblioteques","coneixement","campus","estudiants"]
+        tags:["biblioteques","coneixement","campus","estudiants","progrés"]
       },{
         id:15,
         sec: 2458,
         txt: "Els Doctors 'Honoris Causa'",
-        tags:["doctors","honoris causa"]
+        tags:["doctors","honoris causa","reconeixement","talent"]
       },{
         id:16,
         sec: 2496,
         txt: "Connexió ferroviària amb Sabadell",
-        tags:["connexió","Sabadell","transport","tren","FGC"]
+        tags:["connexió","Sabadell","transport","tren","FGC","campus"]
       },{
         id:17,
         sec: 2701,
@@ -560,7 +560,7 @@ const videos =[
         id:19,
         sec: 2847,
         txt: "L'anècdota",
-        tags:["anècdota","migrants"]
+        tags:["anècdota","records","migrants"]
       }
     ]
  },
@@ -790,7 +790,7 @@ const videos =[
         id:25,
         sec: 2193,
         txt: "Els Doctors Honoris Causa",
-        tags:["doctor","honoris"]
+        tags:["doctors","honoris causa","reconeixement","talent"]
       },{
         id:26,
         sec: 2335,
