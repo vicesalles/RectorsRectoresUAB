@@ -148,14 +148,96 @@ const videos =[
     yt: "cwQgjq0mCdE",
     events: [
       {
-        sec: 24,
-        txt: "Dork",
-        tags:[]
-      },
-      { sec: 58, txt: "You such a..",
-      tags:[] },
-      { sec: 76, txt: "I'm a sick..",
-      tags:[] }
+        id:0,
+        sec: 5,
+        txt: "Breu període com a rector en funcions (1980)",
+        tags:["rector en funcions","Laporte","Serra Ramoneda"]
+      },{
+        id:1,
+        sec: 68,
+        txt: "Director general d'Ensenyament Universitari en el primer govern Pujol",
+        tags:["política","Generalitat","Jordi Pujol"]
+      },{
+        id:2,
+        sec: 221,
+        txt: "Reformes en l'estructura de la UAB",
+        tags:["canvis","reformes","estructura","LRU"]
+      },{
+        id:3,
+        sec: 304,
+        txt: "Augment notable del finançament per a les universitats",
+        tags:["finançament","universitats"]
+      },{
+        id:4,
+        sec: 458,
+        txt: "Noves facultats",
+        tags:["facultat","polítiques","campus Sabadell"]
+      },{
+        id:5,
+        sec: 603,
+        txt: "Un pressupost 'expansiu'",
+        tags:["finançament","recerca","biblioteques","rehabilitació"]
+      },{
+        id:6,
+        sec: 841,
+        txt: "Nous centres de recerca",
+        tags:["recerca","CSIC","CNM","consorcis"]
+      },{
+        id:7,
+        sec: 1022,
+        txt: "Impuls a les unitats docents hospitalàries",
+        tags:["unitats docents hospitalàries","Germans Trias","Hospital del Mar","Sant Pau"]
+      },{
+        id:8,
+        sec: 1170,
+        txt: "El programa Erasmus",
+        tags:["Erasmus","intercanvi","Unió Europea"]
+      },{
+        id:9,
+        sec: 1265,
+        txt: "Orígens del sincrotró Alba",
+        tags:["sincrotró","Alba","accelerador de partícules","CERN"]
+      },{
+        id:10,
+        sec: 1531,
+        txt: "El sincrotró dins del campus, una ubicació inviable",
+        tags:["sincrotró","Alba","accelerador de partícules","campus"]
+      },{
+        id:11,
+        sec: 1650,
+        txt: "Protestes estudiantils",
+        tags:["protestes","mobilitzacions","servei social substitutori","ocupació","rectorat"]
+      },{
+        id:12,
+        sec: 1819,
+        txt: "Condicions laborals del PAS",
+        tags:["condicions laborals","personal","PAS"]
+      },{
+        id:13,
+        sec: 2010,
+        txt: "Celebració del 20è aniversari",
+        tags:["20è aniversari","UAM","festa major","exposició"]
+      },{
+        id:14,
+        sec: 2132,
+        txt: "Introducció de la Festa Major",
+        tags:["festa major","campus"]
+      },{
+        id:15,
+        sec: 2174,
+        txt: "Efectes de la fundació d'altres universitats catalanes",
+        tags:["UDL","UDG","URV","UPF","URL"]
+      },{
+        id:16,
+        sec: 2393,
+        txt: "Balanç del mandat",
+        tags:["balanç","mandat"]
+      },{
+        id:17,
+        sec: 2489,
+        txt: "Bons records del mandat",
+        tags:["urbanització","campus","reformes","biblioteques","recerca"]
+      }
     ]
   },{
     id: "valles",
@@ -165,9 +247,90 @@ const videos =[
     yt: "3-BIS1HEtrQ",
     events: [
       {
-        sec: 32,
-        txt: "We're retired",
-        tags:[]
+        id:00,
+        sec: 5,
+        txt: "Les adversitats de l'inici del mandat",
+        tags:["finançament","docència"]
+      },{
+        id:01,
+        sec: 130,
+        txt: "Noves facultats",
+        tags:["polítiques","sociologia","traduccio","educació"]
+      },{
+        id:02,
+        sec: 410,
+        txt: "Noves titulacions",
+        tags:["titulacions","innovació"]
+      },{
+        id:03,
+        sec: 515,
+        txt: "Una forta restricció financera",
+        tags:["finançament","crisi"]
+      },{
+        id:04,
+        sec: 597,
+        txt: "Edificació de la Vila Universitària",
+        tags:["Vila","residència","policia"]
+      },{
+        id:05,
+        sec: 904,
+        txt: "Consolidació dels centres de recerca",
+        tags:["recerca","CREAF","CVC"]
+      },{
+        id:06,
+        sec: 981,
+        txt: "Gestió de la recerca",
+        tags:["recerca","gestió"]
+      },{
+        id:07,
+        sec: 1030,
+        txt: "Conveni amb l'Hospital Parc Taulí",
+        tags:["conveni","hospital","Sabadell"]
+      },{
+        id:08,
+        sec: 1163,
+        txt: "Desenvolupament de la xarxa de biblioteques",
+        tags:["biblioteques","xarxa","catàleg"]
+      },{
+        id:09,
+        sec: 1296,
+        txt: "Revisió integral dels plans d'estudis",
+        tags:["reformes","docència"]
+      },{
+        id:10,
+        sec: 1381,
+        txt: "Reducció de les llicenciatures de 5 a 4 anys",
+        tags:["reformes","llicenciatures"]
+      },{
+        id:11,
+        sec: 1701,
+        txt: "Presencia de la UAB als rankings internacionals",
+        tags:["rankings","classificacio"]
+      },{
+        id:12,
+        sec: 1729,
+        txt: "Creació de Cultura en Viu i origen de la Fundació Autònoma Solidària",
+        tags:["cultura","FAS","voluntariat"]
+      },{
+        id:13,
+        sec: 1931,
+        txt: "Una matrícula un 0,5% més cara per millorar la docència",
+        tags:["matrícula","cost","docència","ocupació"]
+      },{
+        id:14,
+        sec: 2294,
+        txt: "Reimpuls de les publicacions informatives de la UAB",
+        tags:["publicacions","comunicació"]
+      },{
+        id:15,
+        sec: 2415,
+        txt: "Balanç del mandat",
+        tags:["balanç","mandat"]
+      },{
+        id:16,
+        sec: 2667,
+        txt: "El lligam personal amb la UAB",
+        tags:["vincles"]
       }
     ]
   },
@@ -179,17 +342,116 @@ const videos =[
     yt: "bSXbW2a4IIk",
     events: [
       {
-        sec: 21,
-        txt: "Back to this...",
-        tags:[]
-      },
-      {
-        sec: 82,
-        txt: "Back to this...(2)",
-        tags:[]
-      },
-      { sec: 93, txt: "Oh my God",
-      tags:[] }
+        id:0,
+        sec: 5,
+        txt: "Secretari de la Comissió Promotora de la UAB",
+        tags:["comissió promotora","fundació","UAB"]
+      },{
+        id:1,
+        sec: 148,
+        txt: "Participació en el Manifest de Bellaterra (1975)",
+        tags:["manifest","Bellaterra","universitat"]
+      },{
+        id:2,
+        sec: 304,
+        txt: "Entrega de la medalla UAB a l'exrector Josep Laporte",
+        tags:["medalla","UAB","Josep Laporte","rector","fundació"]
+      },{
+        id:3,
+        sec: 326,
+        txt: "Efectes de l'aprovació de la Llei de Reforma Universitària (LRU)",
+        tags:["LRU","reforma universitària","marc legal"]
+      },{
+        id:4,
+        sec: 449,
+        txt: "Estabilització personal numerari",
+        tags:["personal numerari","docència","condicions laborals"]
+      },{
+        id:5,
+        sec: 535,
+        txt: "Aprovació de nous estatuts adaptats a la LRU",
+        tags:["estatuts","LRU","marc legal"]
+      },{
+        id:6,
+        sec: 567,
+        txt: "Disconformitat dels estudiants i el PAS amb els nous estatuts",
+        tags:["protestes","estatuts","marc legal","govern","estudiants","PAS"]
+      },{
+        id:7,
+        sec: 597,
+        txt: "Creixement progressiu de la universitat",
+        tags:["creixement","campus","estudiants","professors","marc legal","protestes","tren","FGC"]
+      },{
+        id:8,
+        sec: 847,
+        txt: "Creació de la facultat de Veterinària",
+        tags:["facultat","veterinària","conferència de rectors"]
+      },{
+        id:9,
+        sec: 1025,
+        txt: "Inauguració del pavelló poliesportiu",
+        tags:["inauguració","poliesportiu","campus"]
+      },{
+        id:10,
+        sec: 1110,
+        txt: "El procés d'informatització",
+        tags:["informatització","modernització","ordinadors","càlcul"]
+      },{
+        id:11,
+        sec: 1224,
+        txt: "Novetats acadèmiques",
+        tags:["innovació","titulacions","facultats","ciències de la informació","traducció"]
+      },{
+        id:12,
+        sec: 1334,
+        txt: "Projecte d'una sola biblioteca a l'edifici del rectorat",
+        tags:["projecte","biblioteques","rectorat","coneixement"]
+      },{
+        id:13,
+        sec: 1422,
+        txt: "Creació de l'Institut de Ciències de l'Educació (ICE)",
+        tags:["ICE","Josep Laporte","formació","innovació","coneixement"]
+      },{
+        id:14,
+        sec: 1458,
+        txt: "Nous centres de recerca",
+        tags:["centres","recerca","CED","CNM","microelectrònica","IAE","CSIC"]
+      },{
+        id:15,
+        sec: 1599,
+        txt: "Relació amb la Direcció General d'Ensenyament Universitari de Ramon Pascual",
+        tags:["Ramon Pascual","Generalitat","Jordi Pujol","UAB"]
+      },{
+        id:16,
+        sec: 1615,
+        txt: "Converses sobre internacionalització",
+        tags:["internacionalització","convenis"]
+      },{
+        id:17,
+        sec: 1678,
+        txt: "Protestes estudiantils",
+        tags:["LRU","mobilitzacions","protestes","estudiants","ocupació","rectorat"]
+      },{
+        id:18,
+        sec: 1813,
+        txt: "Reimpuls de l'activitat cultural",
+        tags:["cultura","campus","aula de teatre","cor de la UAB"]
+      },{
+        id:19,
+        sec: 1868,
+        txt: "Gran èxit del concert de Lluís Llach",
+        tags:["concert","Lluís Llach","cultura","música","campus"]
+      },{
+        id:20,
+        sec: 1921,
+        txt: "Balanç del mandat",
+        tags:["balanç","mandat","rector"]
+      },{
+        id:21,
+        sec: 2001,
+        txt: "Records del cop d'Estat del 23-F",
+        tags:["anècdota","cop d'Estat","23-F","Tejero","marxa sobre Cerdanyola"]
+      }
     ]
   },
   {
@@ -310,9 +572,85 @@ const videos =[
     yt: "rK62UIZOvGM",
     events: [
       {
-        sec: 15,
-        txt: "Gamble",
-        tags:[]
+        id:0,
+        sec: 5,
+        txt: "Vicerectora de Professorat durant el mandat de Lluís Ferrer",
+        tags:["personal acadèmic","professorat","associats","becaris","Lluís Ferrer"]
+      },{
+        id:1,
+        sec: 246,
+        txt: "La primera dona rectora de la UAB",
+        tags:["dona","rectora"]
+      },{
+        id:2,
+        sec: 363,
+        txt: "Programació acadèmica en el marc de la consolidació de l'EEES",
+        tags:["planificació","titulacions","anglès","internacionalització","mobilitat","Pla Bolonya"]
+      },{
+        id:3,
+        sec: 360,
+        txt: "Noves titulacions en anglès",
+        tags:["titulacions","Pla Bolonya","graus","màsters","anglès","internacionalització"]
+      },{
+        id:4,
+        sec: 440,
+        txt: "Constitució del Consell d'Estudiants",
+        tags:["consell d'estudiants","participació","alumnat"]
+      },{
+        id:5,
+        sec: 535,
+        txt: "Modalitat de matrícula per 'via lenta'",
+        tags:["via lenta","estudiants","planificació","feina","temps parcial","igualtat"]
+      },{
+        id:6,
+        sec: 554,
+        txt: "Creació de les beques-salari Ítaca",
+        tags:["beques","Ítaca","estudiants","talent","igualtat"]
+      },{
+        id:7,
+        sec: 573,
+        txt: "UAB Campus d'Excel·lència Internacional",
+        tags:["campus","excel·lència","internacionalització","Universitat de Corea","recerca","Ortelius","B-30","coneixement","innovació"]
+      },{
+        id:8,
+        sec: 771,
+        txt: "Creació de l'Escola d'Enginyeria i la Facultat d'Economia i Empresa",
+        tags:["noves facultats","enginyeria","economia","empresa","Pla Bolonya"]
+      },{
+        id:9,
+        sec: 1135,
+        txt: "Nous centres de recerca",
+        tags:["centres","recerca","projecte Melissa","CRAG","sincrotró Alba","Ortelius","internacionalització"]
+      },{
+        id:10,
+        sec: 1293,
+        txt: "Les relacions amb Àsia i Amèrica Llatina",
+        tags:["internacionalització","recerca","titulacions","Àsia","Corea","Amèrica Llatina","Lluís Ferrer "]
+      },{
+        id:11,
+        sec: 1360,
+        txt: "Crisi financera global i restriccions pressupostàries",
+        tags:["crisi financera","finançament","retallades","pressupost"]
+      },{
+        id:12,
+        sec: 1557,
+        txt: "Protestes estudiantils",
+        tags:["estudiants","protestes","mobilitzacions"]
+      },{
+        id:13,
+        sec: 1594,
+        txt: "Balanç del mandat",
+        tags:["balanç","mandat","rectora","crisi financera"]
+      },{
+        id:14,
+        sec: 1834,
+        txt: "L'anècdota",
+        tags:["anècdota","Lluís Ferrer"]
+      },{
+        id:15,
+        sec: 1930,
+        txt: "Objectiu prioritari: tenir el millor professorat",
+        tags:["professorat","personal acadèmic","qualitat"]
       }
     ]
   },
@@ -324,14 +662,145 @@ const videos =[
     yt: "Ev5nFBN9xHI",
     events: [
       {
-        sec: 15,
-        txt: "Gamble",
-        tags:[]
-      },
-      {
-        sec:26,
-        txt:"Average Avenger",
-        tags:[]
+        id:00,
+        sec: 5,
+        txt: "Primer rector alumni de la UAB",
+        tags:["rector","alumni","exalumne"]
+      },{
+        id:01,
+        sec: 29,
+        txt: "Un aspirant a periodista que va acabar estudiant Economia",
+        tags:["anècdota","periodisme","economia"]
+      },{
+        id:02,
+        sec: 143,
+        txt: "Vicerector durant el mandat de Carles Solà",
+        tags:["vicerector","Carles Solà"]
+      },{
+        id:03,
+        sec: 207,
+        txt: "Noves titulacions",
+        tags:["titulacions","graus","innovació"]
+      },{
+        id:04,
+        sec: 327,
+        txt: "Impuls a la formació en anglès",
+        tags:["formació","anglès"]
+      },{
+        id:05,
+        sec: 380,
+        txt: "L'aposta pels MOOC amb la plataforma Coursera",
+        tags:["cursos online","formació contínua","Coursera"]
+      },{
+        id:06,
+        sec: 456,
+        txt: "El programa UAB Emprèn",
+        tags:["programa","UAB Emprèn","emprenedoria"]
+      },{
+        id:07,
+        sec: 511,
+        txt: "El Projecte B30",
+        tags:["B30","Projecte B30","Àmbit 30","innovació"]
+      },{
+        id:08,
+        sec: 572,
+        txt: "Integració de la UAB a la YERUN",
+        tags:["integració","YERUN","universitats","Europa"]
+      },{
+        id:09,
+        sec: 676,
+        txt: "Altres iniciatives d'internacionalització de la UAB",
+        tags:["internacionalització","COFUND","recursos","talent"]
+      },{
+        id:10,
+        sec: 742,
+        txt: "Model de dedicació variable del PDI",
+        tags:["dedicació variable","PDI","docència","investigació"]
+      },{
+        id:11,
+        sec: 880,
+        txt: "Restriccions pressupostàries durant la crisi financera",
+        tags:["retallades","pressupost","crisi financera"]
+      },{
+        id:12,
+        sec: 958,
+        txt: "La polèmica taxa de reposició d'efectius",
+        tags:["taxa de reposició","places"]
+      },{
+        id:13,
+        sec: 1109,
+        txt: "Manca de relleu generacional",
+        tags:["relleu generacional","envelliment","jubilació"]
+      },{
+        id:14,
+        sec: 1140,
+        txt: "Mesures per pal·liar la precarització del personal",
+        tags:["mesures","precarització","personal","temporalitat"]
+      },{
+        id:15,
+        sec: 1206,
+        txt: "Creació del programa de beques Finestreta",
+        tags:["beques","Finestreta","ajudes"]
+      },{
+        id:16,
+        sec: 1276,
+        txt: "Les beques Equitat i l'augment del 66% en les taxes",
+        tags:["beques","Equitat","taxes","ajudes"]
+      },{
+        id:17,
+        sec: 1357,
+        txt: "Protestes estudiantils",
+        tags:["protestes","estudiants","vaga"]
+      },{
+        id:18,
+        sec: 1407,
+        txt: "Ocupació del rectorat",
+        tags:["ocupació","rectorat","protestes","estudiants"]
+      },{
+        id:19,
+        sec: 1490,
+        txt: "Conseqüències de la crisi financera per a la recerca",
+        tags:["crisi financera","retallades","finançament"]
+      },{
+        id:20,
+        sec: 1603,
+        txt: "Èxit de la recerca malgrat les adversitats",
+        tags:["recerca","talent","èxit"]
+      },{
+        id:21,
+        sec: 1702,
+        txt: "Noves instal·lacions per a recerca",
+        tags:["recerca","inauguració","ICTA"]
+      },{
+        id:22,
+        sec: 1915,
+        txt: "El Campus Saludable i Sostenible (SiS)",
+        tags:["campus","medi ambient","sostenibilitat"]
+      },{
+        id:23,
+        sec: 1984,
+        txt: "Recuperació de la Festa Major",
+        tags:["Festa Major","campus"]
+      },{
+        id:24,
+        sec: 2058,
+        txt: "Implantació del vot electrònic a les eleccions",
+        tags:["eleccions","govern","vot electrònic"]
+      },{
+        id:25,
+        sec: 2193,
+        txt: "Els Doctors Honoris Causa",
+        tags:["doctor","honoris"]
+      },{
+        id:26,
+        sec: 2335,
+        txt: "L'anècdota dels representants de la Universitat de Corea",
+        tags:["anècdota","Universitat de Corea"]
+      },{
+        id:27,
+        sec: 2395,
+        txt: "Balanç del mandat",
+        tags:["balanç","mandat"]
       }
     ]
   }
