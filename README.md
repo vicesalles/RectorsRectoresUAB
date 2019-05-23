@@ -1,26 +1,32 @@
 # WebDoc del 50è aniversari de la UAB
 
-Documental Web on es recullen els testimonis de tots els rectors, en vida, de la Universitat.
+Documental Web on es recullen els testimonis dels rectors i rectores de la UAB
 
 ## Bugs
 
-- Comportament de la cerca en la pàgina principal
+- deploy fa el ruc
 
 ## Tasques
 
-- Estil pàgina principal. (sobretot histories)
-    - Barra del cercador
-- Estil pàgina rector. (sobretot histories)
-    - Capçalera
-    - Player
-- Scroll del cercador al cap d'amunt quan l'usuari escriu alguna cosa.
+- Capçalera incloure motiu gràfic 50 anys
 - Component de compartir
-- Crear footer
 - Crear pàgina de crèdits
+- manifest.json
 
-## Nice to have
+## Continguts
 
-- Dos modes de visualització en la vista 'Rector': Reproductor gros i Llista d'histories.
+- ! Afegir el segon de música al davant dels vídeos.
+
+- Icona
+- Favicon
+- Flyer
+- Trailer
+- Miniatures Youtube
+- Titols
+- Titols animats
+- Caretes d'entrada
+- Digitalització Laporte
+- Localitzar foto Laporte (Com mostrem gràficament que està mort??????)
 
 ## Distribució
 
