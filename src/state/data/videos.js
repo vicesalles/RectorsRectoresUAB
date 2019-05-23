@@ -464,7 +464,7 @@ const videos =[
       {
         id:0,
         sec: 5,
-        txt: "Fundació Escola Enginyeria",
+        txt: "Fundació de l'Escola d'Enginyeria",
         tags:["escola d'enginyeria","facultats","campus","progrés"]
       },{
         id:1,
@@ -489,8 +489,8 @@ const videos =[
       },{
         id:5,
         sec: 643,
-        txt: "Creació de la Institució Catalana de Recerca i Estudis Avançats (ICREA)",
-        tags:["recerca","ICREA"]
+        txt: "Constitució de l'ICREA",
+        tags:["recerca","ICREA","talent","excel·lència","internacionalització"]
       },{
         id:6,
         sec: 720,
@@ -509,7 +509,7 @@ const videos =[
       },{
         id:9,
         sec: 1330,
-        txt: "Crisi institucional: la visita de José María Aznar",
+        txt: "Crisi institucional: la visita d'Aznar",
         tags:["crisi","Aznar","càrregues","policia","estudiants","protestes","campus"]
       },{
         id:10,
@@ -524,12 +524,12 @@ const videos =[
       },{
         id:12,
         sec: 2165,
-        txt: "La universitat de l'Estat amb més programes d'intercanvi europeus",
+        txt: "La universitat amb més programes d'intercanvi europeus de tot l'Estat",
         tags:["intercanvi","mobilitat","internacionalització","estudiants"]
       },{
         id:13,
         sec: 2350,
-        txt: "Creació del programa 'Universitat a l'Abast'",
+        txt: "Creació del programa Universitat a l'Abast",
         tags:["Universitat a l'Abast","formació","integració","igualtat"]
       },{
         id:14,
@@ -539,7 +539,7 @@ const videos =[
       },{
         id:15,
         sec: 2458,
-        txt: "Els Doctors 'Honoris Causa'",
+        txt: "Els doctors 'honoris causa'",
         tags:["doctors","honoris causa","reconeixement","talent"]
       },{
         id:16,
@@ -549,7 +549,7 @@ const videos =[
       },{
         id:17,
         sec: 2701,
-        txt: "Accident mortal a França d'un autocar amb estudiants de Psicologia",
+        txt: "Accident mortal a França d'estudiants de Psicologia",
         tags:["accident","estudiants","psicologia","França"]
       },{
         id:18,
@@ -559,7 +559,7 @@ const videos =[
       },{
         id:19,
         sec: 2847,
-        txt: "L'anècdota",
+        txt: "L'anècdota dels migrants",
         tags:["anècdota","records","migrants"]
       }
     ]
