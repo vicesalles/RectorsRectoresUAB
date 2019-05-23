@@ -14,7 +14,6 @@ import {setCurrentRector} from '../../state/actions';
 import { Typography } from '@material-ui/core';
 
 // Estil
-
 const styles = {    
     
     histories:{
@@ -43,15 +42,7 @@ class Cos extends Component {
     state= {
         current:"",
         width:100,
-        playerOptions : {             
-            playerVars:{              
-                autoplay: 1,            
-                modestbranding:1,
-                rel: 0,
-                color:'white',
-                iv_load_policy:3
-            }
-        }
+        playerOptions : { }
     }
 
     //REFS
@@ -61,25 +52,16 @@ class Cos extends Component {
 
     //Ref for the player
     reproductor = React.createRef();
-
-    
-
+ 
     //Navigate to a given second of the video
     navigateTo = (s) => {
-        console.log('Navegant',s);   
-        this.reproductor.current.internalPlayer.seekTo(s);    
-        console.log('reproductor',this.reproductor.current.internalPlayer)  
+        console.log('Navegant',s);    
+        this.reproductor.current.internalPlayer.seekTo(s);  
     }
 
     //Returns the 16:9 height for a given width
     setzeNou = (amplada) =>{
         return amplada*9/16
-    }
-
-
-    play = (reproductor) =>{
-
-
     }
     
     //Generates an event list for the current video
@@ -94,32 +76,58 @@ class Cos extends Component {
         //Setting the player size       
         const ampladaPare = this.containerReproductor.current.clientWidth;           
         const ampladaPlayer = window.innerWidth > 960 ? ampladaPare : this.containerReproductor.current.parentNode.clientWidth/1.05;
-        this.setState({width:ampladaPlayer, playerOptions:{             
-            width: ampladaPlayer,        
-            height: this.setzeNou(ampladaPlayer),                      
-            playerVars:{                 
-                autoplay: 1,            
-                modestbranding:1,
-                rel: 0,
-                color:'white',
-                iv_load_policy:3
-            }
-           }
-        });
         
-         
-         const id = this.props.match.params.id;
-         const secs = this.props.match.params.secs;        
-         this.props.dispatch(setCurrentRector(id));
-         const current = _.find(this.props.videos,{id});
-         this.setState({current})       
-         //IF there're seconds, navigate to there 
-         if(secs!==0 && secs!==undefined){
-             console.log('Hi ha segons!!!!!');
-             this.reproductor.current.internalPlayer.playVideo();
-             this.navigateTo(secs);
+
+        //GETTING URL PARAMS
+
+        //Getting rector
+        const {id} = this.props.match.params;
+
+        //Getting seconds
+        const secs = parseInt(this.props.match.params.secs);
+
+        //Setting Current Rector
+        this.props.dispatch(setCurrentRector(id));
+        const current = _.find(this.props.videos,{id});
+        this.setState({current})   
+        
+        //IF there're seconds on the params, navigate to there 
+        if(secs!==0 && !isNaN(secs)){  
+                   
+           this.setState({width:ampladaPlayer, playerOptions:{             
+               width: ampladaPlayer,        
+               height: this.setzeNou(ampladaPlayer),                      
+               playerVars:{                 
+                   autoplay: 1,            
+                   modestbranding:1,
+                   rel: 0,
+                   color:'white',
+                   iv_load_policy:3,
+                   start:secs
+               }
+              }
+            });    
+
+         }else{
+            
+            this.setState({width:ampladaPlayer, playerOptions:{             
+                width: ampladaPlayer,        
+                height: this.setzeNou(ampladaPlayer),                      
+                playerVars:{  
+                    start:0,               
+                    autoplay: 1,            
+                    modestbranding:1,
+                    rel: 0,
+                    color:'white',
+                    iv_load_policy:3
+                    
+                }
+               }
+            });
+
          }
      }
+      
 
     render(){
            
@@ -136,7 +144,7 @@ class Cos extends Component {
 
             return(<Grid container spacing={24} direction="row" justify="space-between" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRector}>
                     <div ref={this.containerReproductor} className="reproductor">
-                        <YouTube ref={this.reproductor} videoId={current.yt} opts={this.state.playerOptions} onReady={this._onReady}></YouTube>
+                        <YouTube ref={this.reproductor} onStateChange={this.onStateChange} videoId={current.yt} opts={this.state.playerOptions} onReady={this._onReady}></YouTube>
                         <Searcher w={this.state.width}/>
                     </div>            
                     <div className="histories">
@@ -163,8 +171,6 @@ class Cos extends Component {
                 </Grid>)
 
         }
-
-
         
     }
 }
