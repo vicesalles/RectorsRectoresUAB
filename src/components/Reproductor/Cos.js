@@ -100,6 +100,7 @@ class Cos extends Component {
                playerVars:{                 
                    autoplay: 1,            
                    modestbranding:1,
+                   widget_referrer:"Web Rectors i rectores",
                    rel: 0,
                    color:'white',
                    iv_load_policy:3,
@@ -114,9 +115,10 @@ class Cos extends Component {
                 width: ampladaPlayer,        
                 height: this.setzeNou(ampladaPlayer),                      
                 playerVars:{  
-                    start:0,               
+                    start:1,               
                     autoplay: 1,            
                     modestbranding:1,
+                    widget_referrer:"Web Rectors i rectores",
                     rel: 0,
                     color:'white',
                     iv_load_policy:3
