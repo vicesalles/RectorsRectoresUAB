@@ -459,7 +459,7 @@ const videos =[
     nom:"Carles",
     cognoms:"Solà Ferrando",      
     anys:[1994,2002],      
-    yt: "rmes_G5iwnY",
+    yt: "vaYZM82tkT8",
     events: [
       {
         id:0,
