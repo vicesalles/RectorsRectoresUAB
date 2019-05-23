@@ -64,7 +64,7 @@ const videos =[
           },{
             id:11,
             sec: 1804,
-            txt: "Internacionalització i creació de l'Aliança 4 Universitats",
+            txt: "Aliança 4 Universitats",
             tags:["internacionalització","Aliança 4 Universitats"]
           },{
             id:12,
@@ -247,52 +247,52 @@ const videos =[
     yt: "3-BIS1HEtrQ",
     events: [
       {
-        id:00,
+        id:0,
         sec: 5,
         txt: "Les adversitats de l'inici del mandat",
         tags:["finançament","docència","mandat"]
       },{
-        id:01,
+        id:1,
         sec: 130,
         txt: "Noves facultats",
         tags:["polítiques","sociologia","traducció","educació","facultats","campus","progrés"]
       },{
-        id:02,
+        id:2,
         sec: 410,
         txt: "Noves titulacions",
         tags:["titulacions","innovació","docència"]
       },{
-        id:03,
+        id:3,
         sec: 515,
         txt: "Una forta restricció financera",
         tags:["finançament","crisi","retallades","pressupost"]
       },{
-        id:04,
+        id:4,
         sec: 597,
         txt: "Edificació de la Vila Universitària",
         tags:["Vila Universitària","residència","estudiants","policia"]
       },{
-        id:05,
+        id:5,
         sec: 904,
         txt: "Consolidació dels centres de recerca",
         tags:["recerca","CREAF","CVC"]
       },{
-        id:06,
+        id:6,
         sec: 981,
         txt: "Gestió de la recerca",
         tags:["recerca","gestió"]
       },{
-        id:07,
+        id:7,
         sec: 1030,
         txt: "Conveni amb l'Hospital Parc Taulí",
         tags:["conveni","Parc Taulí","Sabadell"]
       },{
-        id:08,
+        id:8,
         sec: 1163,
         txt: "Desenvolupament de la xarxa de biblioteques",
         tags:["biblioteques","xarxa","coneixement","campus","progrés"]
       },{
-        id:09,
+        id:9,
         sec: 1296,
         txt: "Revisió integral dels plans d'estudis",
         tags:["reformes","plans d'estudis","docència"]
@@ -477,7 +477,7 @@ const videos =[
         txt: "Escola de doctorat i de formació contínua",
         tags:["escola de doctorat","formació","campus"]
       },{
-        id:03,
+        id:3,
         sec: 384,
         txt: "Recursos per a la recerca",
         tags:["recerca","finançament"]
