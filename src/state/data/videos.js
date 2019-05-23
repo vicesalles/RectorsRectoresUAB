@@ -580,17 +580,17 @@ const videos =[
         id:1,
         sec: 246,
         txt: "La primera dona rectora de la UAB",
-        tags:["dona","rectora"]
+        tags:["dona","rectora","igualtat"]
       },{
         id:2,
         sec: 363,
         txt: "Programació acadèmica en el marc de la consolidació de l'EEES",
-        tags:["planificació","titulacions","anglès","internacionalització","mobilitat","Pla Bolonya"]
+        tags:["planificació","titulacions","anglès","internacionalització","mobilitat","Pla Bolonya","Espai Europeu"]
       },{
         id:3,
         sec: 360,
         txt: "Noves titulacions en anglès",
-        tags:["titulacions","Pla Bolonya","graus","màsters","anglès","internacionalització"]
+        tags:["titulacions","Pla Bolonya","graus","màsters","anglès","internacionalització","progrés"]
       },{
         id:4,
         sec: 440,
@@ -599,8 +599,8 @@ const videos =[
       },{
         id:5,
         sec: 535,
-        txt: "Modalitat de matrícula per 'via lenta'",
-        tags:["via lenta","estudiants","planificació","feina","temps parcial","igualtat"]
+        txt: "Modalitat de matrícula per via lenta",
+        tags:["matrícula","via lenta","estudiants","planificació","feina","temps parcial","igualtat"]
       },{
         id:6,
         sec: 554,
@@ -615,17 +615,17 @@ const videos =[
         id:8,
         sec: 771,
         txt: "Creació de l'Escola d'Enginyeria i la Facultat d'Economia i Empresa",
-        tags:["noves facultats","enginyeria","economia","empresa","Pla Bolonya"]
+        tags:["noves facultats","enginyeria","economia","empresa","Pla Bolonya","progrés","campus"]
       },{
         id:9,
         sec: 1135,
         txt: "Nous centres de recerca",
-        tags:["centres","recerca","projecte Melissa","CRAG","sincrotró Alba","Ortelius","internacionalització"]
+        tags:["centres","recerca","projecte Melissa","CRAG","sincrotró Alba","Ortelius","internacionalització","progrés","campus"]
       },{
         id:10,
         sec: 1293,
         txt: "Les relacions amb Àsia i Amèrica Llatina",
-        tags:["internacionalització","recerca","titulacions","Àsia","Corea","Amèrica Llatina","Lluís Ferrer "]
+        tags:["internacionalització","recerca","titulacions","Àsia","Corea","Amèrica Llatina","Lluís Ferrer"]
       },{
         id:11,
         sec: 1360,
@@ -635,7 +635,7 @@ const videos =[
         id:12,
         sec: 1557,
         txt: "Protestes estudiantils",
-        tags:["estudiants","protestes","mobilitzacions"]
+        tags:["estudiants","protestes","mobilitzacions","campus"]
       },{
         id:13,
         sec: 1594,
@@ -645,12 +645,12 @@ const videos =[
         id:14,
         sec: 1834,
         txt: "L'anècdota",
-        tags:["anècdota","Lluís Ferrer"]
+        tags:["anècdota","records","Lluís Ferrer"]
       },{
         id:15,
         sec: 1930,
         txt: "Objectiu prioritari: tenir el millor professorat",
-        tags:["professorat","personal acadèmic","qualitat"]
+        tags:["professorat","personal acadèmic","qualitat","talent"]
       }
     ]
   },
@@ -662,52 +662,52 @@ const videos =[
     yt: "Ev5nFBN9xHI",
     events: [
       {
-        id:00,
+        id:0,
         sec: 5,
         txt: "Primer rector alumni de la UAB",
         tags:["rector","alumni","exalumne"]
       },{
-        id:01,
+        id:1,
         sec: 29,
         txt: "Un aspirant a periodista que va acabar estudiant Economia",
-        tags:["anècdota","periodisme","economia"]
+        tags:["anècdota","records","periodisme","economia"]
       },{
-        id:02,
+        id:2,
         sec: 143,
         txt: "Vicerector durant el mandat de Carles Solà",
         tags:["vicerector","Carles Solà"]
       },{
-        id:03,
+        id:3,
         sec: 207,
         txt: "Noves titulacions",
-        tags:["titulacions","graus","innovació"]
+        tags:["titulacions","graus","innovació","progrés"]
       },{
-        id:04,
+        id:4,
         sec: 327,
         txt: "Impuls a la formació en anglès",
         tags:["formació","anglès"]
       },{
-        id:05,
+        id:5,
         sec: 380,
         txt: "L'aposta pels MOOC amb la plataforma Coursera",
-        tags:["cursos online","formació contínua","Coursera"]
+        tags:["cursos online","formació","Coursera","coneixement","participació"]
       },{
-        id:06,
+        id:6,
         sec: 456,
         txt: "El programa UAB Emprèn",
-        tags:["programa","UAB Emprèn","emprenedoria"]
+        tags:["UAB Emprèn","emprenedoria","coneixement","campus"]
       },{
-        id:07,
+        id:7,
         sec: 511,
         txt: "El Projecte B30",
-        tags:["B30","Projecte B30","Àmbit 30","innovació"]
+        tags:["Projecte B30","Àmbit 30","recerca","innovació","campus"]
       },{
-        id:08,
+        id:8,
         sec: 572,
         txt: "Integració de la UAB a la YERUN",
-        tags:["integració","YERUN","universitats","Europa"]
+        tags:["YERUN","universitats","Europa","recerca","qualitat"]
       },{
-        id:09,
+        id:9,
         sec: 676,
         txt: "Altres iniciatives d'internacionalització de la UAB",
         tags:["internacionalització","COFUND","recursos","talent"]
@@ -715,62 +715,62 @@ const videos =[
         id:10,
         sec: 742,
         txt: "Model de dedicació variable del PDI",
-        tags:["dedicació variable","PDI","docència","investigació"]
+        tags:["dedicació variable","PDI","docència","recerca","condicions laborals"]
       },{
         id:11,
         sec: 880,
         txt: "Restriccions pressupostàries durant la crisi financera",
-        tags:["retallades","pressupost","crisi financera"]
+        tags:["retallades","pressupost","crisi financera","finançament"]
       },{
         id:12,
         sec: 958,
         txt: "La polèmica taxa de reposició d'efectius",
-        tags:["taxa de reposició","places"]
+        tags:["taxa de reposició","places","personal","condicions laborals","marc legal"]
       },{
         id:13,
         sec: 1109,
         txt: "Manca de relleu generacional",
-        tags:["relleu generacional","envelliment","jubilació"]
+        tags:["relleu generacional","envelliment","jubilació","personal","condicions laborals"]
       },{
         id:14,
         sec: 1140,
         txt: "Mesures per pal·liar la precarització del personal",
-        tags:["mesures","precarització","personal","temporalitat"]
+        tags:["mesures","precarització","personal","condicions laborals"]
       },{
         id:15,
         sec: 1206,
         txt: "Creació del programa de beques Finestreta",
-        tags:["beques","Finestreta","ajudes"]
+        tags:["beques","Finestreta","ajudes","igualtat"]
       },{
         id:16,
         sec: 1276,
         txt: "Les beques Equitat i l'augment del 66% en les taxes",
-        tags:["beques","Equitat","taxes","ajudes"]
+        tags:["beques","Equitat","taxes","ajudes","igualtat","marc legal"]
       },{
         id:17,
         sec: 1357,
         txt: "Protestes estudiantils",
-        tags:["protestes","estudiants","vaga"]
+        tags:["protestes","estudiants","mobilitzacions","vaga","campus"]
       },{
         id:18,
         sec: 1407,
         txt: "Ocupació del rectorat",
-        tags:["ocupació","rectorat","protestes","estudiants"]
+        tags:["ocupació","rectorat","protestes","mobilitzacions","estudiants","campus"]
       },{
         id:19,
         sec: 1490,
         txt: "Conseqüències de la crisi financera per a la recerca",
-        tags:["crisi financera","retallades","finançament"]
+        tags:["crisi financera","retallades","finançament","pressupost","recerca"]
       },{
         id:20,
         sec: 1603,
         txt: "Èxit de la recerca malgrat les adversitats",
-        tags:["recerca","talent","èxit"]
+        tags:["recerca","talent","èxit","adversitats"]
       },{
         id:21,
         sec: 1702,
         txt: "Noves instal·lacions per a recerca",
-        tags:["recerca","inauguració","ICTA"]
+        tags:["recerca","inauguració","ICTA","campus","progrés"]
       },{
         id:22,
         sec: 1915,
@@ -780,12 +780,12 @@ const videos =[
         id:23,
         sec: 1984,
         txt: "Recuperació de la Festa Major",
-        tags:["Festa Major","campus"]
+        tags:["Festa Major","campus","cultura"]
       },{
         id:24,
         sec: 2058,
         txt: "Implantació del vot electrònic a les eleccions",
-        tags:["eleccions","govern","vot electrònic"]
+        tags:["eleccions","rectorat","vot electrònic","participació"]
       },{
         id:25,
         sec: 2193,
@@ -795,12 +795,12 @@ const videos =[
         id:26,
         sec: 2335,
         txt: "L'anècdota dels representants de la Universitat de Corea",
-        tags:["anècdota","Universitat de Corea"]
+        tags:["anècdota","records","Universitat de Corea","internacionalització"]
       },{
         id:27,
         sec: 2395,
         txt: "Balanç del mandat",
-        tags:["balanç","mandat"]
+        tags:["balanç","mandat","rector"]
       }
     ]
   }
