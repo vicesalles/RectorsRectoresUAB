@@ -17,7 +17,6 @@ import {globalHistories} from '../state/actions';
 import Footer from '../components/Footer/Footer';
 
 //Estil
-
 const styles = {
     
       cap:{
@@ -46,8 +45,7 @@ const styles = {
           marginLeft: "2.5%",
           width:"95%",
           
-      }
-  
+      }  
      
   };
 
@@ -57,7 +55,7 @@ class Home extends Component{
     factory = (rectors) =>{
 
         return rectors.map(r=>{
-            return <CartaRector rector={r}/>
+            return <CartaRector key={r.nom} rector={r}/>
         })
 
     }
@@ -70,30 +68,27 @@ class Home extends Component{
     render(){
         const { classes } = this.props;
         return (<Grid container>
-                    <AppBar position="fixed">
+                    <AppBar position="static">
                         <Toolbar variant="regular">   
                             <Typography variant="h5" color="inherit" align="left">
-                                Rectors i Rectores de la UAB: 50 anys.
-                            </Typography>                                      
+                                Rectors i rectores de la UAB 
+                            </Typography>                     
                         </Toolbar>
                     </AppBar>               
-                    <Grid container spacing={24} direction="row" justify="center" alignItems="center" alignContent="center" className={classes.graellaRectors}>
-                        {this.factory(this.props.rectors)}
-                    </Grid>
                     <Grid container direction="column" justify="center" alignItems="center" alignContent="center" className={classes.cercador}>
-                            <Typography variant="h2" color={"primary"} align="left">
-                                Cerca per temes
-                            </Typography> 
                         <Searcher isGlobal={true}/>
                     </Grid>
                     <Grid container className={classes.histories}                    
-                    direction="column"
-                    alignItems="center"
-                    justify="center"
-                    >
-                       
+                        direction="column"
+                        alignItems="center"
+                        justify="center"
+                    >                       
                         <HistoriesGeneral/>
                     </Grid>
+                    <Grid container spacing={24} direction="row" justify="center" alignItems="center" alignContent="center" className={classes.graellaRectors}>
+                        {this.factory(this.props.rectors)}
+                    </Grid>
+                 
                     <Footer/>
                 </Grid>)
     }

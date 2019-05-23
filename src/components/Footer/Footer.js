@@ -2,8 +2,12 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 function Footer(){
-    return(<div> <h2>Unitat d'Audiovisuals i Multimèdia - UAB</h2>
-            <Link to="/credits">Crèdits</Link>
+    return(<div id="peu"> 
+            <div>                
+                <Link to="/credits"><img alt="Universitat Autònoma de Barcelona 50è Aniversari" src="/img/logos/uab50.png"></img>  </Link>    
+            </div>     
+            
+            
     </div>)
 }
 

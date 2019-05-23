@@ -1,20 +1,39 @@
+@import "./parcials/colors";
+
 body{
   background-color: darkslategrey;
 }
-.App {
-  width: "100vw";
+
+#root{
+  width: 99%;
+}
+
+.App { 
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  height: 100%;
+}
+
+.rector{
+  top:0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
 }
 
 .histories{
+  flex:2;
+  margin: 0 auto; 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
 .searcher{
@@ -35,9 +54,11 @@ body{
 }
 
 .reproductor{  
+  flex: 3;
   position: sticky;
   position: -webkit-sticky;
-  top: 0em;
+  top: 1em;  
+  padding-left: 1em;
   background-color: darkslategrey;
 
 }
@@ -54,4 +75,37 @@ body{
     color:white;
     text-decoration: none;
   }
+}
+
+#peu{
+  display: flex;
+  bottom: 0px;
+  flex: 1;
+  left: 0px;
+  justify-content: flex-start;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  div{  
+    display: flex;
+    flex: 1;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    img{
+      max-width: 360px;
+    }  
+  } 
+  a{
+    padding-top: 1em;
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  a:hover{
+    color:$verd-uab;
+  }
+  
 }
