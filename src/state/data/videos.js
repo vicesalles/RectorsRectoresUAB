@@ -69,7 +69,7 @@ const videos =[
           },{
             id:12,
             sec: 2140,
-            txt: "Programa 'Study Abroad'",
+            txt: "Programa Study Abroad",
             tags:["internacionalització","intercanvi","Study Abroad","estudiants"]
           },{
             id:13,
@@ -99,8 +99,8 @@ const videos =[
           },{
             id:18,
             sec: 3220,
-            txt: "Primers actes institucionals del Dia de la Dona Treballadora",
-            tags:["Institucional","dona","8M","transparència","drets","igualtat"]
+            txt: "Primer acte institucional del Dia de la Dona",
+            tags:["institucional","dona","8M","transparència","drets","igualtat"]
           },{
             id:19,
             sec: 3306,
@@ -109,28 +109,28 @@ const videos =[
           },{
             id:20,
             sec: 3688,
-            txt: "Els 'Anys Temàtics'",
+            txt: "Els anys temàtics",
             tags:["cultura","participació","campus"]
           },{
             id:21,
             sec: 3861,
             txt: "Compromís amb el medi ambient",
-            tags:["compromís","medi ambient","sostenibilitat"]
+            tags:["compromís","medi ambient","sostenibilitat","campus"]
           },{
             id:22,
             sec: 4037,
-            txt: "Moviment contra la Guerra d'Iraq",
-            tags:["protestes","mobilitzacions","guerra","Iraq"]
+            txt: "Moviment de protesta contra la guerra d'Iraq",
+            tags:["protestes","mobilitzacions","guerra d'Iraq","campus"]
           },{
             id:23,
             sec: 4162,
-            txt: "Els doctors 'Honoris Causa'",
+            txt: "Els doctors 'honoris causa'",
             tags:["doctors","honoris causa","reconeixement","talent"]
           },{
             id:24,
             sec: 4317,
             txt: "Ocupacions de les facultats",
-            tags:["ocupacions","protestes","estudiants","Pla Bolonya"]
+            tags:["ocupacions","protestes","vaga","estudiants","Pla Bolonya","campus"]
           },{
             id:25,
             sec: 4538,
