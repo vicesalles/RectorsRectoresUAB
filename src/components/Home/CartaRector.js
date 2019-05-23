@@ -49,7 +49,7 @@ class CartaRector extends Component{
                         </Typography> 
                     </CardContent>
                     <CardActions>
-                        <Button size="large" href={`/r/${r.url}/`} color="primary">Entrevista</Button>
+                        <Button size="large" href={`/#/r/${r.url}/`} color="primary">Entrevista</Button>
                         <Button size="large" href={`${r.vikipedia}`} target="_blank" color="primary">Viquipedia</Button>
                     </CardActions>
                 </Card>
