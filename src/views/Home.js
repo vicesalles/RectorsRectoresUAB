@@ -71,7 +71,7 @@ class Home extends Component{
                     <AppBar position="static">
                         <Toolbar variant="regular">   
                             <Typography variant="h5" color="inherit" align="left">
-                                Rectors i Rectores de la UAB 
+                                Rectors i rectores de la UAB 
                             </Typography>                     
                         </Toolbar>
                     </AppBar>               
