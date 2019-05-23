@@ -21,7 +21,7 @@ const rectors = [
     },
     {
         id:2,        
-        nom:"Josep Maria",
+        nom:"Josep M.",
         cognoms:"Vallès Casadevall",  
         url:"valles",      
         mandat:"20.3.1990 – 25.3.1994",

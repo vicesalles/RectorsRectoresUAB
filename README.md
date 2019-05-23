@@ -4,16 +4,14 @@ Documental Web on es recullen els testimonis de tots els rectors, en vida, de la
 
 ## Bugs
 
+
 ## Tasques
 
-- Capçalera pàgina del rector.
-- Estil pàgina principal. (sobretot histories)
-- Estil pàgina rector. (sobretot histories)
-- Scroll del cercador al cap d'amunt quan l'usuari escriu alguna cosa.
+- Capçalera incloure motiu gràfic 50 anys
 - Component de compartir
-- Crear footer
 - Crear pàgina de crèdits
 
+## Continguts
 
 ## Distribució
 
