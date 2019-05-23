@@ -2,13 +2,28 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 //Components
-import {AppBar, Grid, Typography} from '@material-ui/core';
+import {AppBar, Grid, Typography, Toolbar, IconButton} from '@material-ui/core';
+
+//Icona 
+import HomeIcon from '@material-ui/icons/Home';
 
 //Pàgina de Crèdits
 export default function Credits() {
     return (
         <Grid id="credits">
-            <AppBar/>
+            <AppBar>
+                    <Toolbar variant="dense">  
+                        <IconButton href="/">
+                            <HomeIcon/>             
+                        </IconButton>                   
+                      
+                        <Grid>                           
+                            <Typography component="p" color="inherit" align="left">
+                               Credits
+                            </Typography>
+                        </Grid>      
+                </Toolbar>
+            </AppBar>
             <Grid>
                 <Grid>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut mauris erat.

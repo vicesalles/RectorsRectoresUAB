@@ -75,7 +75,7 @@ class Cos extends Component {
 
         //Setting the player size       
         const ampladaPare = this.containerReproductor.current.clientWidth;           
-        const ampladaPlayer = window.innerWidth > 960 ? ampladaPare : this.containerReproductor.current.parentNode.clientWidth/1.05;
+        const ampladaPlayer = window.innerWidth > 960 ? ampladaPare : this.containerReproductor.current.parentNode.clientWidth/1.075;
         
 
         //GETTING URL PARAMS
