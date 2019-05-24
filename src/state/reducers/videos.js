@@ -85,7 +85,7 @@ const initialState = {
   nom: 'Antoni',
   cognoms: 'Serra Ramoneda',
   anys: [ 1980, 1985 ],
-  yt: 'bSXbW2a4IIk',
+  yt: 'hKBP-N-csU0',
   events:
    [ { id: 0,  sec: 6,  txt: 'Secretari de la Comissió Promotora de la UAB',  tags: [ 'comissió promotora', 'fundació', 'UAB' ] },
      { id: 1,  sec: 149,  txt: 'Participació en el Manifest de Bellaterra (1975)',  tags: [ 'Manifest de Bellaterra', 'UAB' ] },
