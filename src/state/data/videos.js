@@ -34,7 +34,7 @@ events:
 nom: 'Ramon',
 cognoms: 'Pascual de Sans',
 anys: [ 1986, 1990 ],
-yt: 'cwQgjq0mCdE',
+yt: 's0Zs2G1MTt0',
 events:
  [ { id: 0,  sec: 6,  txt: 'Breu període com a rector en funcions (1980)',  tags: [ 'rector', 'Josep Laporte', 'Serra Ramoneda' ] },
    { id: 1,  sec: 70,  txt:  'Director general d\'Ensenyament Universitari en el primer govern Pujol',  tags: [ 'política', 'Generalitat', 'Jordi Pujol' ] },
@@ -109,7 +109,7 @@ events:
 nom: 'Carles',
 cognoms: 'Solà Ferrando',
 anys: [ 1994, 2002 ],
-yt: 'vaYZM82tkT8',
+yt: 'CQ6yaAQhPMg',
 events:
  [ { id: 0,  sec: 6,  txt: 'Fundació de l\'Escola d\'Enginyeria',  tags: [ 'escola d\'enginyeria', 'facultats', 'campus', 'progrés' ] },
    { id: 1,  sec: 87,  txt: 'Innovacions acadèmiques',  tags: [ 'titulacions', 'innovació', 'progrés' ] },
@@ -157,7 +157,7 @@ events:
 nom: 'Ferran',
 cognoms: 'Sancho Pifarré',
 anys: [ 2012, 2016 ],
-yt: 'Ev5nFBN9xHI',
+yt: 'cE8hmWXA9Cw',
 events:
  [ { id: 0,  sec: 6,  txt: 'Primer rector alumni de la UAB',  tags: [ 'rector', 'alumni', 'exalumne' ] },
    { id: 1,  sec: 31,  txt: 'Un aspirant a periodista que va acabar estudiant Economia',  tags: [ 'anècdota', 'records', 'periodisme', 'economia' ] },
