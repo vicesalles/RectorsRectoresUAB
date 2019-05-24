@@ -13,7 +13,7 @@ events:
    { id: 6,  sec: 576,  txt: 'Adaptació al Pla Bolonya',  tags:   [ 'Pla Bolonya',     'homologació',     'Espai Europeu',     'reforma',     'universitats' ] },
    { id: 7,  sec: 954,  txt: 'Pla pilot de titulacions adaptades',  tags:   [ 'titulacions', 'reestructuració', 'flexibilitat', 'pla pilot' ] },
    { id: 8,  sec: 1220,  txt: 'Noves titulacions',  tags: [ 'innovació', 'titulacions' ] },
-   { id: 9,  sec: 1399,  txt:  'Creació de la facultat de Biociències i reestructuració d\'altres facultats',  tags: [ 'facultats', 'Biociències', 'reestructuració' ] },
+   { id: 9,  sec: 1399,  txt:  'Creació de la facultat de Biociències',  tags: [ 'facultats', 'Biociències', 'reestructuració' ] },
    { id: 10,  sec: 1725,  txt: 'Ampliació de la unitat docent Germans Trias i Pujol',  tags: [ 'unitat docent', 'Can Ruti', 'Germans Trias i Pujol' ] },
    { id: 11,  sec: 1816,  txt: 'Aliança 4 Universitats',  tags: [ 'internacionalització', 'Aliança 4 Universitats' ] },
    { id: 12,  sec: 2153,  txt: 'Programa Study Abroad',  tags:   [ 'internacionalització',     'intercanvi',     'Study Abroad',     'estudiants' ] },
