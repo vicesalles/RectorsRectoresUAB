@@ -4,7 +4,6 @@ Documental Web on es recullen els testimonis dels rectors i rectores de la UAB
 
 ## Bugs
 
-- deploy fa el ruc
 
 ## Tasques
 

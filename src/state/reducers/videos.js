@@ -6,7 +6,7 @@ const initialState = {
   nom: 'Lluís',
   cognoms: 'Ferrer Caubet',
   anys: [ 2002, 2009 ],
-  yt: 'esbrXKHGrl8',
+  yt: 'pqTblOmvwLM',
   events:
    [ { id: 0,  sec: 6,  txt: 'Primer rector escollit en vigència de la LOU',  tags: [ 'LOU', 'PP', 'marc legal' ] },
      { id: 1,  sec: 85,  txt: 'Conseqüències de l\'aprovació de la LOU',  tags: [ 'LOU', 'conseqüències', 'marc legal' ] },
@@ -62,7 +62,7 @@ const initialState = {
   nom: 'Josep Maria',
   cognoms: 'Vallès Casadevall',
   anys: [ 1986, 1990 ],
-  yt: '3-BIS1HEtrQ',
+  yt: 'sE-lem9y_lk',
   events:
    [ { id: 0,  sec: 6,  txt: 'Les adversitats de l\'inici del mandat',  tags: [ 'finançament', 'docència', 'mandat' ] },
      { id: 1,  sec: 131,  txt: 'Noves facultats',  tags:   [ 'polítiques',     'sociologia',     'traducció',     'educació',     'facultats',     'campus',     'progrés' ] },
@@ -139,7 +139,7 @@ const initialState = {
   nom: 'Ana',
   cognoms: 'Ripoll Aracil',
   anys: [ 2009, 2012 ],
-  yt: 'rK62UIZOvGM',
+  yt: 'YTs5MehGZHg',
   events:
    [ { id: 0,  sec: 6,  txt:   'Vicerectora de Professorat durant el mandat de Lluís Ferrer',  tags:   [ 'personal acadèmic',     'professorat',     'associats',     'becaris',     'Lluís Ferrer' ] },
      { id: 1,  sec: 247,  txt: 'La primera dona rectora de la UAB',  tags: [ 'dona', 'rectora', 'igualtat' ] },
