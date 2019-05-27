@@ -139,7 +139,7 @@ const initialState = {
   nom: 'Ana',
   cognoms: 'Ripoll Aracil',
   anys: [ 2009, 2012 ],
-  yt: 'YTs5MehGZHg',
+  yt: 'Dgj-cmCc89k',
   events:
    [ { id: 0,  sec: 6,  txt:   'Vicerectora de Professorat durant el mandat de Lluís Ferrer',  tags:   [ 'personal acadèmic',     'professorat',     'associats',     'becaris',     'Lluís Ferrer' ] },
      { id: 1,  sec: 247,  txt: 'La primera dona rectora de la UAB',  tags: [ 'dona', 'rectora', 'igualtat' ] },
@@ -161,7 +161,7 @@ const initialState = {
   nom: 'Ferran',
   cognoms: 'Sancho Pifarré',
   anys: [ 2012, 2016 ],
-  yt: 'cE8hmWXA9Cw',
+  yt: 'F6LEU9cd-cY',
   events:
    [ { id: 0,  sec: 6,  txt: 'Primer rector alumni de la UAB',  tags: [ 'rector', 'alumni', 'exalumne' ] },
      { id: 1,  sec: 30,  txt: 'Un aspirant a periodista que va acabar estudiant Economia',  tags: [ 'anècdota', 'records', 'periodisme', 'economia' ] },

@@ -27,6 +27,11 @@ const styles = {
         width: 60,
         height: 60,
       },
+    mediumAvatar: {
+        margin: 10,
+        width: 30,
+        height: 30,
+      },
       wikiBu: {        
         width: 15,
         height: 15,
@@ -46,7 +51,7 @@ class DesktopHeader extends Component {
         return(<AppBar position="static">
         <Toolbar variant="dense">  
                 <IconButton href="/">
-                    <HomeIcon className={classes.bigAvatar}/>             
+                    <HomeIcon className={classes.mediumAvatar}/>             
                 </IconButton>                   
                 <Avatar alt={this.props.currentRector.cognoms} src={`/img/l/${this.props.currentRector.url}.jpg`} className={classes.bigAvatar}/>
                 <Grid className={classes.cap}>

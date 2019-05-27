@@ -27,7 +27,7 @@ const styles = {
         marginRight: 10,
       },
       graellaRectors:{       
-        marginTop:90,
+        marginTop:10,
         minWidth:400
       },
       bigAvatar: {

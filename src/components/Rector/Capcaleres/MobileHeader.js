@@ -46,8 +46,11 @@ const styles = {
          <Toolbar variant="dense">  
                  <IconButton href="/">
                      <HomeIcon className={classes.smallAvatar}/>             
-                 </IconButton>                   
-                 <Avatar alt={this.props.currentRector.cognoms} src={`/img/l/${this.props.currentRector.url}.jpg`} className={classes.smallAvatar}/>
+                 </IconButton>             
+                 <IconButton size="small" href={this.props.currentRector.vikipedia} target="_blank">
+                    <Avatar alt={this.props.currentRector.cognoms} src={`/img/l/${this.props.currentRector.url}.jpg`} className={classes.smallAvatar}/>               
+                 </IconButton>      
+                 
                  <Grid className={classes.cap}>
                      <Grid container direction="row" justify="flex-start">
                          <Typography variant="h6" color="inherit" align="left">

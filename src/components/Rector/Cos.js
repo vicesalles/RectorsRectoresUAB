@@ -8,6 +8,7 @@ import _ from 'lodash';
 //Components
 import Searcher from '../Searcher/Searcher';
 import Grid from '@material-ui/core/Grid';
+import Arxiu from './Arxiu/Arxiu';
 
 //Accions
 import {setCurrentRector} from '../../state/actions';
@@ -148,6 +149,7 @@ class Cos extends Component {
                     <div ref={this.containerReproductor} className="reproductor">
                         <YouTube ref={this.reproductor} onStateChange={this.onStateChange} videoId={current.yt} opts={this.state.playerOptions} onReady={this._onReady}></YouTube>
                         <Searcher w={this.state.width}/>
+                        <Arxiu/>
                     </div>            
                     <div className="histories">
                         <Typography variant="h3" color="primary" align="center">
