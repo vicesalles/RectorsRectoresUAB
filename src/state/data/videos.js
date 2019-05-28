@@ -34,7 +34,7 @@
   nom: 'Ramon',
   cognoms: 'Pascual de Sans',
   anys: [ 1986, 1990 ],
-  yt: 's0Zs2G1MTt0',
+  yt: '3Xo0y-zGpbo',
   events:
    [ { id: 0,  sec: 6,  txt: 'Breu període com a rector en funcions (1980)',  tags: [ 'rector', 'Josep Laporte', 'Serra Ramoneda' ] },
      { id: 1,  sec: 69,  txt: 'Director general d\'Universitats a la Generalitat',  tags: [ 'política', 'Generalitat', 'Jordi Pujol' ] },
@@ -58,7 +58,7 @@
   nom: 'Josep Maria',
   cognoms: 'Vallès Casadevall',
   anys:[1990,1994],
-  yt: 'sE-lem9y_lk',
+  yt: 'gGtkrq_QMZM',
   events:
    [ { id: 0,  sec: 6,  txt: 'Les adversitats de l\'inici del mandat',  tags: [ 'finançament', 'docència', 'mandat' ] },
      { id: 1,  sec: 131,  txt: 'Noves facultats',  tags:   [ 'polítiques',     'sociologia',     'traducció',     'educació',     'facultats',     'campus',     'progrés' ] },
@@ -81,7 +81,7 @@
   nom: 'Antoni',
   cognoms: 'Serra Ramoneda',
   anys: [ 1980, 1985 ],
-  yt: 'hKBP-N-csU0',
+  yt: 'jO8p4Sf1-yY',
   events:
    [ { id: 0,  sec: 6,  txt: 'Secretari de la Comissió Promotora de la UAB',  tags: [ 'comissió promotora', 'fundació', 'UAB' ] },
      { id: 1,  sec: 149,  txt: 'Participació en el Manifest de Bellaterra (1975)',  tags: [ 'Manifest de Bellaterra', 'UAB' ] },
@@ -157,7 +157,7 @@
   nom: 'Ferran',
   cognoms: 'Sancho Pifarré',
   anys: [ 2012, 2016 ],
-  yt: 'F6LEU9cd-cY',
+  yt: '99-pbGhW4N4',
   events:
    [ { id: 0,  sec: 6,  txt: 'Primer rector alumni de la UAB',  tags: [ 'rector', 'alumni', 'exalumne' ] },
      { id: 1,  sec: 30,  txt: 'Un aspirant a periodista que va acabar estudiant Economia',  tags: [ 'anècdota', 'records', 'periodisme', 'economia' ] },
