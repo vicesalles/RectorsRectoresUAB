@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 
 //Components
 import {Card,CardActionArea,CardMedia,CardContent} from '@material-ui/core/';
-import Zoom from '@material-ui/core/Zoom';
+import Fade from '@material-ui/core/Fade';
 import { Typography } from '@material-ui/core';
 import LaunchRounded from '@material-ui/icons/LaunchRounded';
 
@@ -32,7 +32,7 @@ class CartaVideo extends Component {
         const { id,titol } = video;
         
         return(
-            <Zoom in={true} timeout={{enter:1000}}>
+            <Fade in={true} timeout={{enter:this.props.animacio}}>
                     <Card className={classes.card}>
                         <CardActionArea href={`https://www.youtube.com/watch?v=${id}&sub_confirmation=1`} target="_blank">
                             <CardMedia
@@ -47,7 +47,7 @@ class CartaVideo extends Component {
                             </CardContent>
                         </CardActionArea>                  
                     </Card>
-                    </Zoom>)
+                    </Fade>)
     }
 }
 

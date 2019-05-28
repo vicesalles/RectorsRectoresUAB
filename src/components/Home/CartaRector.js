@@ -3,17 +3,17 @@ import {withRouter} from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
 import Button from '@material-ui/core/Button';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
+import Fade from '@material-ui/core/Fade';
+
+//Carta
+import {CardMedia,CardActionArea,CardActions,CardContent,Card} from '@material-ui/core';
 
 //Estil
 
 const styles = {    
   
-      bigAvatar: {
+    bigAvatar: {
       margin: 10,
       width: 90,
       height: 90,
@@ -26,6 +26,13 @@ const styles = {
     },
     fotoRector: {
       height: 400,
+    },
+    nomRector:{
+        fontSize:18,
+        fontWeight:"bold"
+    },
+    mandat:{
+        fontSize:14
     }
    
 };
@@ -37,22 +44,24 @@ class CartaRector extends Component{
         const {classes} = this.props;
         const r = this.props.rector;
 
-        return(<Grid item lg={3} md={6} xs={12}>            
-                <Card>                    
-                    <CardMedia image={`/img/xl/${r.url}.jpg`} title={r.cognoms} className={classes.fotoRector}/>                
-                    <CardContent>
-                        <Typography variant="h4">
-                            {r.nom} {r.cognoms}
-                        </Typography>
-                        <Typography variant="h5">
-                            {r.mandat}
-                        </Typography> 
-                    </CardContent>
-                    <CardActions>
-                        <Button size="large" href={`/#/r/${r.url}/`} color="primary">Entrevista</Button>
-                        <Button size="large" href={`${r.vikipedia}`} target="_blank" color="primary">Viquipedia</Button>
-                    </CardActions>
+        console.log('ANIMACIÓ', this.props.animacio);
+        return(<Grid item lg={3} md={6} xs={12}>       
+            <Fade in={true} timeout={{enter:this.props.animacio}} >     
+                <Card>             
+                    <CardActionArea href={`/#/r/${r.url}/`}>       
+                        <CardMedia image={`/img/xl/${r.url}.jpg`} title={r.cognoms} className={classes.fotoRector}/>                
+                        
+                        <CardContent>
+                            <Typography variant="h4" className={classes.nomRector}>
+                                {r.nom} {r.cognoms}
+                            </Typography>
+                            <Typography variant="h5" className={classes.mandat}>
+                                {r.mandat}
+                            </Typography> 
+                        </CardContent>
+                    </CardActionArea>
                 </Card>
+                </Fade>
             </Grid>)
     }
 }

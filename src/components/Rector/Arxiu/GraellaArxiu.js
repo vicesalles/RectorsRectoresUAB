@@ -20,7 +20,7 @@ class GraellaArxiu extends Component{
 
     //Create
     cardFactory = (vids) => {
-        return vids.map((v,i)=><CartaVideo key={`Carta-${i}`} video={v}/>)
+        return vids.map((v,i)=><CartaVideo key={`Carta-${i}`} animacio={i*500} video={v}/>)
     }
 
     render(){
