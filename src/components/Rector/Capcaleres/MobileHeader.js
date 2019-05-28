@@ -42,7 +42,7 @@ const styles = {
          //Classes
          const { classes } = this.props;
 
-         return(<AppBar position="static">
+         return(<AppBar position="fixed">
          <Toolbar variant="dense">  
                  <IconButton href="/">
                      <HomeIcon className={classes.smallAvatar}/>             

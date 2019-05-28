@@ -4,7 +4,7 @@ import {withRouter} from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 
 //Components
-import {Grid,Card,CardActionArea,CardMedia,CardContent} from '@material-ui/core/';
+import {Grid} from '@material-ui/core/';
 import { Typography } from '@material-ui/core';
 import GraellaArxiu from './GraellaArxiu';
 
@@ -28,7 +28,7 @@ class Arxiu extends Component {
     render(){
         
         const { classes,currentRector } = this.props;
-        console.log('render',currentRector);
+        
         if(currentRector!==null){
             return(<Grid>
                 <Typography className={classes.titolSeccio} color="primary" align="left">

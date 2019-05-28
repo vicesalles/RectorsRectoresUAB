@@ -3,11 +3,10 @@ import {withRouter} from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
 import Fade from '@material-ui/core/Fade';
 
 //Carta
-import {CardMedia,CardActionArea,CardActions,CardContent,Card} from '@material-ui/core';
+import {CardMedia,CardActionArea,CardContent,Card} from '@material-ui/core';
 
 //Estil
 
@@ -20,7 +19,8 @@ const styles = {
     },
     fitxaRector:{
         margin:10,
-        minWidth:300,
+        minWidth:250,
+        maxWidth:300,
         padding:10
 
     },
@@ -43,9 +43,8 @@ class CartaRector extends Component{
 
         const {classes} = this.props;
         const r = this.props.rector;
-
-        console.log('ANIMACIÓ', this.props.animacio);
-        return(<Grid item lg={3} md={6} xs={12}>       
+        
+        return(<Grid item lg={3} md={6} xs={12} className={classes.fitxaRector}>       
             <Fade in={true} timeout={{enter:this.props.animacio}} >     
                 <Card>             
                     <CardActionArea href={`/#/r/${r.url}/`}>       
