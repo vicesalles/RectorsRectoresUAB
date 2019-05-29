@@ -34,7 +34,7 @@ class Arxiu extends Component {
                 <Typography className={classes.titolSeccio} color="primary" align="left">
                     Alguns vídeos del mandat
                 </Typography>
-                <GraellaArxiu videos={currentRector.videos} in={this.props.in}/>
+                <GraellaArxiu pausaVideoGeneral={this.props.pausaVideoGeneral} videos={currentRector.videos} in={this.props.in}/>
             </Grid>)
         }else{
             return(<Grid>

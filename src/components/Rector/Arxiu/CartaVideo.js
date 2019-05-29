@@ -25,7 +25,7 @@ const estilVideoArxiu = {
     };
 
 class CartaVideo extends Component {
-    
+ 
     render(){
         
         const {video,classes} = this.props;
@@ -33,7 +33,7 @@ class CartaVideo extends Component {
         
         return(
             <Fade in={this.props.in} timeout={{enter:this.props.animacio}}>
-                    <CardActionArea className={classes.card} href={`https://www.youtube.com/watch?v=${id}&sub_confirmation=1`} target="_blank">
+                    <CardActionArea className={classes.card} onClick={()=>{this.props.pausaVideoGeneral()}} href={`https://www.youtube.com/watch?v=${id}&sub_confirmation=1`} target="_blank">
                         <Card >                           
                                 <CardMedia
                                     className={classes.media}

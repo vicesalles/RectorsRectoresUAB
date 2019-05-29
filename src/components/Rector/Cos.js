@@ -54,7 +54,7 @@ const styles = theme => ({
       cursor: "pointer",
       marginTop: "1em",
       width: "100%",
-      fontSize: 14
+      fontSize: 18
     }
 
    
@@ -81,6 +81,13 @@ class Cos extends Component {
     navigateTo = (s) => {
         console.log('Navegant',s);    
         this.reproductor.current.internalPlayer.seekTo(s);  
+    }
+
+    //Pause video
+    pause = () => {
+        console.log('pausa!', this.reproductor.current.internalPlayer);
+        this.reproductor.current.internalPlayer.pauseVideo();
+        
     }
 
     //Returns the 16:9 height for a given width
@@ -184,7 +191,7 @@ class Cos extends Component {
                                 </div>
                             </Fade>  
                         <Searcher w={this.state.width}/>
-                        <Arxiu in={this.state.ready}/>                        
+                        <Arxiu pausaVideoGeneral = {this.pause}  in={this.state.ready}/>                        
                     </div>                            
                     <div className="histories">
                     <div className={classes.toolbar}></div>    
@@ -210,6 +217,7 @@ class Cos extends Component {
                         </Typography>
                         {this.eventsFactory(this.props.histories.filtrades)}
                     </div>
+                    <Arxiu pausaVideoGeneral = {this.pause}  in={this.state.ready}/>
                 </Grid>)
 
         }
