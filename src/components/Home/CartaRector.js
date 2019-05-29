@@ -33,10 +33,10 @@ const styles = {
     },
     mandat:{
         marginTop:12,
-        fontSize:14
+        fontSize:18
     },
     cartaRector:{
-        height:390
+        height:370
     }
    
 };
@@ -51,7 +51,7 @@ class CartaRector extends Component{
         return(<Grid item lg={3} md={6} xs={12} className={classes.fitxaRector}>       
             <Fade in={true} timeout={{enter:this.props.animacio}} >  
             <CardActionArea href={`/#/r/${r.url}/`}>    
-                <Card className={classes.cartaRector}>             
+                <Card elevation={6} className={classes.cartaRector}>             
                           
                         <CardMedia image={`/img/xl/${r.url}.jpg`} title={r.cognoms} className={classes.fotoRector}/>                
                         

@@ -22,6 +22,9 @@ const styles = theme => ({
   },
   dense: {
     marginTop: 16,
+  },
+  mainSearcher:{
+    fontSize:24
   }
  
 });
@@ -52,12 +55,34 @@ class Searcher extends Component{
 
     render(){
         
+      const {classes} = this.props;
         const wi = this.props.w ? this.props.w : "100%";
 
-        return(<div className="Searcher">
+        if(this.props.isGlobal){
+          return(<div className="Searcher">
             <TextField
                 id="outlined-full-width"
                 label="Cercador"                
+                placeholder="Explora els mandats..."               
+                fullWidth
+                color="gray"
+                margin="normal"
+                variant="filled"
+                autoFocus
+                onChange={(event)=>{this.handleChange(event)}}dsfs
+                style={{backgroundColor:'white'}} 
+                InputProps={{ style: { fontSize: 40 } }}
+                            
+                InputLabelProps={{
+                    shrink: true,
+                }}
+        />
+            </div>)
+        }else{
+          return(<div className="Searcher">
+            <TextField
+                id="outlined-full-width"
+                label="Cercador d'aquest mandat"                
                 placeholder="Cercar un tema..."               
                 fullWidth
                 color="gray"
@@ -72,6 +97,10 @@ class Searcher extends Component{
                 }}
         />
             </div>)
+
+        }
+
+        
     }
 }
 
