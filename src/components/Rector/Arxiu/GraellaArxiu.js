@@ -17,13 +17,13 @@ const estilGraella = {
 }
 
 class GraellaArxiu extends Component{
-
+    
     //Create
     cardFactory = (vids) => {
-        return vids.map((v,i)=><CartaVideo key={`Carta-${i}`} animacio={i*500} video={v}/>)
+        return vids.map((v,i)=><CartaVideo key={`Carta-${i}`} animacio={i*1000} in={this.props.in} video={v}/>)
     }
 
-    render(){
+    render(){        
         const {classes} = this.props;
         return( <Grid className={classes.graella} container spacing={24} direction="row" justify="flex-start" alignContent="center">
                     {this.cardFactory(this.props.videos)}

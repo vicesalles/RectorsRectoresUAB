@@ -32,21 +32,22 @@ class CartaVideo extends Component {
         const { id,titol } = video;
         
         return(
-            <Fade in={true} timeout={{enter:this.props.animacio}}>
-                    <Card className={classes.card}>
-                        <CardActionArea href={`https://www.youtube.com/watch?v=${id}&sub_confirmation=1`} target="_blank">
-                            <CardMedia
-                                className={classes.media}
-                                image={`https://img.youtube.com/vi/${id}/mqdefault.jpg`}
-                                title={titol}
-                                />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5">
-                                    {titol}
-                                </Typography> <LaunchRounded/>                      
-                            </CardContent>
-                        </CardActionArea>                  
-                    </Card>
+            <Fade in={this.props.in} timeout={{enter:this.props.animacio}}>
+                    <CardActionArea className={classes.card} href={`https://www.youtube.com/watch?v=${id}&sub_confirmation=1`} target="_blank">
+                        <Card >                           
+                                <CardMedia
+                                    className={classes.media}
+                                    image={`https://img.youtube.com/vi/${id}/mqdefault.jpg`}
+                                    title={titol}
+                                    />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5">
+                                        {titol}
+                                    </Typography> <LaunchRounded/>                      
+                                </CardContent>
+                                        
+                        </Card>
+                    </CardActionArea>    
                     </Fade>)
     }
 }

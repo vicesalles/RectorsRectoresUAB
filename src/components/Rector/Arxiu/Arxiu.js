@@ -32,9 +32,9 @@ class Arxiu extends Component {
         if(currentRector!==null){
             return(<Grid>
                 <Typography className={classes.titolSeccio} color="primary" align="left">
-                    Moments del mandat
+                    Alguns vídeos del mandat
                 </Typography>
-                <GraellaArxiu videos={currentRector.videos}/>
+                <GraellaArxiu videos={currentRector.videos} in={this.props.in}/>
             </Grid>)
         }else{
             return(<Grid>

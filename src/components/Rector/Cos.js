@@ -7,12 +7,15 @@ import _ from 'lodash';
 
 //Components
 import Searcher from '../Searcher/Searcher';
-import Grid from '@material-ui/core/Grid';
 import Arxiu from './Arxiu/Arxiu';
+import { Grid,Typography, CircularProgress,Paper,Slide, Card, CardActionArea } from '@material-ui/core';
+
+//Animacions
+import Fade from '@material-ui/core/Fade';
 
 //Accions
 import {setCurrentRector} from '../../state/actions';
-import { Typography } from '@material-ui/core';
+
 
 // Estil
 const styles = theme => ({    
@@ -29,12 +32,30 @@ const styles = theme => ({
         
     },
     reproductor:{
-        width:"100%"
+        width:"100%",
+        display:"hidden"
     },
     graellaRector:{
         marginTop:20
     },
-    toolbar:theme.mixins.toolbar
+    toolbar:theme.mixins.toolbar,
+    carregador:{
+        marginTop:"5em",
+        justify:"center",
+        alignContent:"center",
+        alignItems:"center"
+    },
+    esdevenimentBu:{
+      fontFamily: theme.typography.fontFamily,
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      padding: "1em 1em 1em 1em",
+      cursor: "pointer",
+      marginTop: "1em",
+      width: "100%",
+      fontSize: 14
+    }
 
    
 });
@@ -43,6 +64,7 @@ class Cos extends Component {
 
     state= {
         current:"",
+        ready:false,
         width:100,
         playerOptions : { }
     }
@@ -69,7 +91,7 @@ class Cos extends Component {
     //Generates an event list for the current video
     eventsFactory = (evs) => {
         return evs.map((ev,i)=>{
-            return(<button className="esdevenimentBu" key={i} onClick={()=>this.navigateTo(ev.sec)}>{ev.txt}</button>)
+            return(<Slide in={true} timeout={{enter:i*100}}><CardActionArea><Paper className={this.props.classes.esdevenimentBu} elevation={6} key={i} onClick={()=>this.navigateTo(ev.sec)}>{ev.txt}</Paper></CardActionArea></Slide>)
         })
     }
 
@@ -132,6 +154,11 @@ class Cos extends Component {
          }
      }
       
+    onReady = () =>{
+       
+        this.setState({ready:true})
+
+    }
 
     render(){
            
@@ -147,17 +174,22 @@ class Cos extends Component {
         if(isBigScreen(window.innerWidth)){
 
             return(<Grid container spacing={24} direction="row" justify="space-between" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRector}>
-                <div className={classes.toolbar}></div>     
+                <div className={classes.toolbar}></div>                     
                     <div ref={this.containerReproductor} className="reproductor">
-                    <div className={classes.toolbar}></div>    
-                        <YouTube ref={this.reproductor} onStateChange={this.onStateChange} videoId={current.yt} opts={this.state.playerOptions} onReady={this._onReady}></YouTube>
+                        <div className={classes.toolbar}></div>    
+                            {!this.state.ready &&<Grid className={classes.carregador}><CircularProgress size={80} /></Grid>}
+                            <Fade in={this.state.ready} timeout={{enter:1000}}> 
+                                <div>
+                                 <YouTube onPlay={this.onReady} ref={this.reproductor} onStateChange={this.onStateChange} videoId={current.yt} opts={this.state.playerOptions} onReady={this._onReady}></YouTube>
+                                </div>
+                            </Fade>  
                         <Searcher w={this.state.width}/>
-                        <Arxiu/>
-                    </div>            
+                        <Arxiu in={this.state.ready}/>                        
+                    </div>                            
                     <div className="histories">
                     <div className={classes.toolbar}></div>    
                         <Typography variant="h3" color="primary" align="center">
-                            Temes
+                            Temes d'aquest mandat
                         </Typography>
                         {this.eventsFactory(this.props.histories.filtrades)}
                     </div>
@@ -174,7 +206,7 @@ class Cos extends Component {
                     </div>            
                     <div className="histories">
                         <Typography variant="h3" color="primary" align="center">
-                            Temes
+                            Temes d'aquest mandat
                         </Typography>
                         {this.eventsFactory(this.props.histories.filtrades)}
                     </div>
