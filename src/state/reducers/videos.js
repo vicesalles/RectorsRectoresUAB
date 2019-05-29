@@ -6,12 +6,6 @@ const initialState = {
   nom: 'Lluís',
   cognoms: 'Ferrer Caubet',
   anys: [ 2002, 2009 ],
-  yt: 'pqTblOmvwLM',
-  events:
-  [ { id: 'ferrer',
-  nom: 'Lluís',
-  cognoms: 'Ferrer Caubet',
-  anys: [ 2002, 2009 ],
   yt: 'tHf6Ik9PAFo',
   events:
    [ { id: 0,  sec: 6,  txt: 'Primer rector escollit en vigència de la LOU',  tags: [ 'LOU', 'PP', 'marc legal' ] },
