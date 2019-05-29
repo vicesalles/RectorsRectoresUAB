@@ -15,7 +15,7 @@ import {setCurrentRector} from '../../state/actions';
 import { Typography } from '@material-ui/core';
 
 // Estil
-const styles = {    
+const styles = theme => ({    
     
     histories:{
       marginTop:20
@@ -33,10 +33,11 @@ const styles = {
     },
     graellaRector:{
         marginTop:20
-    }
+    },
+    toolbar:theme.mixins.toolbar
 
    
-};
+});
 
 class Cos extends Component {
 
@@ -146,12 +147,15 @@ class Cos extends Component {
         if(isBigScreen(window.innerWidth)){
 
             return(<Grid container spacing={24} direction="row" justify="space-between" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRector}>
+                <div className={classes.toolbar}></div>     
                     <div ref={this.containerReproductor} className="reproductor">
+                    <div className={classes.toolbar}></div>    
                         <YouTube ref={this.reproductor} onStateChange={this.onStateChange} videoId={current.yt} opts={this.state.playerOptions} onReady={this._onReady}></YouTube>
                         <Searcher w={this.state.width}/>
                         <Arxiu/>
                     </div>            
                     <div className="histories">
+                    <div className={classes.toolbar}></div>    
                         <Typography variant="h3" color="primary" align="center">
                             Temes
                         </Typography>
@@ -162,7 +166,9 @@ class Cos extends Component {
         }else{
 
             return(<Grid container spacing={24} direction="column" justify="space-between" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRector}>
+                <div className={classes.toolbar}></div>     
                     <div ref={this.containerReproductor} className="reproductor">
+                    <div className={classes.toolbar}></div>    
                         <YouTube ref={this.reproductor} videoId={current.yt} opts={this.state.playerOptions} onReady={this._onReady}></YouTube>
                         <Searcher w={this.state.width}/>
                     </div>            

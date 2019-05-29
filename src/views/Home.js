@@ -17,7 +17,7 @@ import {globalHistories} from '../state/actions';
 import Footer from '../components/Footer/Footer';
 
 //Estil
-const styles = {
+const styles = theme => ({
     
       cap:{
           marginLeft:25
@@ -45,9 +45,11 @@ const styles = {
           marginLeft: "2.5%",
           width:"95%",
           
-      }  
+      },
+      toolbar: theme.mixins.toolbar
+
      
-  };
+  });
 
 class Home extends Component{
 
@@ -68,14 +70,16 @@ class Home extends Component{
     render(){
         const { classes } = this.props;
         return (<Grid container>
-                    <AppBar position="static">
+                    <AppBar position="fixed">
                         <Toolbar variant="regular">   
                             <Typography variant="h5" color="inherit" align="left">
                                 Rectors i rectores de la UAB 
                             </Typography>                     
                         </Toolbar>
-                    </AppBar>               
-                    <Grid container direction="column" justify="center" alignItems="center" alignContent="center" className={classes.cercador}>
+                    </AppBar>    
+                         
+                    <Grid container direction="column" justify="center" alignItems="center" alignContent="center" className={classes.cercador} position="fixed">
+                    <div className={classes.toolbar}></div>      
                         <Searcher isGlobal={true}/>
                     </Grid>
                     <Grid container className={classes.histories}                    
