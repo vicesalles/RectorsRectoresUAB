@@ -2,7 +2,7 @@
   nom: 'Lluís',
   cognoms: 'Ferrer Caubet',
   anys: [ 2002, 2009 ],
-  yt: 'pqTblOmvwLM',
+  yt: 'tHf6Ik9PAFo',
   events:
    [ { id: 0,  sec: 6,  txt: 'Primer rector escollit en vigència de la LOU',  tags: [ 'LOU', 'PP', 'marc legal' ] },
      { id: 1,  sec: 85,  txt: 'Conseqüències de la LOU',  tags: [ 'LOU', 'conseqüències', 'marc legal' ] },
@@ -34,7 +34,7 @@
   nom: 'Ramon',
   cognoms: 'Pascual de Sans',
   anys: [ 1986, 1990 ],
-  yt: '3Xo0y-zGpbo',
+  yt: 'I8ikXkxqSHg',
   events:
    [ { id: 0,  sec: 6,  txt: 'Breu període com a rector en funcions (1980)',  tags: [ 'rector', 'Josep Laporte', 'Serra Ramoneda' ] },
      { id: 1,  sec: 69,  txt: 'Director general d\'Universitats',  tags: [ 'política', 'Generalitat', 'Jordi Pujol' ] },
@@ -58,7 +58,7 @@
   nom: 'Josep Maria',
   cognoms: 'Vallès Casadevall',
   anys:[1990,1994],
-  yt: 'gGtkrq_QMZM',
+  yt: 'QyFwF6CZzOw',
   events:
    [ { id: 0,  sec: 6,  txt: 'Les adversitats de l\'inici del mandat',  tags: [ 'finançament', 'docència', 'mandat' ] },
      { id: 1,  sec: 131,  txt: 'Noves facultats',  tags:   [ 'polítiques',     'sociologia',     'traducció',     'educació',     'facultats',     'campus',     'progrés' ] },
@@ -81,7 +81,7 @@
   nom: 'Antoni',
   cognoms: 'Serra Ramoneda',
   anys: [ 1980, 1985 ],
-  yt: 'jO8p4Sf1-yY',
+  yt: '7Pv4wzcW8H0',
   events:
    [ { id: 0,  sec: 6,  txt: 'Secretari de la Comissió Promotora de la UAB',  tags: [ 'comissió promotora', 'fundació', 'UAB' ] },
      { id: 1,  sec: 149,  txt: 'Participació en el Manifest de Bellaterra (1975)',  tags: [ 'Manifest de Bellaterra', 'UAB' ] },
@@ -109,7 +109,7 @@
   nom: 'Carles',
   cognoms: 'Solà Ferrando',
   anys: [ 1994, 2002 ],
-  yt: 'CQ6yaAQhPMg',
+  yt: 'hUGcsiVUVAU',
   events:
    [ { id: 0,  sec: 6,  txt: 'Fundació de l\'Escola d\'Enginyeria',  tags: [ 'escola d\'enginyeria', 'facultats', 'campus', 'progrés' ] },
      { id: 1,  sec: 86,  txt: 'Innovacions acadèmiques',  tags: [ 'titulacions', 'innovació', 'progrés' ] },
@@ -135,7 +135,7 @@
   nom: 'Ana',
   cognoms: 'Ripoll Aracil',
   anys: [ 2009, 2012 ],
-  yt: 'Dgj-cmCc89k',
+  yt: 'xJ-BZ8uYwag',
   events:
    [ { id: 0,  sec: 6,  txt:   'Vicerectora de Professorat',  tags:   [ 'personal acadèmic',     'professorat',     'associats',     'becaris',     'Lluís Ferrer' ] },
      { id: 1,  sec: 247,  txt: 'La primera dona rectora de la UAB',  tags: [ 'dona', 'rectora', 'igualtat' ] },
@@ -157,7 +157,7 @@
   nom: 'Ferran',
   cognoms: 'Sancho Pifarré',
   anys: [ 2012, 2016 ],
-  yt: '99-pbGhW4N4',
+  yt: 'XsIJjqsNx7k',
   events:
    [ { id: 0,  sec: 6,  txt: 'Primer rector alumni de la UAB',  tags: [ 'rector', 'alumni', 'exalumne' ] },
      { id: 1,  sec: 30,  txt: 'D\'aspirant a periodista a estudiant d\'economia',  tags: [ 'anècdota', 'records', 'periodisme', 'economia' ] },

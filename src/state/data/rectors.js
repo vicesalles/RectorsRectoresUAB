@@ -3,7 +3,7 @@ const rectors = [{
         nom: "Antoni",
         cognoms: "Serra Ramoneda",
         url: "serra",
-        mandat: "28.3.1980 – 18.4.1985",
+        mandat: "1980 – 1985",
         imatgeActual: "",
         imatgeHistorica: "",
         videos: [{
@@ -23,7 +23,7 @@ const rectors = [{
         nom: "Ramon",
         cognoms: "Pascual de Sans",
         url: "pascual",
-        mandat: "13.2.1986 – 20.3.1990",
+        mandat: "1986 – 1990",
         imatgeActual: "",
         imatgeHistorica: "",
         videos: [{
@@ -43,7 +43,7 @@ const rectors = [{
         nom: "Josep M.",
         cognoms: "Vallès Casadevall",
         url: "valles",
-        mandat: "20.3.1990 – 25.3.1994",
+        mandat: "1990 – 1994",
         videos: [{
             id: "BWwy6oRwTEU",
             titol: "III Jocs Intercontinentals d'Armes Prehistòriques (1993)",
@@ -66,7 +66,7 @@ const rectors = [{
         nom: "Carles",
         cognoms: "Solà Ferrando",
         url: "sola",
-        mandat: "25.3.1994 – 21.3.2002",
+        mandat: "1994 – 2002",
         imatgeActual: "",
         imatgeHistorica: "",
         videos: [{
@@ -89,7 +89,7 @@ const rectors = [{
         nom: "Lluís",
         cognoms: "Ferrer Caubet",
         url: "ferrer",
-        mandat: "21.3.2002 – 14.1.2009",
+        mandat: "2002 – 2009",
         imatgeActual: "",
         imatgeHistorica: "",
         videos: [{
@@ -109,7 +109,7 @@ const rectors = [{
         nom: "Ana",
         cognoms: "Ripoll Aracil",
         url: "ripoll",
-        mandat: "14.1.2009 – 22.6.2012",
+        mandat: "2009 – 2012",
         imatgeActual: "",
         imatgeHistorica: "",
         videos: [{
@@ -129,7 +129,7 @@ const rectors = [{
         nom: "Ferran",
         cognoms: "Sancho Pifarré",
         url: "sancho",
-        mandat: "22.6.2012 – 6.6.2016",
+        mandat: "2012 – 2016",
         videos: [{
             id: "Stu5ncIs248",
             titol: "Programa Alumni UAB",
