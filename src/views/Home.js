@@ -4,10 +4,7 @@ import {connect} from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
 
 //Components
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
+import {AppBar,Toolbar,Typography,Grid} from '@material-ui/core/';
 import CartaRector from '../components/Home/CartaRector';
 import HistoriesGeneral from '../components/HistoriesGeneral/HistoriesGeneral';
 import Searcher from '../components/Searcher/Searcher';
@@ -35,6 +32,9 @@ const styles = theme => ({
         width: 90,
         height: 90,
       },
+      logo:{       
+        paddingRight:16
+      },
       histories:{
         marginTop:20
       },
@@ -45,6 +45,9 @@ const styles = theme => ({
           marginLeft: "2.5%",
           width:"95%",
           
+      },
+      titolApp:{
+        fontSize:24
       },
       toolbar: theme.mixins.toolbar
 
@@ -72,7 +75,8 @@ class Home extends Component{
         return (<Grid container>
                     <AppBar position="fixed">
                         <Toolbar variant="regular">   
-                            <Typography variant="h5" color="inherit" align="left">
+                            <img alt="Rectors i rectores de la UAB" src={`/img/50Anys_36px.png`} className={classes.logo}/>
+                            <Typography className={classes.titolApp} variant="h5" color="inherit" align="left">
                                 Rectors i rectores de la UAB 
                             </Typography>                     
                         </Toolbar>

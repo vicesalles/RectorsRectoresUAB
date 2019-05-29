@@ -49,9 +49,10 @@ class CartaRector extends Component{
         const r = this.props.rector;
         
         return(<Grid item lg={3} md={6} xs={12} className={classes.fitxaRector}>       
-            <Fade in={true} timeout={{enter:this.props.animacio}} >     
+            <Fade in={true} timeout={{enter:this.props.animacio}} >  
+            <CardActionArea href={`/#/r/${r.url}/`}>    
                 <Card className={classes.cartaRector}>             
-                    <CardActionArea href={`/#/r/${r.url}/`}>       
+                          
                         <CardMedia image={`/img/xl/${r.url}.jpg`} title={r.cognoms} className={classes.fotoRector}/>                
                         
                         <CardContent>
@@ -62,8 +63,9 @@ class CartaRector extends Component{
                                 {r.mandat}
                             </Typography> 
                         </CardContent>
-                    </CardActionArea>
+                    
                 </Card>
+                </CardActionArea>
                 </Fade>
             </Grid>)
     }
