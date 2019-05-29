@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {withRouter} from 'react-router-dom';
+import {withRouter, Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import { withStyles } from '@material-ui/core/styles';
 
@@ -47,7 +47,8 @@ const styles = theme => ({
           
       },
       titolApp:{
-        fontSize:24
+        fontSize:24,
+        fontWeight:"bold",
       },
       toolbar: theme.mixins.toolbar
 
@@ -75,7 +76,7 @@ class Home extends Component{
         return (<Grid container>
                     <AppBar position="fixed">
                         <Toolbar variant="regular">   
-                            <img alt="Rectors i rectores de la UAB" src={`/img/50Anys_36px.png`} className={classes.logo}/>
+                            <Link to="/"><img alt="Rectors i rectores de la UAB" src={`/img/logos/uab.png`} className={classes.logo}/></Link>
                             <Typography className={classes.titolApp} variant="h5" color="inherit" align="left">
                                 Rectors i rectores de la UAB 
                             </Typography>                     
