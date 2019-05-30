@@ -69,7 +69,7 @@ class Searcher extends Component{
                 margin="normal"
                 variant="filled"
                 autoFocus
-                onChange={(event)=>{this.handleChange(event)}}dsfs
+                onChange={(event)=>{this.handleChange(event)}}
                 style={{backgroundColor:'white'}} 
                 InputProps={{ style: { fontSize: 40 } }}
                             
