@@ -60,8 +60,8 @@ class Home extends Component{
     //Crea les Cartes dels Rectors
     factory = (rectors) =>{
 
-        return rectors.map((r,i)=>{
-            return <CartaRector key={r.nom} animacio={i*500} rector={r}/>
+        return rectors.map((r,i)=>{            
+            return <CartaRector key={r.nom} animacio={(i+1)*500} rector={r}/>
         })
 
     }
