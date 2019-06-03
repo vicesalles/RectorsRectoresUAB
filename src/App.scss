@@ -1,11 +1,16 @@
 @import "./parcials/colors";
 
 body{
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
   background-color: darkslategrey;
 }
 
 #root{
   width: 99%;
+  height: 100%;
 }
 
 h3{
@@ -18,6 +23,13 @@ h3{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  height: 100%;
+}
+
+.cos{  
+  top:0px;
+  left: 0px;
+  width: 100%;
   height: 100%;
 }
 
@@ -75,6 +87,7 @@ h3{
 
 #peu{
   display: flex;
+  position: static;
   bottom: 0px;
   flex: 1;
   left: 0px;

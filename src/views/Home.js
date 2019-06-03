@@ -11,7 +11,6 @@ import Searcher from '../components/Searcher/Searcher';
 
 //Accions
 import {globalHistories} from '../state/actions';
-import Footer from '../components/Footer/Footer';
 
 //Estil
 const styles = theme => ({
@@ -23,8 +22,7 @@ const styles = theme => ({
         marginLeft: -18,
         marginRight: 10,
       },
-      graellaRectors:{       
-        marginTop:10,
+      graellaRectors:{     
         minWidth:400
       },
       bigAvatar: {
@@ -36,7 +34,7 @@ const styles = theme => ({
         paddingRight:16
       },
       histories:{
-        marginTop:20
+        marginTop:0
       },
       cercador:{
           display: 'flex',
@@ -73,7 +71,7 @@ class Home extends Component{
 
     render(){
         const { classes } = this.props;
-        return (<Grid container>
+        return (<Grid className="cos" container>
                     <AppBar position="fixed">
                         <Toolbar variant="regular">   
                             <Link to="/"><img alt="Rectors i rectores de la UAB" src={`/img/logos/uab.png`} className={classes.logo}/></Link>
@@ -96,9 +94,8 @@ class Home extends Component{
                     </Grid>
                     <Grid container spacing={24} direction="row" justify="center" alignItems="center" alignContent="center" className={classes.graellaRectors}>
                         {this.factory(this.props.rectors)}
-                    </Grid>
-                 
-                    <Footer/>
+                    </Grid>                
+                
                 </Grid>)
     }
 

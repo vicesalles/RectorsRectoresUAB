@@ -8,7 +8,7 @@ import _ from 'lodash';
 //Components
 import Searcher from '../Searcher/Searcher';
 import Arxiu from './Arxiu/Arxiu';
-import { Grid,Typography, CircularProgress,Paper,Slide, Card, CardActionArea } from '@material-ui/core';
+import { Grid,Typography, CircularProgress,Paper,Slide, CardActionArea } from '@material-ui/core';
 
 //Animacions
 import Fade from '@material-ui/core/Fade';
@@ -21,7 +21,7 @@ import {setCurrentRector} from '../../state/actions';
 const styles = theme => ({    
     
     histories:{
-      marginTop:20
+      marginTop:35
     },
     cercador:{
         display: 'flex',
@@ -53,8 +53,12 @@ const styles = theme => ({
       padding: "1em 1em 1em 1em",
       cursor: "pointer",
       marginTop: "1em",
-      width: "100%",
+      width: "95%",
       fontSize: 18
+    },
+    titolHistories:{
+        paddingTop: 14,
+        paddingBottom: 12
     }
 
    
@@ -78,16 +82,13 @@ class Cos extends Component {
     reproductor = React.createRef();
  
     //Navigate to a given second of the video
-    navigateTo = (s) => {
-        console.log('Navegant',s);    
+    navigateTo = (s) => {           
         this.reproductor.current.internalPlayer.seekTo(s);  
     }
 
     //Pause video
-    pause = () => {
-        console.log('pausa!', this.reproductor.current.internalPlayer);
-        this.reproductor.current.internalPlayer.pauseVideo();
-        
+    pause = () => {        
+        this.reproductor.current.internalPlayer.pauseVideo();        
     }
 
     //Returns the 16:9 height for a given width
@@ -98,7 +99,7 @@ class Cos extends Component {
     //Generates an event list for the current video
     eventsFactory = (evs) => {
         return evs.map((ev,i)=>{
-            return(<Slide in={true} timeout={{enter:i*100}}><CardActionArea><Paper className={this.props.classes.esdevenimentBu} elevation={6} key={i} onClick={()=>this.navigateTo(ev.sec)}>{ev.txt}</Paper></CardActionArea></Slide>)
+            return(<Slide in={true} timeout={{enter:i*100}} key={`${i}-esdeveniment`}><CardActionArea><Paper className={this.props.classes.esdevenimentBu} elevation={6} onClick={()=>this.navigateTo(ev.sec)}>{ev.txt}</Paper></CardActionArea></Slide>)
         })
     }
 
@@ -108,7 +109,6 @@ class Cos extends Component {
         const ampladaPare = this.containerReproductor.current.clientWidth;           
         const ampladaPlayer = window.innerWidth > 960 ? ampladaPare : this.containerReproductor.current.parentNode.clientWidth/1.075;
         
-
         //GETTING URL PARAMS
 
         //Getting rector
@@ -161,6 +161,7 @@ class Cos extends Component {
          }
      }
       
+    // Checking if player is ready
     onReady = () =>{
        
         this.setState({ready:true})
@@ -195,7 +196,7 @@ class Cos extends Component {
                     </div>                            
                     <div className="histories">
                     <div className={classes.toolbar}></div>    
-                        <Typography variant="h3" color="primary" align="center">
+                        <Typography className={classes.titolHistories} variant="h3" color="primary" align="center">
                             Temes d'aquest mandat
                         </Typography>
                         {this.eventsFactory(this.props.histories.filtrades)}
