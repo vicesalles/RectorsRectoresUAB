@@ -21,7 +21,7 @@ const styles = theme => ({
     
   },
   dense: {
-    marginTop: 16,
+    marginTop: 61,
   },
   mainSearcher:{
     fontSize:24
@@ -55,7 +55,6 @@ class Searcher extends Component{
 
     render(){
         
-      const {classes} = this.props;
         const wi = this.props.w ? this.props.w : "100%";
 
         if(this.props.isGlobal){

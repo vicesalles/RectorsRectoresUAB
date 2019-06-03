@@ -6,13 +6,19 @@ import { withStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import Historia from './Historia';
 
-//Estil
 
+//Estil
 const styles = theme => ({
     root: {    
       width: '100%',
       maxWidth: 560,
       backgroundColor: theme.palette.background.paper,
+    },
+    buit:{
+        display:"none",
+        height:0,
+        paddingTop:0,
+        paddingBottom:0
     },
     inline: {
       display: 'inline',
@@ -40,8 +46,8 @@ class HistoriesGeneral extends Component {
 
         // Mira si l'usuari ha fet alguna cerca
         if(filtrades.length===0){
-
-            return(<div></div>)
+            console.log('No hi ha histories');
+            return(<div className={classes.buit}></div>)
 
         }else{
 

@@ -34,6 +34,7 @@ const styles = theme => ({
         paddingRight:16
       },
       histories:{
+        flex:1,
         marginTop:0
       },
       cercador:{
@@ -82,7 +83,7 @@ class Home extends Component{
                     </AppBar>    
                          
                     <Grid container direction="column" justify="center" alignItems="center" alignContent="center" className={classes.cercador} position="fixed">
-                    <div className={classes.toolbar}></div>      
+                        <div className={classes.toolbar}></div>      
                         <Searcher isGlobal={true}/>
                     </Grid>
                     <Grid container className={classes.histories}                    
@@ -92,7 +93,7 @@ class Home extends Component{
                     >                       
                         <HistoriesGeneral/>
                     </Grid>
-                    <Grid container spacing={24} direction="row" justify="center" alignItems="center" alignContent="center" className={classes.graellaRectors}>
+                    <Grid container spacing={24} direction="row" justify="center" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRectors}>
                         {this.factory(this.props.rectors)}
                     </Grid>                
                 

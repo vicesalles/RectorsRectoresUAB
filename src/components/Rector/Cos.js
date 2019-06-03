@@ -40,7 +40,7 @@ const styles = theme => ({
     },
     toolbar:theme.mixins.toolbar,
     carregador:{
-        marginTop:"5em",
+        marginTop:"6em",
         justify:"center",
         alignContent:"center",
         alignItems:"center"
@@ -57,7 +57,7 @@ const styles = theme => ({
       fontSize: 18
     },
     titolHistories:{
-        paddingTop: 14,
+        paddingTop: 10,
         paddingBottom: 12
     }
 
