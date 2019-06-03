@@ -1,6 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+//Estil
+import { withStyles } from '@material-ui/core/styles';
+
 //Components
 import {AppBar, Grid, Typography, Toolbar, IconButton} from '@material-ui/core';
 
@@ -8,7 +11,7 @@ import {AppBar, Grid, Typography, Toolbar, IconButton} from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
 
 //Pàgina de Crèdits
-export default function Credits() {
+function Credits() {
     return (
         <Grid id="credits">
             <AppBar>
@@ -25,6 +28,7 @@ export default function Credits() {
                 </Toolbar>
             </AppBar>
             <Grid>
+                <Toolbar variant="dense" hidden={true}> </Toolbar> 
                 <Grid>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut mauris erat.
                         Sed at viverra justo. In eleifend ante vitae fringilla condimentum. Duis
@@ -83,3 +87,6 @@ export default function Credits() {
         </Grid>
     )
 }
+
+
+export default withStyles()(Credits)
