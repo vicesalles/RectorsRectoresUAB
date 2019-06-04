@@ -80,8 +80,8 @@ function Credits(props) {
                         Mínima manipulació i facilitar-ne l'exploració. Aquest és el valor de la funcionalitat amb la qual hem dotat aquest documental web.
                     </Typography>
                 </Grid>
-                <Grid item className={classes.titolSeccioCredits}>
-                    <Typography variant="h6" color="inherit" align="left">
+                <Grid item className={classes.creditsSubGrid}>
+                    <Typography variant="h6" color="inherit" align="left" className={classes.titolSeccioCredits}>
                         Una producció de la Unitat d'Audiovisuals i Multimèdia
                     </Typography>                 
                     <Typography component="p" color="inherit" align="left">
