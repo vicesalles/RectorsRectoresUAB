@@ -41,7 +41,7 @@ const initialState = {
     nom: 'Ramon',
     cognoms: 'Pascual de Sans',
     anys: [1986, 1990],
-    yt: 'I8ikXkxqSHg',
+    yt: '-wqk5FmFvKg',
     events:
       [{ id: 0, sec: 6, txt: 'Breu període com a rector en funcions (1980)', tags: ['rector', 'Josep Laporte', 'Serra Ramoneda'] },
       { id: 1, sec: 69, txt: 'Director general d\'Universitats', tags: ['política', 'Generalitat', 'Jordi Pujol'] },
@@ -92,7 +92,7 @@ const initialState = {
     nom: 'Antoni',
     cognoms: 'Serra Ramoneda',
     anys: [1980, 1985],
-    yt: '7Pv4wzcW8H0',
+    yt: '9VDo70N9n3c',
     events:
       [{ id: 0, sec: 6, txt: 'Secretari de la Comissió Promotora de la UAB', tags: ['comissió promotora', 'fundació', 'UAB'] },
       { id: 1, sec: 150, txt: 'Participació en el Manifest de Bellaterra (1975)', tags: ['Manifest de Bellaterra', 'UAB'] },
@@ -150,7 +150,7 @@ const initialState = {
     nom: 'Ana',
     cognoms: 'Ripoll Aracil',
     anys: [2009, 2012],
-    yt: 'xJ-BZ8uYwag',
+    yt: 'yCCNB2Ffg-M',
     events:
       [{ id: 0, sec: 6, txt: 'Vicerectora de Professorat', tags: ['personal acadèmic', 'professorat', 'associats', 'becaris', 'Lluís Ferrer'] },
       { id: 1, sec: 247, txt: 'La primera dona rectora de la UAB', tags: ['dona', 'rectora', 'igualtat'] },
