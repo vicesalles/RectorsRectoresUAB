@@ -99,7 +99,7 @@ class Cos extends Component {
     //Generates an event list for the current video
     eventsFactory = (evs) => {
         return evs.map((ev,i)=>{
-            return(<Slide in={true} timeout={{enter:i*100}} key={`${i}-esdeveniment`}><CardActionArea><Paper className={this.props.classes.esdevenimentBu} elevation={6} onClick={()=>this.navigateTo(ev.sec)}>{ev.txt}</Paper></CardActionArea></Slide>)
+            return(<Slide in={true} timeout={{enter:i*100}} key={`${i}-esdeveniment`}><CardActionArea><Paper className={this.props.classes.esdevenimentBu} elevation={3} onClick={()=>this.navigateTo(ev.sec)}>{ev.txt}</Paper></CardActionArea></Slide>)
         })
     }
 
@@ -182,7 +182,7 @@ class Cos extends Component {
         if(isBigScreen(window.innerWidth)){
 
             return(<Grid container spacing={24} direction="row" justify="space-between" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRector}>
-                <div className={classes.toolbar}></div>                     
+                <div className={classes.toolbar}></div>  
                     <div ref={this.containerReproductor} className="reproductor">
                         <div className={classes.toolbar}></div>    
                             {!this.state.ready &&<Grid className={classes.carregador}><CircularProgress size={80} /></Grid>}
@@ -193,7 +193,8 @@ class Cos extends Component {
                             </Fade>  
                         <Searcher w={this.state.width}/>
                         <Arxiu pausaVideoGeneral = {this.pause}  in={this.state.ready}/>                        
-                    </div>                            
+                    </div>   
+                                        
                     <div className="histories">
                     <div className={classes.toolbar}></div>    
                         <Typography className={classes.titolHistories} variant="h3" color="primary" align="center">

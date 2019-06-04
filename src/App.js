@@ -14,6 +14,9 @@ import Credits from './views/Credits';
 //Peu
 import Footer from './components/Footer/Footer';
 
+//Share
+import Share from './components/Share/Share';
+
 const theme = createMuiTheme({
     palette:{
       primary:{
@@ -36,7 +39,9 @@ class App extends Component {
             <Route exact path="/r/:id/:secs?" component={Rector}/>
             <Route exact path="/credits" component={Credits}/>
           </Switch>
+          <Share/>
         </MuiThemeProvider>
+        
         <Footer/>
       </div>
     );

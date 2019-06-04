@@ -80,8 +80,7 @@ class Home extends Component{
                                 Rectors i rectores de la UAB 
                             </Typography>                     
                         </Toolbar>
-                    </AppBar>    
-                         
+                    </AppBar>                                              
                     <Grid container direction="column" justify="center" alignItems="center" alignContent="center" className={classes.cercador} position="fixed">
                         <div className={classes.toolbar}></div>      
                         <Searcher isGlobal={true}/>
@@ -95,8 +94,7 @@ class Home extends Component{
                     </Grid>
                     <Grid container spacing={24} direction="row" justify="center" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRectors}>
                         {this.factory(this.props.rectors)}
-                    </Grid>                
-                
+                    </Grid>   
                 </Grid>)
     }
 
