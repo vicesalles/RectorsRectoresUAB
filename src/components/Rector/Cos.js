@@ -216,7 +216,7 @@ class Cos extends Component {
 
         }else{
 
-            return(<Grid container spacing={12} direction="column" justify="space-between" alignItems="flex-start" alignContent="flex-start">
+            return(<Grid container spacing={8} direction="column" justify="space-between" alignItems="flex-start" alignContent="flex-start">
                 <div className={classes.toolbar}></div>     
                     <div ref={this.containerReproductor} className="reproductorMobil">
                     <div className={classes.toolbar}></div>    

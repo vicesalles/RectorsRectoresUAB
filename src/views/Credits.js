@@ -10,6 +10,10 @@ import {AppBar, Grid, Typography, Toolbar, IconButton} from '@material-ui/core';
 //Icona 
 import HomeIcon from '@material-ui/icons/Home';
 
+const estilCredits = theme =>({
+
+})
+
 //Pàgina de Crèdits
 function Credits() {
     return (
@@ -89,4 +93,4 @@ function Credits() {
 }
 
 
-export default withStyles()(Credits)
+export default withStyles(estilCredits)(Credits)

@@ -31,7 +31,8 @@ const estilShare = theme =>({
         position:"fixed",
         bottom: 15,
         right: 15,
-        backgroundColor: theme.palette.primary.main
+        backgroundColor: theme.palette.primary.main,
+        zIndex:99,
     },
     closeButton:{
         height:32,
@@ -58,9 +59,9 @@ class Share extends Component {
     }
 
     componentDidMount(){
-        
+        console.log('share', window.location.href );
         //Setting URL        
-        const currentUrl = `http://localhost:3000/#${this.props.location.pathname}`
+        const currentUrl = window.location.href;
         this.setState({currentUrl});    
             
 
