@@ -45,8 +45,7 @@ class HistoriesGeneral extends Component {
         
 
         // Mira si l'usuari ha fet alguna cerca
-        if(filtrades.length===0){
-            console.log('No hi ha histories');
+        if(filtrades.length===0){            
             return(<div className={classes.buit}></div>)
 
         }else{

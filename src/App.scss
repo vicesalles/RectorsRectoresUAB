@@ -3,14 +3,14 @@
 body{
   top:0;
   left: 0;
-  width: 100%;
-  height: 100vh;
+  width: 99%;
+  min-height: 100vh;
   background-color: darkslategrey;
 }
 
 #root{
   width: 99%;
-  height: 100%;
+  min-height: 100vh;
 }
 
 h3{
@@ -23,14 +23,14 @@ h3{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100%;
+  min-height: 100vh;
 }
 
 .cos{  
   top:0px;
   left: 0px;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
 }
 
 .rector{
@@ -63,6 +63,7 @@ h3{
 
 .reproductor{  
   flex: 3;
+  z-index: 98;
   position: sticky;
   position: -webkit-sticky;
   top: 1em;  
@@ -70,6 +71,18 @@ h3{
   background-color: darkslategrey;
 
 }
+
+.reproductorMobil{  
+  flex: 1;
+  width: 100%;
+  z-index: 98;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 2px;
+  background-color: darkslategrey;
+
+}
+
 
 .Searcher{
   position: sticky;
@@ -88,11 +101,12 @@ h3{
 #peu{
   display: flex;
   position: static;
+  top: 1em;
   bottom: 0px;
   flex: 1;
   left: 0px;
   justify-content: flex-start;
-  width: 100%;
+  width: 99%;
   font-family: 'Courier New', Courier, monospace;
   padding-top: 1em;
   padding-bottom: 2em;

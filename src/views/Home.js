@@ -56,6 +56,10 @@ const styles = theme => ({
 
 class Home extends Component{
 
+    state={
+        title:"Rectors i rectores de la UAB"
+    }
+
     //Crea les Cartes dels Rectors
     factory = (rectors) =>{
 
@@ -68,6 +72,10 @@ class Home extends Component{
     componentDidMount(){
         //Estableix es histories
         this.props.dispatch(globalHistories());
+        //If mobile change title
+      if(window.innerWidth<=600){
+        this.setState({title:"Rectors i rectores"})
+      }
     }
 
     render(){
@@ -77,7 +85,7 @@ class Home extends Component{
                         <Toolbar variant="regular">   
                             <Link to="/"><img alt="Rectors i rectores de la UAB" src={`/img/logos/uab.png`} className={classes.logo}/></Link>
                             <Typography className={classes.titolApp} variant="h5" color="inherit" align="left">
-                                Rectors i rectores de la UAB 
+                               {this.state.title}
                             </Typography>                     
                         </Toolbar>
                     </AppBar>                                              
@@ -92,7 +100,7 @@ class Home extends Component{
                     >                       
                         <HistoriesGeneral/>
                     </Grid>
-                    <Grid container spacing={24} direction="row" justify="center" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRectors}>
+                    <Grid container direction="row" justify="center" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRectors}>
                         {this.factory(this.props.rectors)}
                     </Grid>   
                 </Grid>)

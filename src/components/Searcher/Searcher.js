@@ -32,7 +32,8 @@ const styles = theme => ({
 class Searcher extends Component{
 
     state = {
-        cercador: ""
+        cercador: "",
+        searchTextSize: 40
       };
     
       handleChange = (event) => {
@@ -46,12 +47,19 @@ class Searcher extends Component{
           this.props.dispatch(searchText(text,true))
         }else{
           this.props.dispatch(searchText(text))
-        }
-
-        
+        }      
        
         
       };
+
+    componentDidMount(){
+
+      //If mobile make text smaller
+      if(window.innerWidth<=600){
+        this.setState({searchTextSize:24})
+      }
+
+    }
 
     render(){
         
@@ -70,7 +78,7 @@ class Searcher extends Component{
                 autoFocus
                 onChange={(event)=>{this.handleChange(event)}}
                 style={{backgroundColor:'white'}} 
-                InputProps={{ style: { fontSize: 40 } }}
+                InputProps={{ style: { fontSize: this.state.searchTextSize } }}
                             
                 InputLabelProps={{
                     shrink: true,

@@ -23,6 +23,17 @@ const styles = theme => ({
     histories:{
       marginTop:35
     },
+    historiesMob:{      
+        flex:1,
+        flexDirection: "column",
+        justifyContent: "flex-start",
+        alignItems: "flex-start",
+        alignContent: "flex-start",        
+        width: "90%",
+        marginLeft: 10,
+        marginRight:10
+       
+    },
     cercador:{
         display: 'flex',
         flexWrap: 'wrap',
@@ -61,7 +72,6 @@ const styles = theme => ({
         paddingBottom: 12
     }
 
-   
 });
 
 class Cos extends Component {
@@ -196,7 +206,7 @@ class Cos extends Component {
                     </div>   
                                         
                     <div className="histories">
-                    <div className={classes.toolbar}></div>    
+                        <div className={classes.toolbar}></div>    
                         <Typography className={classes.titolHistories} variant="h3" color="primary" align="center">
                             Temes d'aquest mandat
                         </Typography>
@@ -206,20 +216,17 @@ class Cos extends Component {
 
         }else{
 
-            return(<Grid container spacing={24} direction="column" justify="space-between" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRector}>
+            return(<Grid container spacing={12} direction="column" justify="space-between" alignItems="flex-start" alignContent="flex-start">
                 <div className={classes.toolbar}></div>     
-                    <div ref={this.containerReproductor} className="reproductor">
+                    <div ref={this.containerReproductor} className="reproductorMobil">
                     <div className={classes.toolbar}></div>    
                         <YouTube ref={this.reproductor} videoId={current.yt} opts={this.state.playerOptions} onReady={this._onReady}></YouTube>
                         <Searcher w={this.state.width}/>
                     </div>            
-                    <div className="histories">
-                        <Typography variant="h3" color="primary" align="center">
-                            Temes d'aquest mandat
-                        </Typography>
+                    <div className={classes.historiesMob}>                        
                         {this.eventsFactory(this.props.histories.filtrades)}
                     </div>
-                    <Arxiu pausaVideoGeneral = {this.pause}  in={this.state.ready}/>
+                    
                 </Grid>)
 
         }
