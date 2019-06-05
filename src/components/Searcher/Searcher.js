@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 import {withRouter} from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 
-
 //Components
 import {TextField,Paper, InputBase} from '@material-ui/core/';
 
@@ -29,9 +28,9 @@ const styles = theme => ({
   caixaCercador:{
     backgroundColor:"white",
     paddingTop: 5,
-    paddingBottom:5,
-    paddingLeft: 5,
-    marginLeft:5,    
+    paddingBottom:5, 
+    marginLeft:5,   
+    paddingLeft:5,
     borderRadius:10
   }
  
