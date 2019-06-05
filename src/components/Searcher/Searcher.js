@@ -31,8 +31,7 @@ const styles = theme => ({
     paddingTop: 5,
     paddingBottom:5,
     paddingLeft: 5,
-    marginLeft:5,
-    paddingRight: 5,
+    marginLeft:5,    
     borderRadius:10
   }
  
