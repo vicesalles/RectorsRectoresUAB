@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import {Grid,Fab} from '@material-ui/core';
 import SendIcon from '@material-ui/icons/Send';
 import CloseIcon from '@material-ui/icons/Close';
+import ShareIcon from '@material-ui/icons/Share';
 
 
 import {
@@ -88,7 +89,7 @@ class Share extends Component {
               return(
                 
                 <Fab onClick={this.clickHandler} color="primary" aria-label="Compartir" className={classes.botoShare}>
-                    <SendIcon/>
+                    <ShareIcon/>
                 </Fab>
                   
                 )

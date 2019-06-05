@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 
 
 //Components
-import TextField from '@material-ui/core/TextField';
+import {TextField,Paper, InputBase} from '@material-ui/core/';
 
 //Accions
 import {searchText} from '../../state/actions';
@@ -25,6 +25,15 @@ const styles = theme => ({
   },
   mainSearcher:{
     fontSize:24
+  },
+  caixaCercador:{
+    backgroundColor:"white",
+    paddingTop: 5,
+    paddingBottom:5,
+    paddingLeft: 5,
+    marginLeft:5,
+    paddingRight: 5,
+    borderRadius:10
   }
  
 });
@@ -33,7 +42,7 @@ class Searcher extends Component{
 
     state = {
         cercador: "",
-        searchTextSize: 40
+        searchTextSize: 32
       };
     
       handleChange = (event) => {
@@ -64,33 +73,32 @@ class Searcher extends Component{
     render(){
         
         const wi = this.props.w ? this.props.w : "100%";
+        const {classes} = this.props;
 
         if(this.props.isGlobal){
-          return(<div className="Searcher">
-            <TextField
-                id="outlined-full-width"
-                label="Cercador"                          
-                placeholder="Explora els mandats..."               
+          return(<Paper className="Searcher">
+            <InputBase
+                id="outlined-full-width"                              
+                placeholder="Cerca moments... ex: Recerca"               
                 fullWidth
                 color="white"
                 margin="normal"
                 variant="filled"
                 autoFocus
                 onChange={(event)=>{this.handleChange(event)}}
-                style={{backgroundColor:'white'}} 
+                className= {classes.caixaCercador}
+                style={{fontSize: this.state.searchTextSize}} 
                 InputProps={{ style: { fontSize: this.state.searchTextSize, backgroundColor:"white" } }}
                             
-                InputLabelProps={{
-                    shrink: true,
-                }}
+             
         />
-            </div>)
+            </Paper>)
         }else{
           return(<div className="Searcher">
             <TextField 
                 id="outlined-full-width"
                 label="Cercador d'aquest mandat"                
-                placeholder="Cercar un tema..."               
+                placeholder="Cercar un moment..."               
                 fullWidth
                 color="white"
                 margin="normal"

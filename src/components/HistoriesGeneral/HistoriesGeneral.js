@@ -10,8 +10,7 @@ import Historia from './Historia';
 //Estil
 const styles = theme => ({
     root: {    
-      width: '100%',
-      maxWidth: 560,
+      width: '90%',     
       backgroundColor: theme.palette.background.paper,
     },
     buit:{
@@ -35,7 +34,7 @@ class HistoriesGeneral extends Component {
      */
     fabricaHistories = (hs) =>{
 
-        return hs.map((h,i)=><Historia key={i} historia={h}/>)
+        return hs.map((h,i)=><Historia key={`${i}-historia`} historia={h}/>)
 
     }
 
@@ -52,7 +51,7 @@ class HistoriesGeneral extends Component {
 
             return (
                 <List 
-                spacing={0}
+                spacing={4}
                 direction="column"            
                 justify="center"
                 className={classes.root} 

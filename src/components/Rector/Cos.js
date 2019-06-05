@@ -65,7 +65,10 @@ const styles = theme => ({
       cursor: "pointer",
       marginTop: "1em",
       width: "95%",
-      fontSize: 18
+      fontSize: 18,
+      "&:hover":{         
+          backgroundColor:"#ececec",         
+      }
     },
     titolHistories:{
         paddingTop: 10,
@@ -88,6 +91,14 @@ class Cos extends Component {
     //Ref for the player's container
     containerReproductor = React.createRef();
 
+    //elevation hover
+
+    elevation = (e) => {
+
+        e.target.elevation(2)
+
+    }
+
     //Ref for the player
     reproductor = React.createRef();
  
@@ -109,7 +120,7 @@ class Cos extends Component {
     //Generates an event list for the current video
     eventsFactory = (evs) => {
         return evs.map((ev,i)=>{
-            return(<Slide in={true} timeout={{enter:(i+1)*100}} key={`${i}-esdeveniment`}><CardActionArea><Paper className={this.props.classes.esdevenimentBu} elevation={3} onClick={()=>this.navigateTo(ev.sec)}>{ev.txt}</Paper></CardActionArea></Slide>)
+            return(<Slide in={true} timeout={{enter:(i+1)*100}} key={`${i}-esdeveniment`}><Paper className={this.props.classes.esdevenimentBu} elevation={3} onClick={()=>this.navigateTo(ev.sec)}>{ev.txt}</Paper></Slide>)
         })
     }
 
@@ -208,7 +219,7 @@ class Cos extends Component {
                     <div className="histories">
                         <div className={classes.toolbar}></div>    
                         <Typography className={classes.titolHistories} variant="h3" color="primary" align="center">
-                            Temes d'aquest mandat
+                            Moments del mandat
                         </Typography>
                         {this.eventsFactory(this.props.histories.filtrades)}
                     </div>

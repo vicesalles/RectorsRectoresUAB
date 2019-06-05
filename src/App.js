@@ -40,9 +40,8 @@ class App extends Component {
             <Route exact path="/credits" component={Credits}/>
           </Switch>
           <Share/>
-        </MuiThemeProvider>
-        
-        <Footer/>
+        </MuiThemeProvider>        
+   
       </div>
     );
   }

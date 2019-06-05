@@ -10,7 +10,6 @@ import Typography from '@material-ui/core/Typography';
 const styles = theme => ({
   root: {
     width: '100%',
-    maxWidth: 560,
     backgroundColor: theme.palette.background.paper,
   },
   inline: {
@@ -18,8 +17,14 @@ const styles = theme => ({
   },
   principal: {
     display: 'inline',    
-    fontWeight:"bold"
+    fontWeight:"bold",
+    fontSize:18
   },
+  item:{
+    marginTop:5,
+    paddingTop:5,
+    paddingBottom:5
+  }
 });
 
 function Historia(props){
@@ -28,7 +33,7 @@ function Historia(props){
 
   return (
 
-      <ListItem button component={Link} to={`./r/${historia.url}/${historia.sec}`} alignItems="flex-start">
+      <ListItem button component={Link} className={classes.item} to={`./r/${historia.url}/${historia.sec}`} alignItems="flex-start">
         <ListItemAvatar>
           <Avatar alt={historia.nom} src={`/img/s/${historia.url}.jpg`} />
         </ListItemAvatar>

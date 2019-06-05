@@ -8,6 +8,7 @@ import {AppBar,Toolbar,Typography,Grid} from '@material-ui/core/';
 import CartaRector from '../components/Home/CartaRector';
 import HistoriesGeneral from '../components/HistoriesGeneral/HistoriesGeneral';
 import Searcher from '../components/Searcher/Searcher';
+import Footer from '../components/Footer/Footer';
 
 //Accions
 import {globalHistories} from '../state/actions';
@@ -23,7 +24,8 @@ const styles = theme => ({
         marginRight: 10,
       },
       graellaRectors:{     
-        minWidth:400
+        minWidth:400,
+        paddingBottom:0
       },
       bigAvatar: {
         margin: 10,
@@ -103,6 +105,7 @@ class Home extends Component{
                     <Grid container direction="row" justify="center" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRectors}>
                         {this.factory(this.props.rectors)}
                     </Grid>   
+                    <Footer/>
                 </Grid>)
     }
 
