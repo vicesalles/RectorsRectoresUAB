@@ -7,7 +7,7 @@ const initialState = {
     nom: 'Lluís',
     cognoms: 'Ferrer Caubet',
     anys: [2002, 2009],
-    yt: 'tHf6Ik9PAFo',
+    yt: 'tVsypwSgjEo',
     events:
       [{ id: 0, sec: 6, txt: 'Primer rector escollit en vigència de la LOU', tags: ['LOU', 'PP', 'marc legal'] },
       { id: 1, sec: 85, txt: 'Conseqüències de la LOU', tags: ['LOU', 'conseqüències', 'marc legal'] },
@@ -41,7 +41,7 @@ const initialState = {
     nom: 'Ramon',
     cognoms: 'Pascual de Sans',
     anys: [1986, 1990],
-    yt: '-wqk5FmFvKg',
+    yt: 'P1ezoMGoj3s',
     events:
       [{ id: 0, sec: 6, txt: 'Breu període com a rector en funcions (1980)', tags: ['rector', 'Josep Laporte', 'Serra Ramoneda'] },
       { id: 1, sec: 69, txt: 'Director general d\'Universitats', tags: ['política', 'Generalitat', 'Jordi Pujol'] },
@@ -67,7 +67,7 @@ const initialState = {
     nom: 'Josep Maria',
     cognoms: 'Vallès Casadevall',
     anys: [1990, 1994],
-    yt: 'QyFwF6CZzOw',
+    yt: 'kDLnLRxmQ8I',
     events:
       [{ id: 0, sec: 7, txt: 'Les adversitats de l\'inici del mandat', tags: ['finançament', 'docència', 'mandat'] },
       { id: 1, sec: 131, txt: 'Noves facultats', tags: ['polítiques', 'sociologia', 'traducció', 'educació', 'facultats', 'campus', 'progrés'] },
@@ -92,7 +92,7 @@ const initialState = {
     nom: 'Antoni',
     cognoms: 'Serra Ramoneda',
     anys: [1980, 1985],
-    yt: '9VDo70N9n3c',
+    yt: 'Tyqd_7vOUUo',
     events:
       [{ id: 0, sec: 6, txt: 'Secretari de la Comissió Promotora de la UAB', tags: ['comissió promotora', 'fundació', 'UAB'] },
       { id: 1, sec: 150, txt: 'Participació en el Manifest de Bellaterra (1975)', tags: ['Manifest de Bellaterra', 'UAB'] },
@@ -122,7 +122,7 @@ const initialState = {
     nom: 'Carles',
     cognoms: 'Solà Ferrando',
     anys: [1994, 2002],
-    yt: 'hUGcsiVUVAU',
+    yt: 'p1AMrDu8vv4',
     events:
       [{ id: 0, sec: 6, txt: 'Fundació de l\'Escola d\'Enginyeria', tags: ['escola d\'enginyeria', 'facultats', 'campus', 'progrés'] },
       { id: 1, sec: 87, txt: 'Innovacions acadèmiques', tags: ['titulacions', 'innovació', 'progrés'] },
@@ -150,7 +150,7 @@ const initialState = {
     nom: 'Ana',
     cognoms: 'Ripoll Aracil',
     anys: [2009, 2012],
-    yt: 'yCCNB2Ffg-M',
+    yt: '-fQM3O1FNcE',
     events:
       [{ id: 0, sec: 6, txt: 'Vicerectora de Professorat', tags: ['personal acadèmic', 'professorat', 'associats', 'becaris', 'Lluís Ferrer'] },
       { id: 1, sec: 247, txt: 'La primera dona rectora de la UAB', tags: ['dona', 'rectora', 'igualtat'] },
@@ -174,7 +174,7 @@ const initialState = {
     nom: 'Ferran',
     cognoms: 'Sancho Pifarré',
     anys: [2012, 2016],
-    yt: 'XsIJjqsNx7k',
+    yt: 'caFYiS66wVc',
     events:
       [{ id: 0, sec: 6, txt: 'Primer rector alumni de la UAB', tags: ['rector', 'alumni', 'exalumne'] },
       { id: 1, sec: 31, txt: 'D\'aspirant a periodista a estudiant d\'economia', tags: ['anècdota', 'records', 'periodisme', 'economia'] },
