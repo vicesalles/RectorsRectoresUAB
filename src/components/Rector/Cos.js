@@ -109,7 +109,7 @@ class Cos extends Component {
     //Generates an event list for the current video
     eventsFactory = (evs) => {
         return evs.map((ev,i)=>{
-            return(<Slide in={true} timeout={{enter:i*100}} key={`${i}-esdeveniment`}><CardActionArea><Paper className={this.props.classes.esdevenimentBu} elevation={3} onClick={()=>this.navigateTo(ev.sec)}>{ev.txt}</Paper></CardActionArea></Slide>)
+            return(<Slide in={true} timeout={{enter:(i+1)*100}} key={`${i}-esdeveniment`}><CardActionArea><Paper className={this.props.classes.esdevenimentBu} elevation={3} onClick={()=>this.navigateTo(ev.sec)}>{ev.txt}</Paper></CardActionArea></Slide>)
         })
     }
 

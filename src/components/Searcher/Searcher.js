@@ -69,16 +69,16 @@ class Searcher extends Component{
           return(<div className="Searcher">
             <TextField
                 id="outlined-full-width"
-                label="Cercador"                
+                label="Cercador"                          
                 placeholder="Explora els mandats..."               
                 fullWidth
-                color="gray"
+                color="white"
                 margin="normal"
                 variant="filled"
                 autoFocus
                 onChange={(event)=>{this.handleChange(event)}}
                 style={{backgroundColor:'white'}} 
-                InputProps={{ style: { fontSize: this.state.searchTextSize } }}
+                InputProps={{ style: { fontSize: this.state.searchTextSize, backgroundColor:"white" } }}
                             
                 InputLabelProps={{
                     shrink: true,
@@ -87,18 +87,18 @@ class Searcher extends Component{
             </div>)
         }else{
           return(<div className="Searcher">
-            <TextField
+            <TextField 
                 id="outlined-full-width"
                 label="Cercador d'aquest mandat"                
                 placeholder="Cercar un tema..."               
                 fullWidth
-                color="gray"
+                color="white"
                 margin="normal"
                 variant="filled"
                 autoFocus
                 onChange={(event)=>{this.handleChange(event)}}
                 style={{backgroundColor:'white', width:wi}}   
-                            
+                InputProps={{ style: { backgroundColor:"white" } }}
                 InputLabelProps={{
                     shrink: true,
                 }}
