@@ -27,6 +27,7 @@ const styles = theme => ({
   },
   caixaCercador:{
     backgroundColor:"white",
+    width:"95%",
     paddingTop: 5,
     paddingBottom:5, 
     marginLeft:5,   
@@ -79,16 +80,12 @@ class Searcher extends Component{
                 id="outlined-full-width"                              
                 placeholder="Cerca moments... ex: Recerca"               
                 fullWidth
-                color="white"
-                margin="normal"
+                color="white"                
                 variant="filled"
                 autoFocus
                 onChange={(event)=>{this.handleChange(event)}}
                 className= {classes.caixaCercador}
-                style={{fontSize: this.state.searchTextSize}} 
-                InputProps={{ style: { fontSize: this.state.searchTextSize, backgroundColor:"white" } }}
-                            
-             
+                style={{fontSize: this.state.searchTextSize}}  
         />
             </Paper>)
         }else{
