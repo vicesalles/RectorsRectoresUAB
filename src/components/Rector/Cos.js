@@ -8,7 +8,7 @@ import _ from 'lodash';
 //Components
 import Searcher from '../Searcher/Searcher';
 import Arxiu from './Arxiu/Arxiu';
-import { Grid,Typography, CircularProgress,Paper,Slide, CardActionArea } from '@material-ui/core';
+import { Grid,Typography, CircularProgress,Paper,Slide} from '@material-ui/core';
 
 //Animacions
 import Fade from '@material-ui/core/Fade';

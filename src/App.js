@@ -11,9 +11,6 @@ import Home from './views/Home';
 import Rector from './views/Rector';
 import Credits from './views/Credits';
 
-//Peu
-import Footer from './components/Footer/Footer';
-
 //Share
 import Share from './components/Share/Share';
 

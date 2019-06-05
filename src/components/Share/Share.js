@@ -1,9 +1,7 @@
 import React,{Component} from 'react';
-
 import {withRouter} from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import {Grid,Fab} from '@material-ui/core';
-import SendIcon from '@material-ui/icons/Send';
 import CloseIcon from '@material-ui/icons/Close';
 import ShareIcon from '@material-ui/icons/Share';
 

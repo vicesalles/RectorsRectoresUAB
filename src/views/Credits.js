@@ -72,7 +72,7 @@ function Credits(props) {
                         per boca dels rectors i rectores que l'han governat.
                     </Typography>
                     <Typography className={classes.about} color="inherit" align="left">
-                        Guiats pel <a href="https://www.youtube.com/watch?v=1hVwAQOu83Y" className={classes.enllac} target="_blank">llibre del 50è aniversari</a>, entrevista rere entrevista, vam anar constatant el valor històric i
+                        Guiats pel <a href="https://www.youtube.com/watch?v=1hVwAQOu83Y" rel="noopener noreferrer" className={classes.enllac} target="_blank">llibre del 50è aniversari</a>, entrevista rere entrevista, vam anar constatant el valor històric i
                         documental de cadascun dels testimonis. Com se suposava que havíem d'editar aquests discursos? Quin valor podíem aportar-hi?
                     </Typography>
                     <Typography className={classes.about} color="inherit" align="left">
