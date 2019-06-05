@@ -122,7 +122,7 @@ const initialState = {
     nom: 'Carles',
     cognoms: 'Solà Ferrando',
     anys: [1994, 2002],
-    yt: 'p1AMrDu8vv4',
+    yt: 'jpM8quj-HrU',
     events:
       [{ id: 0, sec: 6, txt: 'Fundació de l\'Escola d\'Enginyeria', tags: ['escola d\'enginyeria', 'facultats', 'campus', 'progrés'] },
       { id: 1, sec: 87, txt: 'Innovacions acadèmiques', tags: ['titulacions', 'innovació', 'progrés'] },
