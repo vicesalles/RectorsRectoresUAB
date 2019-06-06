@@ -13,12 +13,7 @@ const styles = theme => ({
   container: {
     display: 'flex',
     flexWrap: 'wrap',
-  },
-  textField: {
-    marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit,    
-    
-  },
+  },  
   dense: {
     marginTop: 61,
   },
@@ -29,9 +24,7 @@ const styles = theme => ({
     backgroundColor:"white",
     width:"95%",
     paddingTop: 5,
-    paddingBottom:5, 
-    marginLeft:5,   
-    paddingLeft:5,
+    paddingBottom:5,     
     borderRadius:10
   }
  
