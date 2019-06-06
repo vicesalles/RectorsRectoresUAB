@@ -15,7 +15,7 @@ class CartaVideo extends Component {
         return(
             <Fade in={this.props.in} timeout={{enter:this.props.animacio}}>
                     <CardActionArea className={classes.card} onClick={()=>{this.props.pausaVideoGeneral()}} href={`https://www.youtube.com/watch?v=${id}&sub_confirmation=1`} target="_blank">
-                        <Card >                           
+                        <Card>                           
                                 <CardMedia
                                     className={classes.media}
                                     image={`https://img.youtube.com/vi/${id}/hqdefault.jpg`}

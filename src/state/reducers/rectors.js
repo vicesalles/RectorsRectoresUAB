@@ -27,14 +27,17 @@ const initialState ={
         url: "pascual",
         mandat: "1986 – 1990",       
         videos: [{
+            id: "hL_9Nagm2ZI",
+            titol: "Benvinguts a la UAB (1986)"
+        },{
             id: "1PPcxS40wM0",
             titol: "Festa Major de la UAB (1986)",
         },{
             id: "sglxs3W5Cx8",
             titol: "Festa Major de la UAB (1987)",
         },{
-            id: "ppR2eklHhuc",
-            titol: "Gernika: símbol d'una tragèdia (1987)"
+            id: "gBewm4S8-mk",
+            titol: "Festa Major de la UAB (1988)",
         }],
         vikipedia: "https://ca.wikipedia.org/wiki/Ramon_Pascual_de_Sans"
     },
@@ -45,8 +48,8 @@ const initialState ={
         url: "valles",
         mandat: "1990 – 1994",
         videos: [{
-            id: "BWwy6oRwTEU",
-            titol: "III Jocs Intercontinentals d'Armes Prehistòriques (1993)",
+            id: "umz2UBs5p3E",
+            titol: "Benvinguts a la UAB (1993)",
         },{
             id: "iXZtBcvV26Q",
             titol: "Jack Steinberger 'honoris causa' (1992)",
@@ -75,8 +78,8 @@ const initialState ={
             id: "l0sIN_IOg18",
             titol: "Acte d'inauguració de les Columnes de la UAB (1999)",
         },{
-            id: "0GdyDLrD6Ow",
-            titol: "Humo en los Ojos. Yámanas de Tierra del Fuego (1997)"
+            id: "XvuSnm4ls58",
+            titol: "Nova biblioteca d'Humanitats (1997)"
         }],
         vikipedia: "https://ca.wikipedia.org/wiki/Carles_Sol%C3%A0_i_Ferrando"
     },
@@ -141,9 +144,7 @@ const initialState ={
 function rectors(state=initialState,action){
     
     const {type,payload} = action;
-
-    
-
+   
     switch(type){
         case SET_CURRENT_RECTOR:        
             return {
