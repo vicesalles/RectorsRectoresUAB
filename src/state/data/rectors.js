@@ -6,13 +6,13 @@ const rectors = [{
     mandat: "1980 – 1985",       
     videos: [{
         id: "kDdeHw950Ek",
-        titol: "Entrevista a Jordi Bayona (1984-85)",
+        titol: "Entrevista a Jordi Bayona (1984)",
     },{
         id: "oOJh-233_yI",
         titol: "Actuació del Cor de Cambra de la UAB (1984)",    
     },{
         id: "1D992e_mpKU",
-        titol: "Informatització de la premsa a Catalunya (1984-87)"
+        titol: "Informatització de la premsa a Catalunya (1984)"
     }],
     vikipedia: "https://ca.wikipedia.org/wiki/Antoni_Serra_i_Ramoneda"
 },
@@ -94,6 +94,9 @@ const rectors = [{
     },{
         id: "xZgmD0GNtg8",
         titol: "Benvinguts a la Facultat de Dret (2002)"
+    },{
+        id: "xZgmD0GNtg8",
+        titol: "25 anys del Cor de Cambra de la UAB (2008)"
     }],
     vikipedia: "https://ca.wikipedia.org/wiki/Llu%C3%ADs_Ferrer_i_Caubet"
 },
@@ -107,6 +110,9 @@ const rectors = [{
         id: "MTRr9UnrI4k",
         titol: "40 anys de la UAB (2009)",
     },{
+        id: "A7ZdoBlcQ5M",
+        titol: "Apropa't al CReSA (2008)",
+    },,{
         id: "xwKtOGkVc6Y",
         titol: "L'Autònoma s'ha de viure!!!",
     },{
@@ -130,6 +136,9 @@ const rectors = [{
     },{
         id: "AEs5T5mDwZg",
         titol: "Programa UAB Empren",
+    },{
+        id: "k5UVPMNXKW4",
+        titol: "El batec del campus",
     }
 ],
     vikipedia: "https://ca.wikipedia.org/wiki/Ferran_Sancho_Pifarr%C3%A9"
