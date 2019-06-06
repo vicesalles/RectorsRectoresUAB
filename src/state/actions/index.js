@@ -5,9 +5,14 @@ import store from '../store';
 //Data
 import rectors from '../data/rectors';
 
-// Sets Current Rector
+
+/**
+ * @description Sets Current Rector
+ * @param {String} r id rector 
+ */
 export const setCurrentRector = (r) => (dispatch) =>{
-      
+   
+    //Getting Rector info
     const payload = rectors.find((rec)=>rec.url===r);    
     //Video Actual
     dispatch(setCurrentVideo(r))
@@ -32,7 +37,10 @@ export function setCurrentVideo(v) {
 
 }
 
-//SET all the histories: Starting state.
+
+/**
+ * @description Sets all the "Histories". This is the Initial State
+ */
 export function globalHistories(){
 
     //Get all the videos and its events
@@ -57,7 +65,7 @@ export function globalHistories(){
     })   
 
     const histories = _.flatten(historesGlobals).filter((a)=>a!==undefined);
-
+    
     return{type:INITIAL_HISTORIES,payload:histories}
 }
 

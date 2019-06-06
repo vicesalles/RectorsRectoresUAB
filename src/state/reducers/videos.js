@@ -122,7 +122,7 @@ const initialState = {
     nom: 'Carles',
     cognoms: 'Solà Ferrando',
     anys: [1994, 2002],
-    yt: 'jpM8quj-HrU',
+    yt: 'xCuUdKbqsYE',
     events:
       [{ id: 0, sec: 6, txt: 'Fundació de l\'Escola d\'Enginyeria', tags: ['escola d\'enginyeria', 'facultats', 'campus', 'progrés'] },
       { id: 1, sec: 87, txt: 'Innovacions acadèmiques', tags: ['titulacions', 'innovació', 'progrés'] },
@@ -200,10 +200,10 @@ const initialState = {
       { id: 21, sec: 1703, txt: 'Noves instal·lacions per a recerca', tags: ['recerca', 'inauguració', 'ICTA', 'campus', 'progrés'] },
       { id: 22, sec: 1917, txt: 'Campus Saludable i Sostenible', tags: ['campus', 'medi ambient', 'sostenibilitat'] },
       { id: 23, sec: 1986, txt: 'Recuperació de la Festa Major', tags: ['Festa Major', 'campus', 'cultura'] },
-      { id: 24, sec: 2060, txt: 'Implantació del vot electrònic a les eleccions', tags: ['eleccions', 'rectorat', 'vot electrònic', 'participació'] },
-      { id: 25, sec: 2194, txt: 'Els doctors \'honoris causa\'', tags: ['doctors', 'honoris causa', 'reconeixement', 'talent'] },
-      { id: 26, sec: 2336, txt: 'Relació amb la Universitat de Corea', tags: ['anècdota', 'records', 'Universitat de Corea', 'internacionalització'] },
-      { id: 27, sec: 2396, txt: 'Balanç del mandat', tags: ['balanç', 'mandat', 'rector', 'Sancho'] }]
+      { id: 24, sec: 2054, txt: 'Implantació del vot electrònic a les eleccions', tags: ['eleccions', 'rectorat', 'vot electrònic', 'participació'] },
+      { id: 25, sec: 2180, txt: 'Els doctors \'honoris causa\'', tags: ['doctors', 'honoris causa', 'reconeixement', 'talent'] },
+      { id: 26, sec: 2321, txt: 'Relació amb la Universitat de Corea', tags: ['anècdota', 'records', 'Universitat de Corea', 'internacionalització'] },
+      { id: 27, sec: 2382, txt: 'Balanç del mandat', tags: ['balanç', 'mandat', 'rector', 'Sancho'] }]
   }]
 }
 

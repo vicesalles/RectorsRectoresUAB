@@ -1,28 +1,9 @@
 import React,{Component} from 'react';
 import { withStyles } from '@material-ui/core/styles';
 
-//Components
-import {Card,CardActionArea,CardMedia,CardContent} from '@material-ui/core/';
-import Fade from '@material-ui/core/Fade';
-import { Typography } from '@material-ui/core';
+//Components Material Ui
+import {Card,CardActionArea,CardMedia,CardContent,Typography,Fade} from '@material-ui/core/';
 import LaunchRounded from '@material-ui/icons/LaunchRounded';
-
-// Estil
-const estilVideoArxiu = {    
-    card: {
-        maxWidth: 345,
-        marginRight: 15,
-        flex:1
-      },
-      media: {
-        height: 140,
-      },
-      titolSeccio:{
-          fontSize:24,
-          marginTop:12,
-          marginBottom: 12
-      }
-    };
 
 class CartaVideo extends Component {
  
@@ -37,7 +18,7 @@ class CartaVideo extends Component {
                         <Card >                           
                                 <CardMedia
                                     className={classes.media}
-                                    image={`https://img.youtube.com/vi/${id}/mqdefault.jpg`}
+                                    image={`https://img.youtube.com/vi/${id}/hqdefault.jpg`}
                                     title={titol}
                                     />
                                 <CardContent>
@@ -51,5 +32,23 @@ class CartaVideo extends Component {
                     </Fade>)
     }
 }
+
+// Estil
+const estilVideoArxiu = {    
+    card: {
+        maxWidth: 345,
+        marginRight: 15,
+        flex:1
+      },
+      media: {
+        minHeight: 180,
+      },
+      titolSeccio:{
+          height:180,
+          fontSize:24,
+          marginTop:12,
+          marginBottom: 12
+      }
+    };
 
 export default withStyles(estilVideoArxiu)(CartaVideo);

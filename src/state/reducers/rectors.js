@@ -1,6 +1,5 @@
 import {SET_CURRENT_RECTOR} from '../actions/types';
 
-
 const initialState ={
     currentRector: null,
     rectors:[{
@@ -8,9 +7,7 @@ const initialState ={
         nom: "Antoni",
         cognoms: "Serra Ramoneda",
         url: "serra",
-        mandat: "1980 – 1985",
-        imatgeActual: "",
-        imatgeHistorica: "",
+        mandat: "1980 – 1985",       
         videos: [{
             id: "kDdeHw950Ek",
             titol: "Entrevista a Jordi Bayona (1984-85)",
@@ -28,9 +25,7 @@ const initialState ={
         nom: "Ramon",
         cognoms: "Pascual de Sans",
         url: "pascual",
-        mandat: "1986 – 1990",
-        imatgeActual: "",
-        imatgeHistorica: "",
+        mandat: "1986 – 1990",       
         videos: [{
             id: "1PPcxS40wM0",
             titol: "Festa Major de la UAB (1986)",
@@ -54,16 +49,14 @@ const initialState ={
             titol: "III Jocs Intercontinentals d'Armes Prehistòriques (1993)",
         },{
             id: "iXZtBcvV26Q",
-            titol: "Lliçó magistral de Jack Steinberger com a doctor 'honoris causa' (1992)",
+            titol: "Jack Steinberger 'honoris causa' (1992)",
         },{
             id: "BsJ1vYEm2qs",
             titol: "Regulació i autoregulació dels aprenentatges (1993)",
         },{
             id: "SzLzK0qYzkM",
             titol: "Els estibadors del port de Barcelona (1993)",
-        }],
-        imatgeActual: "",
-        imatgeHistorica: "",
+        }],       
         vikipedia: "https://ca.wikipedia.org/wiki/Josep_Maria_Vall%C3%A8s_i_Casadevall"
     },
     {
@@ -71,15 +64,13 @@ const initialState ={
         nom: "Carles",
         cognoms: "Solà Ferrando",
         url: "sola",
-        mandat: "1994 – 2002",
-        imatgeActual: "",
-        imatgeHistorica: "",
+        mandat: "1994 – 2002",       
         videos: [{
             id: "HDKukiaMT0Q",
             titol: "Benvinguts a la UAB (1999)"
         },{
             id: "ldvXFog5LwU",
-            titol: "Miquel Martí i Pol com a doctor 'honoris causa' (1999)"
+            titol: "Miquel Martí i Pol 'honoris causa' (1999)"
         },{
             id: "l0sIN_IOg18",
             titol: "Acte d'inauguració de les Columnes de la UAB (1999)",
@@ -94,9 +85,7 @@ const initialState ={
         nom: "Lluís",
         cognoms: "Ferrer Caubet",
         url: "ferrer",
-        mandat: "2002 – 2009",
-        imatgeActual: "",
-        imatgeHistorica: "",
+        mandat: "2002 – 2009",       
         videos: [{
             id: "GMKuJdKB9OE",
             titol: "Apostant per un futur (2002)",
@@ -114,9 +103,7 @@ const initialState ={
         nom: "Ana",
         cognoms: "Ripoll Aracil",
         url: "ripoll",
-        mandat: "2009 – 2012",
-        imatgeActual: "",
-        imatgeHistorica: "",
+        mandat: "2009 – 2012",       
         videos: [{
             id: "MTRr9UnrI4k",
             titol: "40 anys de la UAB (2009)",
@@ -171,16 +158,3 @@ function rectors(state=initialState,action){
 export default rectors;
 
 
-/*
-
-{
-        id:"",
-        nom:"",
-        cognoms:"",       
-        mandat:"",
-        imatgeActual:"",
-        imatgeHistorica:"",
-        vikipedia:""
-    }
-
-*/

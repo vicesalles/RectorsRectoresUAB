@@ -4,24 +4,8 @@ import {withRouter} from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 
 //Components
-import {Grid} from '@material-ui/core/';
-import { Typography } from '@material-ui/core';
+import {Grid,Typography} from '@material-ui/core/';
 import GraellaArxiu from './GraellaArxiu';
-
-// Estil
-const estilArxiu = {    
-    card: {
-        maxWidth: 345,
-      },
-      media: {
-        height: 140,
-      },
-      titolSeccio:{
-          fontSize:24,
-          marginTop:12,
-          marginBottom: 24
-      }
-    };
 
 class Arxiu extends Component {
     
@@ -46,6 +30,21 @@ class Arxiu extends Component {
         
     }
 }
+
+// Estil
+const estilArxiu = {    
+    card: {
+        maxWidth: 345,
+      },
+      media: {
+        height: 140,
+      },
+      titolSeccio:{
+          fontSize:24,
+          marginTop:12,
+          marginBottom: 24
+      }
+    };
 
 function mapStateToProps(state){    
     return state.rectors;

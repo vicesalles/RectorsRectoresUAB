@@ -23,26 +23,6 @@ import {
     EmailIcon,
   } from 'react-share';
 
-
-
-const estilShare = theme =>({
-    botoShare:{
-        position:"fixed",
-        bottom: 15,
-        right: 15,
-        backgroundColor: theme.palette.primary.main,
-        zIndex:99,
-    },
-    closeButton:{
-        height:32,
-        width:32,
-        color: "#fff"
-    },
-    fab: {
-       zIndex:99,
-      }
-}) 
-
 class Share extends Component {
     state={
         currentUrl:"http://vicesalles.me",
@@ -57,9 +37,8 @@ class Share extends Component {
 
     }
 
-    componentDidMount(){
-        console.log('share', window.location.href );
-        //Setting URL        
+    componentDidMount(){        
+        //Setting current URL        
         const currentUrl = window.location.href;
         this.setState({currentUrl});    
             
@@ -97,6 +76,29 @@ class Share extends Component {
     }
 }
 
+// ESTIL
+const estilShare = theme =>({
+    botoShare:{
+        position:"fixed",
+        bottom: 15,
+        right: 15,
+        backgroundColor: theme.palette.primary.main,
+        color:"white",
+        zIndex:99,
+    },
+    closeButton:{
+        height:32,
+        width:32,
+        paddingTop:10,
+        paddingLeft:10,
+        paddingRight:10,
+        paddingBottom:10,
+        color: "#fff"
+    },
+    fab: {
+       zIndex:99,
+      }
+}) 
 
 
 export default withRouter(withStyles(estilShare)(Share));

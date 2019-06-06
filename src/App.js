@@ -14,6 +14,7 @@ import Credits from './views/Credits';
 //Share
 import Share from './components/Share/Share';
 
+//Main Theme
 const theme = createMuiTheme({
     palette:{
       primary:{
@@ -24,6 +25,7 @@ const theme = createMuiTheme({
       useNextVariants: true,
     }
 });
+
 
 class App extends Component {
   render() {

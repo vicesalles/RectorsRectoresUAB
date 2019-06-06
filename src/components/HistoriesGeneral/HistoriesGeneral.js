@@ -6,25 +6,6 @@ import { withStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import Historia from './Historia';
 
-
-//Estil
-const styles = theme => ({
-    root: {    
-      width: '90%',     
-      backgroundColor: theme.palette.background.paper,
-    },
-    buit:{
-        display:"none",
-        height:0,
-        paddingTop:0,
-        paddingBottom:0
-    },
-    inline: {
-      display: 'inline',
-    },
-  });
-
-
 class HistoriesGeneral extends Component {
 
     //Fàbrica d'histories
@@ -40,8 +21,7 @@ class HistoriesGeneral extends Component {
 
     render(){
         
-        const { classes,filtrades } = this.props;
-        
+        const { classes,filtrades } = this.props;        
 
         // Mira si l'usuari ha fet alguna cerca
         if(filtrades.length===0){            
@@ -68,6 +48,23 @@ class HistoriesGeneral extends Component {
     }
 
 }
+
+//Estil
+const styles = theme => ({
+    root: {    
+      width: '90%',     
+      backgroundColor: theme.palette.background.paper,
+    },
+    buit:{
+        display:"none",
+        height:0,
+        paddingTop:0,
+        paddingBottom:0
+    },
+    inline: {
+      display: 'inline',
+    },
+  });
 
 function mapStateToProps(state){
 

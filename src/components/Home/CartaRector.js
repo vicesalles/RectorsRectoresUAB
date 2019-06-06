@@ -1,15 +1,9 @@
 import React,{Component} from 'react';
 import {withRouter} from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
-import Fade from '@material-ui/core/Fade';
-
-//Carta
-import {CardMedia,CardActionArea,CardContent,Card} from '@material-ui/core';
+import {Grid,Typography,Fade,CardMedia,CardActionArea,CardContent,Card} from '@material-ui/core';
 
 //Estil
-
 const styles = {    
   
     bigAvatar: {
