@@ -23,8 +23,7 @@ const styles = theme => ({
         marginLeft: -18,
         marginRight: 10,
       },
-      graellaRectors:{     
-        minWidth:400,
+      graellaRectors:{   
         paddingBottom:0
       },
       bigAvatar: {
