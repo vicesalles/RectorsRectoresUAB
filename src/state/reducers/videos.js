@@ -122,7 +122,7 @@ const initialState = {
     nom: 'Carles',
     cognoms: 'Solà Ferrando',
     anys: [1994, 2002],
-    yt: 'xCuUdKbqsYE',
+    yt: 'jXKC0Yogf_s',
     events:
       [{ id: 0, sec: 6, txt: 'Fundació de l\'Escola d\'Enginyeria', tags: ['escola d\'enginyeria', 'facultats', 'campus', 'progrés'] },
       { id: 1, sec: 87, txt: 'Innovacions acadèmiques', tags: ['titulacions', 'innovació', 'progrés'] },
@@ -150,7 +150,7 @@ const initialState = {
     nom: 'Ana',
     cognoms: 'Ripoll Aracil',
     anys: [2009, 2012],
-    yt: '-fQM3O1FNcE',
+    yt: 'lfwFcLtL8GE',
     events:
       [{ id: 0, sec: 6, txt: 'Vicerectora de Professorat', tags: ['personal acadèmic', 'professorat', 'associats', 'becaris', 'Lluís Ferrer'] },
       { id: 1, sec: 247, txt: 'La primera dona rectora de la UAB', tags: ['dona', 'rectora', 'igualtat'] },
