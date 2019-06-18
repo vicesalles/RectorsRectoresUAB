@@ -192,7 +192,7 @@ class Cos extends Component {
     render(){
            
         //Check viewport size
-        const isBigScreen = (size) => size > 960; 
+        const isBigScreen = (size) => size > 800; 
 
         //Classes
         const { classes } = this.props;

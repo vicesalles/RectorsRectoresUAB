@@ -9,6 +9,7 @@ import CartaRector from '../components/Home/CartaRector';
 import HistoriesGeneral from '../components/HistoriesGeneral/HistoriesGeneral';
 import Searcher from '../components/Searcher/Searcher';
 import Footer from '../components/Footer/Footer';
+import CookieConsent from "react-cookie-consent";
 
 //Accions
 import {globalHistories} from '../state/actions';
@@ -49,6 +50,18 @@ const styles = theme => ({
       titolApp:{
         fontSize:24,
         fontWeight:"bold",
+      },
+      enllacCockies:{
+        textDecoration:"none",
+        color:"white",
+        fontWeight:"bold",
+        fontFamily: theme.typography.fontFamily,
+        "&:hover":{
+          color:theme.palette.primary.main
+        }
+      },
+      textCookies:{
+        fontFamily: theme.typography.fontFamily
       },
       toolbar: theme.mixins.toolbar
 
@@ -105,6 +118,17 @@ class Home extends Component{
                         {this.factory(this.props.rectors)}
                     </Grid>   
                     <Footer/>
+                    <CookieConsent
+                      location="bottom"
+                      buttonText="D'acord"                      
+                      style={{ background: "#2B373B", fontFamily:"Roboto" }}
+                      buttonStyle={{ color: "#4e503b", fontSize: "13px" }} 
+                  >
+                      Aquesta aplicació utilitza cookies.{" "}
+                      <span style={{ fontSize: "10px" }}>
+                      <a className={classes.enllacCockies} href="https://www.uab.cat/web/coneix-la-uab/itineraris/proteccio-de-dades-1345668257177.html" target="_blank">[Més informació]</a>
+                      </span>
+                  </CookieConsent>
                 </Grid>)
     }
 
