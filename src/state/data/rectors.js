@@ -3,14 +3,14 @@ const rectors = [{
     nom: "Antoni",
     cognoms: "Serra Ramoneda",
     url: "serra",
-    mandat: "1980 – 1985",       
+    mandat: "1980 – 1985",
     videos: [{
         id: "kDdeHw950Ek",
         titol: "Entrevista a Jordi Bayona (1984)",
-    },{
+    }, {
         id: "oOJh-233_yI",
-        titol: "Actuació del Cor de Cambra de la UAB (1984)",    
-    },{
+        titol: "Actuació del Cor de Cambra de la UAB (1984)",
+    }, {
         id: "1D992e_mpKU",
         titol: "Informatització de la premsa a Catalunya (1984)"
     }],
@@ -21,17 +21,17 @@ const rectors = [{
     nom: "Ramon",
     cognoms: "Pascual de Sans",
     url: "pascual",
-    mandat: "1986 – 1990",       
+    mandat: "1986 – 1990",
     videos: [{
         id: "hL_9Nagm2ZI",
         titol: "Benvinguts a la UAB (1986)"
-    },{
+    }, {
         id: "1PPcxS40wM0",
         titol: "Festa Major de la UAB (1986)",
-    },{
+    }, {
         id: "sglxs3W5Cx8",
         titol: "Festa Major de la UAB (1987)",
-    },{
+    }, {
         id: "gBewm4S8-mk",
         titol: "Festa Major de la UAB (1988)",
     }],
@@ -46,16 +46,16 @@ const rectors = [{
     videos: [{
         id: "umz2UBs5p3E",
         titol: "Benvinguts a la UAB (1993)",
-    },{
+    }, {
         id: "iXZtBcvV26Q",
         titol: "Jack Steinberger 'honoris causa' (1992)",
-    },{
+    }, {
         id: "BsJ1vYEm2qs",
         titol: "Regulació i autoregulació dels aprenentatges (1993)",
-    },{
+    }, {
         id: "SzLzK0qYzkM",
         titol: "Els estibadors del port de Barcelona (1993)",
-    }],       
+    }],
     vikipedia: "https://ca.wikipedia.org/wiki/Josep_Maria_Vall%C3%A8s_i_Casadevall"
 },
 {
@@ -63,17 +63,17 @@ const rectors = [{
     nom: "Carles",
     cognoms: "Solà Ferrando",
     url: "sola",
-    mandat: "1994 – 2002",       
+    mandat: "1994 – 2002",
     videos: [{
         id: "HDKukiaMT0Q",
         titol: "Benvinguts a la UAB (1999)"
-    },{
+    }, {
         id: "ldvXFog5LwU",
         titol: "Miquel Martí i Pol 'honoris causa' (1999)"
-    },{
+    }, {
         id: "l0sIN_IOg18",
         titol: "Acte d'inauguració de les Columnes de la UAB (1999)",
-    },{
+    }, {
         id: "XvuSnm4ls58",
         titol: "Nova biblioteca d'Humanitats (1997)"
     }],
@@ -84,17 +84,17 @@ const rectors = [{
     nom: "Lluís",
     cognoms: "Ferrer Caubet",
     url: "ferrer",
-    mandat: "2002 – 2009",       
+    mandat: "2002 – 2009",
     videos: [{
         id: "GMKuJdKB9OE",
         titol: "Apostant per un futur (2002)",
-    },{
+    }, {
         id: "eVqrvR5Uu0Q",
         titol: "Desenvolupament de les biblioteques de la UAB (2006)",
-    },{
+    }, {
         id: "xZgmD0GNtg8",
         titol: "Benvinguts a la Facultat de Dret (2002)"
-    },{
+    }, {
         id: "xZgmD0GNtg8",
         titol: "25 anys del Cor de Cambra de la UAB (2008)"
     }],
@@ -105,17 +105,17 @@ const rectors = [{
     nom: "Ana",
     cognoms: "Ripoll Aracil",
     url: "ripoll",
-    mandat: "2009 – 2012",       
+    mandat: "2009 – 2012",
     videos: [{
         id: "MTRr9UnrI4k",
         titol: "40 anys de la UAB (2009)",
-    },{
+    }, {
         id: "A7ZdoBlcQ5M",
         titol: "Apropa't al CReSA (2008)",
-    },,{
+    }, {
         id: "xwKtOGkVc6Y",
         titol: "L'Autònoma s'ha de viure!!!",
-    },{
+    }, {
         id: "ej0JXc3jMr4",
         titol: "Campus de Excelencia Internacional (2010)",
     }],
@@ -130,17 +130,17 @@ const rectors = [{
     videos: [{
         id: "Stu5ncIs248",
         titol: "Programa Alumni UAB",
-    },{
+    }, {
         id: "fiMcqC0kZps",
         titol: "Setmana saludable a la UAB",
-    },{
+    }, {
         id: "AEs5T5mDwZg",
         titol: "Programa UAB Empren",
-    },{
+    }, {
         id: "k5UVPMNXKW4",
         titol: "El batec del campus",
     }
-],
+    ],
     vikipedia: "https://ca.wikipedia.org/wiki/Ferran_Sancho_Pifarr%C3%A9"
 }
 ]

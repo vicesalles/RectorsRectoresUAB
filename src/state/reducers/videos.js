@@ -150,7 +150,7 @@ const initialState = {
     nom: 'Ana',
     cognoms: 'Ripoll Aracil',
     anys: [2009, 2012],
-    yt: 'lfwFcLtL8GE',
+    yt: 'zOHLtTSMU6w',
     events:
       [{ id: 0, sec: 6, txt: 'Vicerectora de Professorat', tags: ['personal acadèmic', 'professorat', 'associats', 'becaris', 'Lluís Ferrer'] },
       { id: 1, sec: 247, txt: 'La primera dona rectora de la UAB', tags: ['dona', 'rectora', 'igualtat'] },
