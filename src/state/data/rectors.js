@@ -12,7 +12,10 @@ const rectors = [{
         titol: "Actuació del Cor de Cambra de la UAB (1984)",
     }, {
         id: "1D992e_mpKU",
-        titol: "Informatització de la premsa a Catalunya (1984)"
+        titol: "Informatització de la premsa a Catalunya (1984)",
+    }, {
+        id: "SXC5Rrox5-o",
+        titol: "Una Experiència d'Innovació Pedagògica (1985)"
     }],
     vikipedia: "https://ca.wikipedia.org/wiki/Antoni_Serra_i_Ramoneda"
 },
@@ -95,7 +98,7 @@ const rectors = [{
         id: "xZgmD0GNtg8",
         titol: "Benvinguts a la Facultat de Dret (2002)"
     }, {
-        id: "xZgmD0GNtg8",
+        id: "9P2gvbrP7oI",
         titol: "25 anys del Cor de Cambra de la UAB (2008)"
     }],
     vikipedia: "https://ca.wikipedia.org/wiki/Llu%C3%ADs_Ferrer_i_Caubet"
@@ -114,7 +117,7 @@ const rectors = [{
         titol: "Apropa't al CReSA (2008)",
     }, {
         id: "xwKtOGkVc6Y",
-        titol: "L'Autònoma s'ha de viure!!!",
+        titol: "L'Autònoma s'ha de viure!!! (2010)",
     }, {
         id: "ej0JXc3jMr4",
         titol: "Campus de Excelencia Internacional (2010)",
@@ -135,7 +138,7 @@ const rectors = [{
         titol: "Setmana saludable a la UAB",
     }, {
         id: "AEs5T5mDwZg",
-        titol: "Programa UAB Empren",
+        titol: "Programa UAB Emprèn",
     }, {
         id: "k5UVPMNXKW4",
         titol: "El batec del campus",

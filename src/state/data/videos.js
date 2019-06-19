@@ -148,7 +148,7 @@
   anys: [2009, 2012],
   yt: 'zOHLtTSMU6w',
   events:
-  [{ id: 0, sec: 6, txt: 'Vicerectora de Professorat', tags: ['personal acadèmic', 'professorat', 'associats', 'becaris', 'Lluís Ferrer'] },
+  [{ id: 0, sec: 6, txt: 'Vicerectora de Personal Acadèmic', tags: ['personal acadèmic', 'professorat', 'associats', 'becaris', 'Lluís Ferrer'] },
   { id: 1, sec: 247, txt: 'La primera dona rectora de la UAB', tags: ['dona', 'rectora', 'igualtat'] },
   { id: 2, sec: 364, txt: 'Programació acadèmica en el marc del Pla Bolonya', tags: ['planificació', 'titulacions', 'anglès', 'internacionalització', 'mobilitat', 'Pla Bolonya', 'Espai Europeu'] },
   { id: 3, sec: 441, txt: 'Noves titulacions en anglès', tags: ['titulacions', 'Pla Bolonya', 'graus', 'màsters', 'anglès', 'internacionalització', 'progrés'] },

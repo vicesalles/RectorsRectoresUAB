@@ -63,7 +63,17 @@ const styles = theme => ({
       textCookies:{
         fontFamily: theme.typography.fontFamily
       },
-      toolbar: theme.mixins.toolbar
+      toolbar: theme.mixins.toolbar,
+      ancora:{
+        marginLeft: "2.5%",
+        marginRight: "2.5%",
+        width:"90%",
+        paddingTop:64,
+        textAlign:"justify",       
+        fontSize:18,
+        fontFamily: theme.typography.fontFamily,
+        color:"gray"
+      }
 
      
   });
@@ -116,7 +126,20 @@ class Home extends Component{
                     </Grid>
                     <Grid container direction="row" justify="center" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRectors}>
                         {this.factory(this.props.rectors)}
+                        <Grid className={classes.ancora}>
+                      <Typography variant="p">
+                      Amb motiu de la commemoració del cinquantè aniversari de la Universitat Autònoma de Barcelona, l'Àrea de Comunicació i Promoció ha realitzat aquest documental web que recull entrevistes a les persones que han ocupat el càrrec de rector o de rectora de la Universitat per tal que ens relatin la història de la institució a través de les seves experiències com a màxims representants institucionals. Els seus testimonis representen un valuós testimoni sobre l’evolució de la UAB al llarg dels seus cinquanta anys d’existència. 
+                      </Typography>
+                      <Typography variant="p">
+                        &nbsp;
+                      </Typography>
+                      <Typography variant="p">
+                        
+                        Bellaterra, juny de 2019
+                      </Typography>
+                    </Grid>
                     </Grid>   
+                   
                     <Footer/>
                     <CookieConsent
                       location="bottom"

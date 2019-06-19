@@ -7,7 +7,7 @@ const initialState = {
     nom: 'Lluís',
     cognoms: 'Ferrer Caubet',
     anys: [2002, 2009],
-    yt: 'tVsypwSgjEo',
+    yt: 'HScGd4v869E',
     events:
       [{ id: 0, sec: 6, txt: 'Primer rector escollit en vigència de la LOU', tags: ['LOU', 'PP', 'marc legal'] },
       { id: 1, sec: 85, txt: 'Conseqüències de la LOU', tags: ['LOU', 'conseqüències', 'marc legal'] },
@@ -41,7 +41,7 @@ const initialState = {
     nom: 'Ramon',
     cognoms: 'Pascual de Sans',
     anys: [1986, 1990],
-    yt: 'P1ezoMGoj3s',
+    yt: 'i4UC7IR3ILQ',
     events:
       [{ id: 0, sec: 6, txt: 'Breu període com a rector en funcions (1980)', tags: ['rector', 'Josep Laporte', 'Serra Ramoneda'] },
       { id: 1, sec: 69, txt: 'Director general d\'Universitats', tags: ['política', 'Generalitat', 'Jordi Pujol'] },
@@ -67,7 +67,7 @@ const initialState = {
     nom: 'Josep Maria',
     cognoms: 'Vallès Casadevall',
     anys: [1990, 1994],
-    yt: 'kDLnLRxmQ8I',
+    yt: '1KFT2I85kn0',
     events:
       [{ id: 0, sec: 7, txt: 'Les adversitats de l\'inici del mandat', tags: ['finançament', 'docència', 'mandat'] },
       { id: 1, sec: 131, txt: 'Noves facultats', tags: ['polítiques', 'sociologia', 'traducció', 'educació', 'facultats', 'campus', 'progrés'] },
@@ -150,9 +150,9 @@ const initialState = {
     nom: 'Ana',
     cognoms: 'Ripoll Aracil',
     anys: [2009, 2012],
-    yt: 'zOHLtTSMU6w',
+    yt: '47DDqEwaDZk',
     events:
-      [{ id: 0, sec: 6, txt: 'Vicerectora de Professorat', tags: ['personal acadèmic', 'professorat', 'associats', 'becaris', 'Lluís Ferrer'] },
+      [{ id: 0, sec: 6, txt: 'Vicerectora de Personal Acadèmic', tags: ['personal acadèmic', 'professorat', 'associats', 'becaris', 'Lluís Ferrer'] },
       { id: 1, sec: 247, txt: 'La primera dona rectora de la UAB', tags: ['dona', 'rectora', 'igualtat'] },
       { id: 2, sec: 364, txt: 'Programació acadèmica en el marc del Pla Bolonya', tags: ['planificació', 'titulacions', 'anglès', 'internacionalització', 'mobilitat', 'Pla Bolonya', 'Espai Europeu'] },
       { id: 3, sec: 441, txt: 'Noves titulacions en anglès', tags: ['titulacions', 'Pla Bolonya', 'graus', 'màsters', 'anglès', 'internacionalització', 'progrés'] },
