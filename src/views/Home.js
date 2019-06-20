@@ -128,7 +128,7 @@ class Home extends Component{
                         {this.factory(this.props.rectors)}
                         <Grid className={classes.ancora}>
                       <Typography variant="p">
-                      Amb motiu de la commemoració del cinquantè aniversari de la Universitat Autònoma de Barcelona, l'Àrea de Comunicació i Promoció ha realitzat aquest documental web que recull entrevistes a les persones que han ocupat el càrrec de rector o de rectora de la Universitat per tal que ens relatin la història de la institució a través de les seves experiències com a màxims representants institucionals. Els seus testimonis representen un valuós testimoni sobre l’evolució de la UAB al llarg dels seus cinquanta anys d’existència. 
+                      Amb motiu de la commemoració del cinquantè aniversari de la Universitat Autònoma de Barcelona, l'Àrea de Comunicació i Promoció ha realitzat aquest documental web que recull entrevistes a les persones que han ocupat el càrrec de rector o de rectora de la Universitat per tal que ens relatin la història de la institució a través de les seves experiències com a màxims representants institucionals. Els seus testimonis representen un valuós document sobre l’evolució de la UAB al llarg dels seus cinquanta anys d’existència. 
                       </Typography>
                       <Typography variant="p">
                         &nbsp;
