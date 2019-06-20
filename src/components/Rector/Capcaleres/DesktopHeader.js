@@ -50,17 +50,17 @@ class DesktopHeader extends Component {
 
         return(<AppBar position="fixed">
         <Toolbar variant="dense">  
-                <IconButton href="/">
+                <IconButton href="./">
                     <HomeIcon className={classes.mediumAvatar}/>             
                 </IconButton>                   
-                <Avatar alt={this.props.currentRector.cognoms} src={`/img/l/${this.props.currentRector.url}.jpg`} className={classes.bigAvatar}/>
+                <Avatar alt={this.props.currentRector.cognoms} src={`./img/l/${this.props.currentRector.url}.jpg`} className={classes.bigAvatar}/>
                 <Grid className={classes.cap}>
                     <Grid container direction="row" justify="flex-start">
                         <Typography variant="h4" color="inherit" align="left">
                             {`${this.props.currentRector.nom} ${this.props.currentRector.cognoms}`}
                         </Typography>   
                         <IconButton size="small" href={this.props.currentRector.vikipedia} target="_blank">
-                            <Avatar alt="Wikipedia" src={`/img/bu/wiki.png`} className={classes.wikiBu}/>                 
+                            <Avatar alt="Wikipedia" src={`./img/bu/wiki.png`} className={classes.wikiBu}/>                 
                         </IconButton>
                     </Grid> 
                     <Typography component="p" color="inherit" align="left">

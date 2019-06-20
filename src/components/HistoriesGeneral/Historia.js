@@ -1,6 +1,7 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import {withRouter,Link} from 'react-router-dom';
+
 //Material ui components
 import {ListItem,ListItemText,ListItemAvatar,Avatar,Typography} from '@material-ui/core';
 
@@ -12,7 +13,7 @@ function Historia(props){
 
       <ListItem button component={Link} className={classes.item} to={`./r/${historia.url}/${historia.sec}`} alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt={historia.nom} src={`/img/s/${historia.url}.jpg`} />
+          <Avatar alt={historia.nom} src={`./img/s/${historia.url}.jpg`} />
         </ListItemAvatar>
         <ListItemText
           primary= {<React.Fragment>

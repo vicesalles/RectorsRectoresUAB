@@ -44,7 +44,7 @@
     }
 
   ],
-  "start_url": "./rectorsirectores/index.html",
+  "start_url": "https://uab.cat/rectorsirectores/index.html",
   "display": "standalone",
   "theme_color": "#40ae33",
   "background_color": "#40ae33"

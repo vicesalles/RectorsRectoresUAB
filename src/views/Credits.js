@@ -17,7 +17,7 @@ function Credits(props) {
         <Grid id="credits">
             <AppBar>
                 <Toolbar variant="dense">
-                    <IconButton href="/">
+                    <IconButton href="./">
                         <HomeIcon />
                     </IconButton>
 
