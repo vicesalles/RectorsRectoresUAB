@@ -11,7 +11,7 @@ Per mitjà del cercador, o les pastilles temàtiques dis de cada entrevista, pre
 
 Pots visitar el webdoc [Aquí](https://uab.cat/rectorsirectores)
 
-##Wikipèdia
+## Wikipèdia
 
 També he aprofitat l'ocasió per incloure cadascuna de les entrevistes a la Viquipèdia.
 
