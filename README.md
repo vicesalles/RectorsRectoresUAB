@@ -1,34 +1,20 @@
-# WebDoc del 50è aniversari de la UAB
+# Rectors i rectores de la UAB
+## WebDoc produït en motiu del 50è aniversari de la UAB
 
-Documental Web on es recullen els testimonis dels rectors i rectores de la UAB
+Documental Web on es recullen els testimonis dels rectors i rectores, en vida, de la UAB. He realitzat aquest documental web amb la col·laboració d'en Lucas Santos i en Xavi Torner.
 
-## Bugs
+Vaig proposar d'adoptar el format Webdoc en veure que les entrevistes que havíem enregistrat amb en Lucas eren història en estat pur. El relat dels rectors era de gran valor. En aquest punt vaig decidir afrontar-ho des d'una perspectiva de Mínima Edició Possible i preservar la integritat dels discursos.
+
+Aquests discursos, quasi íntegres, suposen prop de 7 hores de vídeo. Aquí entra en joc la necessitat de distribuïr aquests continguts en format webdoc: He creat una fina capa de funcionalitat que permet explorar els continguts de manera temàtica.
+
+Per mitjà del cercador, o les pastilles temàtiques dis de cada entrevista, pretenc facilitar l'exploració dels continguts.
+
+##Wikipèdia
+
+També he aprofitat l'ocasió per incloure cadascuna de les entrevistes a la Viquipèdia.
+
+## Eines
+
+Aquesta aplicació està creada utilitzant React, Redux i Material UI. La navegació es fa per mitjà del React Router.
 
 
-## Tasques
-
-- Capçalera incloure motiu gràfic 50 anys
-- Component de compartir
-- Crear pàgina de crèdits
-- manifest.json
-
-## Continguts
-
-- ! Afegir el segon de música al davant dels vídeos.
-
-- Icona
-- Favicon
-- Flyer
-- Trailer
-- Miniatures Youtube
-- Titols
-- Titols animats
-- Caretes d'entrada
-- Digitalització Laporte
-- Localitzar foto Laporte (Com mostrem gràficament que està mort??????)
-
-## Distribució
-
-### Wikipedia
-- Crear la pàgina del documental.
-- Millorar les pàgines dels rectors.
