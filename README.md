@@ -9,6 +9,8 @@ Aquests discursos, quasi íntegres, suposen prop de 7 hores de vídeo. Aquí ent
 
 Per mitjà del cercador, o les pastilles temàtiques dis de cada entrevista, pretenc facilitar l'exploració dels continguts.
 
+Pots visitar el webdoc [Aquí](https://uab.cat/rectorsirectores)
+
 ##Wikipèdia
 
 També he aprofitat l'ocasió per incloure cadascuna de les entrevistes a la Viquipèdia.
