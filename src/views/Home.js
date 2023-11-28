@@ -48,7 +48,7 @@ const styles = theme => ({
           
       },
       titolApp:{
-        fontSize:24,
+        fontSize:22,
         fontWeight:"bold",
       },
       enllacCockies:{
@@ -108,7 +108,7 @@ class Home extends Component{
                     <AppBar position="fixed">
                         <Toolbar variant="regular">   
                             <Link to="./"><img alt="Rectors i rectores de la UAB" src={`./img/logos/uab.png`} className={classes.logo}/></Link>
-                            <Typography className={classes.titolApp} variant="h5" color="inherit" align="left">
+                            <Typography className={classes.titolApp} variant="h1" color="inherit" align="left">
                                {this.state.title}
                             </Typography>                     
                         </Toolbar>

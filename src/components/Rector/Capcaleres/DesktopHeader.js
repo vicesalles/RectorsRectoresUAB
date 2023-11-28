@@ -16,7 +16,7 @@ const styles = {
       flexGrow: 1,
     },
     cap:{
-        marginLeft:25
+        marginLeft:10
     },
     menuButton: {
       marginLeft: -18,
@@ -33,11 +33,21 @@ const styles = {
         height: 30,
       },
       wikiBu: {        
-        width: 15,
-        height: 15,
+        width: 17,
+        height: 17,
+      },
+      containerWiki:{
+        marginLeft:10
+      },
+      nomRector:{
+        fontSize: 18,
+        fontWeight:"bold",
+        marginBottom: 0,
+        paddingBottom: 5        
       },
       mandat:{
-          fontFamily:"Roboto"
+          fontFamily:"Roboto",
+          marginTop: 1
       }
   };
 
@@ -56,17 +66,23 @@ class DesktopHeader extends Component {
                 <Avatar alt={this.props.currentRector.cognoms} src={`./img/l/${this.props.currentRector.url}.jpg`} className={classes.bigAvatar}/>
                 <Grid className={classes.cap}>
                     <Grid container direction="row" justify="flex-start">
-                        <Typography variant="h4" color="inherit" align="left">
-                            {`${this.props.currentRector.nom} ${this.props.currentRector.cognoms}`}
-                        </Typography>   
-                        <IconButton size="small" href={this.props.currentRector.vikipedia} target="_blank">
-                            <Avatar alt="Wikipedia" src={`./img/bu/wiki.png`} className={classes.wikiBu}/>                 
-                        </IconButton>
+                    
+                        <Grid container direction="column">
+                            <Typography variant="h1" className={classes.nomRector} color="inherit" align="left">
+                                {`${this.props.currentRector.nom} ${this.props.currentRector.cognoms}`}
+                            </Typography>   
+                            <Typography component="p" color="inherit" align="left">
+                            {this.props.currentRector.mandat}
+                            </Typography>
+                        </Grid>
+                        
                     </Grid> 
-                    <Typography component="p" color="inherit" align="left">
-                        {this.props.currentRector.mandat}
-                    </Typography>
-                </Grid>      
+                </Grid>     
+                <Grid className={classes.containerWiki} justify='center'>
+                            <IconButton size="small" href={this.props.currentRector.vikipedia} target="_blank">
+                                <Avatar alt="Wikipedia" src={`./img/bu/wiki.png`} className={classes.wikiBu}/>                 
+                            </IconButton>   
+                </Grid>  
         </Toolbar>
     </AppBar> )
 

@@ -23,8 +23,8 @@ const styles = theme => ({
   caixaCercador:{
     backgroundColor:"white",
     width:"95%",
-    paddingTop: 5,
-    paddingBottom:5,     
+    paddingTop: 15,
+    paddingBottom:15,     
     borderRadius:10
   }
  
@@ -34,7 +34,7 @@ class Searcher extends Component{
 
     state = {
         cercador: "",
-        searchTextSize: 32
+        searchTextSize: 18
       };
     
       handleChange = (event) => {
@@ -76,6 +76,7 @@ class Searcher extends Component{
                 color="white"                
                 variant="filled"
                 autoFocus
+                label="Cerca a Rectors i Rectores de la UAB"
                 onChange={(event)=>{this.handleChange(event)}}
                 className= {classes.caixaCercador}
                 style={{fontSize: this.state.searchTextSize}}  
@@ -85,7 +86,7 @@ class Searcher extends Component{
           return(<div className="Searcher">
             <TextField 
                 id="outlined-full-width"
-                label="Cercador d'aquest mandat"                
+                label="Cerca en aquest mandat"                
                 placeholder="Cercar un moment..."               
                 fullWidth
                 color="white"

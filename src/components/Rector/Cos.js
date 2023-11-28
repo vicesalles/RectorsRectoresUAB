@@ -211,8 +211,7 @@ class Cos extends Component {
                                 <div>
                                  <YouTube onPlay={this.onReady} ref={this.reproductor} onStateChange={this.onStateChange} videoId={current.yt} opts={this.state.playerOptions} onReady={this._onReady}></YouTube>
                                 </div>
-                            </Fade>  
-                        <Searcher w={this.state.width}/>
+                            </Fade>                          
                         <Arxiu pausaVideoGeneral = {this.pause}  in={this.state.ready}/>                        
                     </div>   
                                         
@@ -221,6 +220,7 @@ class Cos extends Component {
                         <Typography className={classes.titolHistories} variant="h3" color="primary" align="center">
                             Moments del mandat
                         </Typography>
+                        <Searcher/>
                         {this.eventsFactory(this.props.histories.filtrades)}
                     </div>
                 </Grid>)
@@ -247,7 +247,7 @@ class Cos extends Component {
 
 
 function mapStateToProps(state){
-    const {videos,histories} = state;
+    const {videos,histories} = state;    
     return {videos,histories};
 }
 

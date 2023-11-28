@@ -40,7 +40,7 @@ const estilArxiu = {
         height: 140,
       },
       titolSeccio:{
-          fontSize:24,
+          fontSize:18,
           marginTop:12,
           marginBottom: 24
       }

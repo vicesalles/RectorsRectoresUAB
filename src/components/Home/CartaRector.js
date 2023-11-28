@@ -22,12 +22,13 @@ const styles = {
       minHeight:250
     },
     nomRector:{
-        fontSize:24,
+        fontSize:18,
+        marginTop:12,
         fontWeight:"bold"
     },
     mandat:{
         marginTop:12,
-        fontSize:18
+        fontSize:16
     },
     cartaRector:{
         height:370
