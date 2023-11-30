@@ -142,9 +142,40 @@ const rectors = [{
     }, {
         id: "k5UVPMNXKW4",
         titol: "El batec del campus",
+    }, {
+        id: "ykQ74EhWUv4",
+        titol: "La videomemòria de la UAB 2015/2016",
     }
     ],
     vikipedia: "https://ca.wikipedia.org/wiki/Ferran_Sancho_Pifarr%C3%A9"
+},
+{
+    id: 6,
+    nom: "Margarita",
+    cognoms: "Arboix Arzo",
+    url: "arboix",
+    mandat: "2016 – 2020",
+    videos: [{
+        id: "RB0EzxBaRzI",
+        titol: "Confinament COVID-19: Missatge a la comunitat UAB",
+    }, {
+        id: "_4F0uQD9QwA",
+        titol: "Concert dels 50 Anys de la Universitat Autònoma de Barcelona",
+    }, {
+        id: "G7yl57-_5gY",
+        titol: "La videomemòria de la UAB 2016/2017",
+    }, {
+        id: "yJZx01w9QyI",
+        titol: "La videomemòria de la UAB 2017/2018",
+    },{
+        id: "LQ47Ym6CKmU",
+        titol: "La videomemòria de la UAB 2018/2019",
+    },{
+        id: "qEuVaYKhcAA",
+        titol: "La videomemòria de la UAB 2019/2020",
+    }
+    ],
+    vikipedia: "https://ca.wikipedia.org/wiki/Margarita_Arboix_Arzo"
 }
 ]
 

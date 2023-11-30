@@ -15,8 +15,8 @@ const styles = {
         margin:10,
         minWidth:250,
         maxWidth:300,
-        padding:10
-
+        padding:10,
+        flexBasis:"25 %"
     },
     fotoRector: {
       minHeight:250

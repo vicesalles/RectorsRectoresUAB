@@ -25,7 +25,15 @@ const styles = theme => ({
         marginRight: 10,
       },
       graellaRectors:{   
-        paddingBottom:0
+        display:'flex',
+        paddingTop:40,
+        paddingBottom:0,
+        flexWrap:"wrap",
+        marginLeft: "2.5%",
+        width:"95%"
+      },
+      pastillaRector:{ 
+        flexBasis:"25 %"       
       },
       bigAvatar: {
         margin: 10,
@@ -85,10 +93,10 @@ class Home extends Component{
     }
 
     //Crea les Cartes dels Rectors
-    factory = (rectors) =>{
+    factory = (rectors,classes) =>{
 
         return rectors.map((r,i)=>{            
-            return <CartaRector key={r.nom} animacio={(i+1)*500} rector={r}/>
+            return <CartaRector className={classes.pastillaRector} key={r.nom} animacio={(i+1)*500} rector={r}/>
         })
 
     }
@@ -125,8 +133,10 @@ class Home extends Component{
                         <HistoriesGeneral/>
                     </Grid>
                     <Grid container direction="row" justify="center" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRectors}>
-                        {this.factory(this.props.rectors)}
-                        <Grid className={classes.ancora}>
+                        {this.factory(this.props.rectors,this.props.classes)}
+                        
+                    </Grid>   
+                    <Grid className={classes.ancora}>
                       <Typography variant="p">
                       Amb motiu de la commemoració del cinquantè aniversari de la Universitat Autònoma de Barcelona, l'Àrea de Comunicació i Promoció ha realitzat aquest documental web que recull entrevistes a les persones que han ocupat el càrrec de rector o de rectora de la Universitat per tal que ens relatin la història de la institució a través de les seves experiències com a màxims representants institucionals. Els seus testimonis representen un valuós document sobre l’evolució de la UAB al llarg dels seus cinquanta anys d’existència. 
                       </Typography>
@@ -138,7 +148,6 @@ class Home extends Component{
                         Bellaterra, juny de 2019
                       </Typography>
                     </Grid>
-                    </Grid>   
                    
                     <Footer/>
                     <CookieConsent
