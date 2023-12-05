@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import './App.scss';
 
 //Estil Material
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { MuiThemeProvider, createTheme  } from '@material-ui/core/styles';
 
 //Vistes
 import Home from './views/Home';
@@ -15,7 +15,7 @@ import Credits from './views/Credits';
 import Share from './components/Share/Share';
 
 //Main Theme
-const theme = createMuiTheme({
+const theme = createTheme({
     palette:{
       primary:{
         main:"#40ae33"
