@@ -14,16 +14,16 @@ class Arxiu extends Component {
         const { classes,currentRector } = this.props;
         
         if(currentRector!==null){
-            return(<Grid>
+            return(<Grid direction='column'>
                 <Typography className={classes.titolSeccio} color="primary" align="left">
-                   Moments en vídeo
+                Videos destacats del mandat
                 </Typography>
                 <GraellaArxiu pausaVideoGeneral={this.props.pausaVideoGeneral} videos={currentRector.videos} in={this.props.in}/>
             </Grid>)
         }else{
             return(<Grid>
                 <Typography className={classes.titolSeccio} color="primary" align="left">
-                    Moments en vídeo
+                    Videos destacats del mandat
                 </Typography>                
             </Grid>)
         }
@@ -41,8 +41,10 @@ const estilArxiu = {
       },
       titolSeccio:{
           fontSize:18,
-          marginTop:12,
-          marginBottom: 24
+          marginTop:12,          
+          paddingBottom:18,
+          fontFamily:"Hubot Sans, sans-serif",
+          fontWeight:"bold"
       }
     };
 

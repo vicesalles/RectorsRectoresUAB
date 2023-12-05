@@ -24,6 +24,7 @@ const styles = {
     nomRector:{
         fontSize:18,
         marginTop:12,
+        fontFamily:"Hubot Sans, sans-serif",
         fontWeight:"bold"
     },
     mandat:{

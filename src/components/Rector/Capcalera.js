@@ -26,7 +26,7 @@ const styles = {
         height: 15,
       },
       mandat:{
-          fontFamily:"Roboto"
+          fontFamily:"Hubot Sans, sans-serif"
       }
   };
 

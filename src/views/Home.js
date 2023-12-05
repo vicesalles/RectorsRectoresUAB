@@ -24,13 +24,18 @@ const styles = theme => ({
         marginLeft: -18,
         marginRight: 10,
       },
+      ContainerGraellaRectors:{
+        display:'flex',
+        justifyContent:'center'
+      },
       graellaRectors:{   
         display:'flex',
-        paddingTop:40,
+        justifyContent:'flex-start',
+        paddingTop:20,
         paddingBottom:0,
         flexWrap:"wrap",
-        marginLeft: "2.5%",
-        width:"95%"
+        marginLeft: "2.5%",        
+        width:"80%"
       },
       pastillaRector:{ 
         flexBasis:"25 %"       
@@ -52,12 +57,12 @@ const styles = theme => ({
           flexWrap: 'wrap',
           marginTop:30,
           marginLeft: "2.5%",
-          width:"95%",
-          
+          width:"95%",          
       },
       titolApp:{
         fontSize:22,
         fontWeight:"bold",
+        fontFamily:"Hubot Sans, sans-serif",
       },
       enllacCockies:{
         textDecoration:"none",
@@ -131,16 +136,20 @@ class Home extends Component{
                     >                       
                         <HistoriesGeneral/>
                     </Grid>
-                    <Grid container direction="row" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRectors}>
-                        {this.factory(this.props.rectors,this.props.classes)}
-                        
-                    </Grid>                       
+                    <Grid container direction="column" alignItems="center" alignContent="center" className={classes.ContainerGraellaRectors}>    
+                      
+                      <Grid container direction="row" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRectors}>
+                          {this.factory(this.props.rectors,this.props.classes)}
+                          
+                      </Grid>                       
                    
-                    <Footer/>
+                      <Footer/>
+                    </Grid>  
+
                     <CookieConsent
                       location="bottom"
                       buttonText="D'acord"                      
-                      style={{ background: "#2B373B", fontFamily:"Roboto" }}
+                      style={{ background: "#2B373B", fontFamily:"Hubot Sans, sans-serif" }}
                       buttonStyle={{ color: "#4e503b", fontSize: "13px" }} 
                   >
                       Aquesta aplicació utilitza cookies.{" "}

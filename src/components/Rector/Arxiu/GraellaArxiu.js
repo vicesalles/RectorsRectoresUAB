@@ -32,7 +32,7 @@ class GraellaArxiu extends Component{
 
     render(){        
         const {classes} = this.props;
-        return( <Grid className={classes.graella} container spacing={24} direction="row" justify="flex-start" alignContent="center">
+        return( <Grid className={classes.graella} container justifyContent="flex-start" alignContent="center">
                     {this.cardFactory(this.props.videos)}
                 </Grid>)
     }

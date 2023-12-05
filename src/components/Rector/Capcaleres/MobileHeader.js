@@ -22,7 +22,7 @@ class MobileHeader extends Component {
                  </IconButton>      
                  
                  <Grid className={classes.cap}>
-                     <Grid container direction="row" justify="flex-start">
+                     <Grid container direction="row">
                          <Typography variant="h1" color="inherit" align="left">
                              {`${this.props.currentRector.nom} ${this.props.currentRector.cognoms}`}
                          </Typography>  
@@ -57,7 +57,7 @@ const styles = {
       height: 15,
     },
     mandat:{
-        fontFamily:"Roboto"
+        fontFamily:"Hubot Sans, sans-serif"
     },
     barraMobil:{
       marginLeft:0,

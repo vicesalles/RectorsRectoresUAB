@@ -41,12 +41,13 @@ const styles = {
       },
       nomRector:{
         fontSize: 18,
+        fontFamily:"Hubot Sans, sans-serif",
         fontWeight:"bold",
         marginBottom: 0,
         paddingBottom: 5        
       },
       mandat:{
-          fontFamily:"Roboto",
+          fontFamily:"Hubot Sans, sans-serif",
           marginTop: 1
       }
   };
@@ -65,8 +66,7 @@ class DesktopHeader extends Component {
                 </IconButton>                   
                 <Avatar alt={this.props.currentRector.cognoms} src={`./img/l/${this.props.currentRector.url}.jpg`} className={classes.bigAvatar}/>
                 <Grid className={classes.cap}>
-                    <Grid container direction="row" justify="flex-start">
-                    
+                    <Grid container direction="row">                    
                         <Grid container direction="column">
                             <Typography variant="h1" className={classes.nomRector} color="inherit" align="left">
                                 {`${this.props.currentRector.nom} ${this.props.currentRector.cognoms}`}
@@ -78,7 +78,7 @@ class DesktopHeader extends Component {
                         
                     </Grid> 
                 </Grid>     
-                <Grid className={classes.containerWiki} justify='center'>
+                <Grid className={classes.containerWiki}>
                             <IconButton size="small" href={this.props.currentRector.vikipedia} target="_blank">
                                 <Avatar alt="Wikipedia" src={`./img/bu/wiki.png`} className={classes.wikiBu}/>                 
                             </IconButton>   

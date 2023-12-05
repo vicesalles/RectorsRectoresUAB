@@ -1,5 +1,17 @@
 @import "./parcials/colors";
 
+@font-face {
+  font-family: 'Hubot Sans';
+  src:
+    url('../public/typos/Hubot-Sans.woff2') format('woff2 supports variations'),
+    url('../public/typos/Hubot-Sans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+html {
+  font-family: 'Hubot Sans, sans-serif';
+}
+
 body{
   top:0px;
   left: 0px;

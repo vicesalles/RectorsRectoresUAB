@@ -47,12 +47,13 @@ const styles = theme => ({
         display:"hidden"
     },
     graellaRector:{
-        marginTop:20
+        marginTop:20,
+        paddingBottom:40
     },
     toolbar:theme.mixins.toolbar,
     carregador:{
         marginTop:"6em",
-        justify:"center",
+        justifyContent:"center",
         alignContent:"center",
         alignItems:"center"
     },
@@ -72,7 +73,9 @@ const styles = theme => ({
     },
     titolHistories:{
         paddingTop: 10,
-        paddingBottom: 12
+        paddingBottom: 12,
+        fontFamily:"Hubot Sans, sans-serif",
+        fontWeight:"bold"
     }
 
 });
@@ -134,6 +137,7 @@ class Cos extends Component {
 
         //Getting rector
         const {id} = this.props.match.params;
+        console.log(id);
 
         //Getting seconds
         const secs = parseInt(this.props.match.params.secs);
@@ -199,10 +203,11 @@ class Cos extends Component {
 
         //Current Video
         const current = _.find(this.props.videos.videos,{'id':this.props.match.params.id});
+        
                 
         if(isBigScreen(window.innerWidth)){
 
-            return(<Grid container spacing={24} direction="row" justify="space-between" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRector}>
+            return(<Grid container spacing={4} alignItems="flex-start" alignContent="flex-start" className={classes.graellaRector}>
                 <div className={classes.toolbar}></div>  
                     <div ref={this.containerReproductor} className="reproductor">
                         <div className={classes.toolbar}></div>    
@@ -227,7 +232,7 @@ class Cos extends Component {
 
         }else{
 
-            return(<Grid container spacing={8} direction="column" justify="space-between" alignItems="flex-start" alignContent="flex-start">
+            return(<Grid container spacing={8} direction="column" alignItems="flex-start" alignContent="flex-start">
                 <div className={classes.toolbar}></div>     
                     <div ref={this.containerReproductor} className="reproductorMobil">
                     <div className={classes.toolbar}></div>    

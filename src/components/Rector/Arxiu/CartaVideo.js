@@ -22,11 +22,10 @@ class CartaVideo extends Component {
                                     title={titol}
                                     />
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5">
+                                    <Typography className={classes.titolCarta} gutterBottom variant="h3">
                                         {titol}
-                                    </Typography> <LaunchRounded/>                      
-                                </CardContent>
-                                        
+                                    </Typography>                       
+                                </CardContent>                                        
                         </Card>
                     </CardActionArea>    
                     </Fade>)
@@ -38,16 +37,22 @@ const estilVideoArxiu = {
     card: {
         maxWidth: 345,
         marginRight: 15,
-        flex:1
+        marginBottom: 12,
+        flexGrow:1
       },
       media: {
         minHeight: 180,
       },
       titolSeccio:{
           height:180,
-          fontSize:24,
+          fontSize:18,
           marginTop:12,
-          marginBottom: 12
+          marginBottom: 14,          
+          fontFamily:"Hubot Sans, sans-serif"
+      },
+      titolCarta:{
+        fontSize:16,
+        fontFamily:"Hubot Sans, sans-serif"
       }
     };
 

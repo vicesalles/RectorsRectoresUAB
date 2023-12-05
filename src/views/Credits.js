@@ -19,24 +19,24 @@ function Credits(props) {
                 <Toolbar variant="dense">
                     <IconButton href="./">
                         <HomeIcon />
-                    </IconButton>
-
-                    <Grid>
-                        <Typography className={classes.h1} variant="h1" color="inherit" align="left">
-                        Sobre aquest projecte
-                        </Typography>
-                    </Grid>
+                    </IconButton>                   
                 </Toolbar>
             </AppBar>
             <Toolbar variant="dense" hidden={true}> </Toolbar>
             <Grid container className={classes.creditsMainGridContainer} direction="column">
             <Grid container className={classes.creditsMainGrid} direction="column">
-                <Grid item className={classes.creditsSubGrid} >                    
+                <Grid item className={classes.creditsSubGrid} >  
+                    <Typography className={classes.h1} variant="h1" color="inherit" align="left">
+                        Sobre aquest projecte
+                    </Typography>                  
                     
                     <Typography component="p" className={classes.about} align="left">
-                        Amb motiu de la commemoració del cinquantè aniversari de la Universitat Autònoma de Barcelona, l'any 2019, l'Àrea de Comunicació i Promoció, va impulsar l'enregistrament de les entrevistes que podeu explorar en aquest espai. 
-                        Es tractava de recollir el testimoni de totes les persones que han ocupat el càrrec de rector o de rectora de la Universitat. Volíem explorar els 50 anys d'història de la nostra Universitat a través dels seus records.                      
+                        Amb motiu de la commemoració del cinquantè aniversari de la Universitat Autònoma de Barcelona, l'any 2019, l'Àrea de Comunicació i Promoció, va impulsar l'enregistrament de les entrevistes que podeu explorar en aquest espai.                                           
                     </Typography>
+                    <Typography component="p" className={classes.about} align="left">
+                        Es tractava de recollir el testimoni de totes les persones que han ocupat el càrrec de rector o de rectora de la Universitat. Volíem explorar els 50 anys d'història de la nostra Universitat a través dels seus records.                                           
+                    </Typography>
+
                     <Typography component="p" className={classes.about} align="left">
                         Guiats pel <a href="https://www.youtube.com/watch?v=1hVwAQOu83Y" style={{color:"black"}} rel="noopener noreferrer" className={classes.enllac} target="_blank">llibre del 50è aniversari</a>, entrevista rere entrevista, vam anar constatant el valor històric i
                         documental de cadascun dels testimonis. Com se suposava que havíem d'editar aquests discursos? Quin valor podíem aportar-hi? 
@@ -81,19 +81,21 @@ const estilCredits = theme => ({
         marginRight:'auto',
         paddingLeft: "4em",
         paddingRight:"4em",    
-        justify:"center",    
+        justifyContent:"center",    
         flex:1
     },
     creditsMainGrid: {        
         paddingTop:"2em",
         paddingLeft: "2em",
         paddingRight:"2em",    
-        justify:"center",    
+        justifyContent:"center",    
         flex:2
     },
     h1:{
-        fontSize:16,
-        fontWeight:"bold"
+        fontSize:24,
+        fontWeight:"bold",
+        fontFamily:"Hubot Sans, sans-serif",
+        color:"#008539"
     },
     h2:{
         fontSize:16
@@ -105,7 +107,7 @@ const estilCredits = theme => ({
         paddingTop:"2em",
         flex:1,
         alignItems: "center",
-        justify:"center",
+        justifyContent:"center",
         color: "black"
 
     },
