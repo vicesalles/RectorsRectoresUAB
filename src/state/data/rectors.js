@@ -1,4 +1,4 @@
-const rectors = [{
+const rectorsData = [{
     id: 0,
     nom: "Antoni",
     cognoms: "Serra Ramoneda",
@@ -183,4 +183,4 @@ const rectors = [{
 }
 ]
 
-export default rectors;
+export default rectorsData;

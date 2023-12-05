@@ -1,4 +1,4 @@
-[{
+const videosData = [{
   id: 'ferrer',
   nom: 'Lluís',
   cognoms: 'Ferrer Caubet',
@@ -237,3 +237,5 @@
     { id: 26, sec: 2336, txt: 'Relació amb la Universitat de Corea', tags: ['anècdota', 'records', 'Universitat de Corea', 'internacionalització'] },
     { id: 27, sec: 2396, txt: 'Balanç del mandat', tags: ['balanç', 'mandat', 'rector', 'Sancho'] }]
 }]
+
+export default videosData;

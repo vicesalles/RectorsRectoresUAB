@@ -136,15 +136,14 @@ class Cos extends Component {
         //GETTING URL PARAMS
 
         //Getting rector
-        const {id} = this.props.match.params;
-        console.log(id);
+        const {id} = this.props.match.params;        
 
         //Getting seconds
         const secs = parseInt(this.props.match.params.secs);
 
         //Setting Current Rector
         this.props.dispatch(setCurrentRector(id));
-        const current = _.find(this.props.videos,{id});
+        const current = _.find(this.props.videos,{id});       
         this.setState({current})   
         
         //IF there're seconds on the params, navigate to there 
@@ -202,8 +201,7 @@ class Cos extends Component {
         const { classes } = this.props;
 
         //Current Video
-        const current = _.find(this.props.videos.videos,{'id':this.props.match.params.id});
-        
+        const current = _.find(this.props.videos.videos,{'id':this.props.match.params.id});        
                 
         if(isBigScreen(window.innerWidth)){
 

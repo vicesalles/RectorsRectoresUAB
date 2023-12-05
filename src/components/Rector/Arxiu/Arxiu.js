@@ -14,7 +14,7 @@ class Arxiu extends Component {
         const { classes,currentRector } = this.props;
         
         if(currentRector!==null){
-            return(<Grid direction='column'>
+            return(<Grid container direction='column'>
                 <Typography className={classes.titolSeccio} color="primary" align="left">
                 Videos destacats del mandat
                 </Typography>

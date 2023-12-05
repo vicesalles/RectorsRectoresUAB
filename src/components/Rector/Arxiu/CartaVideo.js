@@ -46,8 +46,7 @@ const estilVideoArxiu = {
       titolSeccio:{
           height:180,
           fontSize:18,
-          marginTop:12,
-          marginBottom: 14,          
+          marginTop:12,                  
           fontFamily:"Hubot Sans, sans-serif"
       },
       titolCarta:{

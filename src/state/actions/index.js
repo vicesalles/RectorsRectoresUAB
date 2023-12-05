@@ -44,7 +44,7 @@ export function setCurrentVideo(v) {
 export function globalHistories(){
 
     //Get all the videos and its events
-    const vids = store.getState().videos.videos;
+    const vids = store.getState().videos.videos;    
 
     //Join Rector data to any event
     const historesGlobals = vids.map((v)=>{
