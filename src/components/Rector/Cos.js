@@ -154,7 +154,7 @@ class Cos extends Component {
                    modestbranding:1,
                    widget_referrer:"Web Rectors i rectores",
                    rel: 0,
-                   color:'white',
+                   color:'#FFFFFF',
                    iv_load_policy:3,
                    start:secs
                }
@@ -172,7 +172,7 @@ class Cos extends Component {
                     modestbranding:1,
                     widget_referrer:"Web Rectors i rectores",
                     rel: 0,
-                    color:'white',
+                    color:'#FFFFFF',
                     iv_load_policy:3
                     
                 }

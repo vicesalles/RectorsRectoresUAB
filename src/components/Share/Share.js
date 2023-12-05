@@ -83,7 +83,7 @@ const estilShare = theme =>({
         bottom: 15,
         right: 15,
         backgroundColor: theme.palette.primary.main,
-        color:"white",
+        color:"#FFFFFF",
         zIndex:99,
     },
     closeButton:{

@@ -18,7 +18,11 @@ import Share from './components/Share/Share';
 const theme = createTheme({
     palette:{
       primary:{
-        main:"#40ae33"
+        main:"#008539",
+        
+      },
+      secondary:{
+        main:"#FFFFFF"
       }
     },
     typography: {

@@ -42,7 +42,7 @@ const styles = {
   },
   cap:{
       marginLeft:15,
-      color:"white"
+      color:"#FFFFFF"
   },
   menuButton: {
     marginLeft: -18,

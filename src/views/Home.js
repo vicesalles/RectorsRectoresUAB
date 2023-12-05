@@ -61,7 +61,7 @@ const styles = theme => ({
       },
       enllacCockies:{
         textDecoration:"none",
-        color:"white",
+        color:"#FFFFFF",
         fontWeight:"bold",
         fontFamily: theme.typography.fontFamily,
         "&:hover":{

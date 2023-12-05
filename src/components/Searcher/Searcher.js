@@ -73,7 +73,7 @@ class Searcher extends Component{
                 id="outlined-full-width"                              
                 placeholder="Cerca moments... ex: Recerca"               
                 fullWidth
-                color="white"                
+                color="secondary"                
                 variant="filled"
                 autoFocus
                 label="Cerca a Rectors i Rectores de la UAB"
@@ -89,12 +89,12 @@ class Searcher extends Component{
                 label="Cerca en aquest mandat"                
                 placeholder="Cercar un moment..."               
                 fullWidth
-                color="white"
+                color="secondary"
                 margin="normal"
                 variant="filled"
                 autoFocus
                 onChange={(event)=>{this.handleChange(event)}}
-                style={{backgroundColor:'white', width:wi}}   
+                style={{backgroundColor:'white'}}   
                 InputProps={{ style: { backgroundColor:"white" } }}
                 InputLabelProps={{
                     shrink: true,
