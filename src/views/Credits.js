@@ -22,29 +22,28 @@ function Credits(props) {
                     </IconButton>
 
                     <Grid>
-                        <Typography variant="h5" color="inherit" align="left">
-                            Crèdits
+                        <Typography className={classes.h1} variant="h1" color="inherit" align="left">
+                        Sobre aquest projecte
                         </Typography>
                     </Grid>
                 </Toolbar>
             </AppBar>
             <Toolbar variant="dense" hidden={true}> </Toolbar>
-            <Grid container className={classes.creditsMainGrid} direction="column" justify="space-between">
+            <Grid container className={classes.creditsMainGrid} direction="column" alignItems='center' justifyContent='center'>
 
-                <Grid item className={classes.creditsSubGrid}>
-                    <Typography variant="h4" className={classes.titolSobreProjecte} color="inherit" align="left">
-                        Sobre aquest projecte
+                <Grid item className={classes.creditsSubGrid} >                    
+                    
+                    <Typography component="p" className={classes.about} align="left">
+                        Amb motiu de la commemoració del cinquantè aniversari de la Universitat Autònoma de Barcelona, l'any 2019, l'Àrea de Comunicació i Promoció, va impulsar l'enregistrament de les entrevistes que podeu explorar en aquest espai. 
+                        Es tractava de recollir el testimoni de totes les persones que han ocupat el càrrec de rector o de rectora de la Universitat. Volíem explorar els 50 anys d'història de la nostra Universitat a través dels seus records.                      
                     </Typography>
-                    <Typography className={classes.about} align="left">
-                        Aquest projecte neix com a documental audiovisual. La idea era recollir la història de la nostra Universitat
-                        per boca dels rectors i rectores que l'han governat.
-                    </Typography>
-                    <Typography className={classes.about} align="left">
+                    <Typography component="p" className={classes.about} align="left">
                         Guiats pel <a href="https://www.youtube.com/watch?v=1hVwAQOu83Y" style={{color:"black"}} rel="noopener noreferrer" className={classes.enllac} target="_blank">llibre del 50è aniversari</a>, entrevista rere entrevista, vam anar constatant el valor històric i
-                        documental de cadascun dels testimonis. Com se suposava que havíem d'editar aquests discursos? Quin valor podíem aportar-hi?
+                        documental de cadascun dels testimonis. Com se suposava que havíem d'editar aquests discursos? Quin valor podíem aportar-hi? 
                     </Typography>
-                    <Typography className={classes.about} color="inherit" align="left">
-                        Mínima manipulació i facilitar-ne l'exploració. Aquest és el valor de la funcionalitat amb la qual hem dotat aquest documental web.
+                    <Typography component="p" className={classes.about} color="inherit" align="left">
+                        Mínima manipulació de les fonts i facilitar-ne l'exploració. Aquest és el criteri d'aproximació als continguts generats durant el cicle d'entrevistes. 
+                        El màxim valor que podíem aportar era facilitar l'exploració dels continguts, pràcticament, en brut. Així neix el documental web que teniu al davant.
                     </Typography>
                 </Grid>
                 <Grid item className={classes.creditsSubGrid}>                              
@@ -60,7 +59,7 @@ function Credits(props) {
                     <Typography component="p" color="inherit" align="left">
                     <b>Ajudants de realització</b> Ana Lozano, Juanra
                     </Typography>
-                    <Typography variant="h6" color="inherit" align="left" className={classes.titolSeccioCredits}>
+                    <Typography variant="h2" color="inherit" align="left" className={classes.titolSeccioCredits}>
                         Una producció de la Unitat d'Audiovisuals i Multimèdia
                     </Typography>       
 
@@ -74,9 +73,20 @@ function Credits(props) {
 const estilCredits = theme => ({
 
     creditsMainGrid: {
-        paddingLeft: "2em",
-        paddingRight:"2em",
+        maxWidth: 750,
+        paddingLeft: "4em",
+        paddingRight:"4em",        
         flex:2
+    },
+    h1:{
+        fontSize:16,
+        fontWeight:"bold"
+    },
+    h2:{
+        fontSize:16
+    },
+    p:{
+        fontSize:14
     },
     creditsSubGrid:{
         paddingTop:"2em",
@@ -87,18 +97,22 @@ const estilCredits = theme => ({
 
     },
     about:{
-        fontSize:24,
+        fontSize:14,
         paddingTop:12,
         color:"black"
     },
     titolSobreProjecte:{
         paddingBottom:24,
-        color: theme.palette.primary.main
+        color: theme.palette.primary.main,
+        fontSize: 24
     },
     titolSeccioCredits:{
         paddingTop:24,
         paddingBottom:12,
-        color: theme.palette.primary.main
+        color: theme.palette.primary.main,
+        fontSize:16,
+        fontWeight:"bold",
+        textAlign:"center"
     },
     enllac:{
         fontWeight:"bold",

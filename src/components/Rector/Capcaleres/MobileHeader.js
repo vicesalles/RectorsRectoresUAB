@@ -23,7 +23,7 @@ class MobileHeader extends Component {
                  
                  <Grid className={classes.cap}>
                      <Grid container direction="row" justify="flex-start">
-                         <Typography variant="h6" color="inherit" align="left">
+                         <Typography variant="h1" color="inherit" align="left">
                              {`${this.props.currentRector.nom} ${this.props.currentRector.cognoms}`}
                          </Typography>  
                     </Grid>                      

@@ -121,33 +121,20 @@ class Home extends Component{
                             </Typography>                     
                         </Toolbar>
                     </AppBar>                                              
-                    <Grid container direction="column" justify="center" alignItems="center" alignContent="center" className={classes.cercador} position="fixed">
+                    <Grid container direction="column" alignItems="center" alignContent="center" className={classes.cercador} position="fixed">
                         <div className={classes.toolbar}></div>      
                         <Searcher isGlobal={true}/>
                     </Grid>
                     <Grid container className={classes.histories}                    
                         direction="column"
-                        alignItems="center"
-                        justify="center"
+                        alignItems="center"                        
                     >                       
                         <HistoriesGeneral/>
                     </Grid>
-                    <Grid container direction="row" justify="center" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRectors}>
+                    <Grid container direction="row" alignItems="flex-start" alignContent="flex-start" className={classes.graellaRectors}>
                         {this.factory(this.props.rectors,this.props.classes)}
                         
-                    </Grid>   
-                    <Grid className={classes.ancora}>
-                      <Typography variant="p">
-                      Amb motiu de la commemoració del cinquantè aniversari de la Universitat Autònoma de Barcelona, l'Àrea de Comunicació i Promoció ha realitzat aquest documental web que recull entrevistes a les persones que han ocupat el càrrec de rector o de rectora de la Universitat per tal que ens relatin la història de la institució a través de les seves experiències com a màxims representants institucionals. Els seus testimonis representen un valuós document sobre l’evolució de la UAB al llarg dels seus cinquanta anys d’existència. 
-                      </Typography>
-                      <Typography variant="p">
-                        &nbsp;
-                      </Typography>
-                      <Typography variant="p">
-                        
-                        Bellaterra, juny de 2019
-                      </Typography>
-                    </Grid>
+                    </Grid>                       
                    
                     <Footer/>
                     <CookieConsent
@@ -158,7 +145,7 @@ class Home extends Component{
                   >
                       Aquesta aplicació utilitza cookies.{" "}
                       <span style={{ fontSize: "10px" }}>
-                      <a className={classes.enllacCockies} href="https://www.uab.cat/web/coneix-la-uab/itineraris/proteccio-de-dades-1345668257177.html" target="_blank">[Més informació]</a>
+                      <a className={classes.enllacCockies} href="https://www.uab.cat/web/coneix-la-uab/itineraris/proteccio-de-dades-1345668257177.html" rel="noreferrer" target="_blank">[Més informació]</a>
                       </span>
                   </CookieConsent>
                 </Grid>)
