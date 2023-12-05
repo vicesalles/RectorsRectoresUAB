@@ -29,8 +29,8 @@ function Credits(props) {
                 </Toolbar>
             </AppBar>
             <Toolbar variant="dense" hidden={true}> </Toolbar>
-            <Grid container className={classes.creditsMainGrid} direction="column" alignItems='center' justifyContent='center'>
-
+            <Grid container className={classes.creditsMainGridContainer} direction="column">
+            <Grid container className={classes.creditsMainGrid} direction="column">
                 <Grid item className={classes.creditsSubGrid} >                    
                     
                     <Typography component="p" className={classes.about} align="left">
@@ -46,24 +46,27 @@ function Credits(props) {
                         El màxim valor que podíem aportar era facilitar l'exploració dels continguts, pràcticament, en brut. Així neix el documental web que teniu al davant.
                     </Typography>
                 </Grid>
-                <Grid item className={classes.creditsSubGrid}>                              
-                    <Typography component="p" color="inherit" align="left">
+                <Grid item className={classes.creditsSubGrid} align="left">                              
+                    <Typography component="p"  color="inherit" align="left">
                         <b>Direcció</b> Vicenç Sallés
                     </Typography>
-                    <Typography component="p" color="inherit" align="left">
+                    <Typography component="p"  color="inherit" align="left">
                     <b>Entrevistes</b> Lucas V. Santos
                     </Typography>
-                    <Typography component="p" color="inherit" align="left">
+                    <Typography component="p"  color="inherit" align="left">
                     <b>Edició</b> Xavi Torner
                     </Typography>
-                    <Typography component="p" color="inherit" align="left">
+                    <Typography component="p"  color="inherit" align="left">
                     <b>Ajudants de realització</b> Ana Lozano, Juanra
                     </Typography>
-                    <Typography variant="h2" color="inherit" align="left" className={classes.titolSeccioCredits}>
+                    <Typography variant="h2" color="inherit" className={classes.titolSeccioCredits}>                    
                         Una producció de la Unitat d'Audiovisuals i Multimèdia
-                    </Typography>       
-
+                    </Typography>    
+                    <div justify="center" align="center" >   
+                    <img alt="Universitat Autònoma de Barcelona 50è Aniversari" src="./img/logos/uab50.png"></img>
+                    </div>
                 </Grid>
+            </Grid>
             </Grid>
 
         </Grid>
@@ -71,11 +74,21 @@ function Credits(props) {
 }
 
 const estilCredits = theme => ({
-
-    creditsMainGrid: {
-        maxWidth: 750,
+    
+    creditsMainGridContainer: {
+        maxWidth: 900,
+        marginLeft:'auto',
+        marginRight:'auto',
         paddingLeft: "4em",
-        paddingRight:"4em",        
+        paddingRight:"4em",    
+        justify:"center",    
+        flex:1
+    },
+    creditsMainGrid: {        
+        paddingTop:"2em",
+        paddingLeft: "2em",
+        paddingRight:"2em",    
+        justify:"center",    
         flex:2
     },
     h1:{
@@ -97,8 +110,8 @@ const estilCredits = theme => ({
 
     },
     about:{
-        fontSize:14,
-        paddingTop:12,
+        fontSize:18,
+        paddingTop:18,
         color:"black"
     },
     titolSobreProjecte:{
@@ -107,7 +120,7 @@ const estilCredits = theme => ({
         fontSize: 24
     },
     titolSeccioCredits:{
-        paddingTop:24,
+        paddingTop:48,
         paddingBottom:12,
         color: theme.palette.primary.main,
         fontSize:16,
