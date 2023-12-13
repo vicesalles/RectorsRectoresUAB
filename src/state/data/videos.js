@@ -215,7 +215,7 @@
     { id: 4, sec: 6, txt: 'Candidatura renovadora', tags: ['òrgans de govern', 'plantilles', 'estabilització', 'estudiants', 'multidisciplinarietat', 'finançament', 'lletres', 'ciències', 'comunicació'] },
     { id: 5, sec: 6, txt: 'Noves titulacions', tags: ['titulacions', 'multidisciplinarietat', 'gènere', 'ocupabilitat', 'lletres', 'ciències', 'enginyeria', 'IA', 'A4U'] },
     { id: 6, sec: 6, txt: '50è aniversari de la UAB', tags: ['cinquantenari', 'rankings', 'mitjans'] },
-    { id: 7, sec: 6, txt: 'Acitivitats pel cinquantenari', tags: ['honoris causa', 'llegat', 'memòria', 'orígens', 'Sant Cugat', 'Sant Pau', 'medicina', 'Barcelona', 'territori'] },
+    { id: 7, sec: 6, txt: 'Activitats pel cinquantenari', tags: ['honoris causa', 'llegat', 'memòria', 'orígens', 'Sant Cugat', 'Sant Pau', 'medicina', 'Barcelona', 'territori'] },
     { id: 8, sec: 6, txt: 'Fites en recerca', tags: ['recerca', 'talent', 'personal', 'PDI', 'finançament', 'transferència', 'burocràcia', 'Parc de Recerca UAB'] },
     { id: 9, sec: 6, txt: 'Campanyes de sensibilització', tags: ['igualtat', 'estudiants', 'sostenibilitat', 'campus', 'mobilitat', 'solidaritat'] },
     { id: 10, sec: 6, txt: 'Mobilitzacions pel procés', tags: ['protestes', 'mobilitzacions', 'vaga', 'política', 'judici'] },
