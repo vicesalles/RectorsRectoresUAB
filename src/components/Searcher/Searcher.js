@@ -68,8 +68,7 @@ class Searcher extends Component{
     }
 
     render(){
-        
-        const wi = this.props.w ? this.props.w : "100%";
+                
         const {classes} = this.props;
 
         if(this.props.isGlobal){
