@@ -52,10 +52,10 @@ class CartaRector extends Component{
                         <CardMedia image={`./img/xl/${r.url}.jpg`} title={r.cognoms} className={classes.fotoRector}/>                
                         
                         <CardContent>
-                            <Typography variant="h4" className={classes.nomRector}>
+                            <Typography variant="h2" className={classes.nomRector}>
                                 {r.nom} {r.cognoms}
                             </Typography>
-                            <Typography variant="h5" className={classes.mandat}>
+                            <Typography variant="h3" className={classes.mandat}>
                                 {r.mandat}
                             </Typography> 
                         </CardContent>
