@@ -120,7 +120,7 @@ class Home extends Component{
         return (<Grid className="cos" container>
                     <AppBar position="fixed">
                         <Toolbar variant="regular">   
-                            <Link to="./"><img alt="Rectors i rectores de la UAB" src={`./img/logos/uab.png`} className={classes.logo}/></Link>
+                            <Link to="./"><img alt="Logo de la UAB" src={`./img/logos/uab.png`} className={classes.logo}/></Link>
                             <Typography className={classes.titolApp} variant="h1" color="inherit" align="left">
                                {this.state.title}
                             </Typography>                     

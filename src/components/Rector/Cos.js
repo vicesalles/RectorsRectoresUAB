@@ -218,9 +218,10 @@ class Cos extends Component {
                                         
                     <div className="histories">
                         <div className={classes.toolbar}></div>    
-                        <Typography className={classes.titolHistories} variant="h3" color="primary" align="center">
+                        <label for="outlined-full-width"><Typography className={classes.titolHistories} variant="h3" color="primary" align="center">
                             Moments del mandat
                         </Typography>
+                        </label>
                         <Searcher/>
                         {this.eventsFactory(this.props.histories.filtrades)}
                     </div>

@@ -26,6 +26,11 @@ const styles = theme => ({
     paddingTop: 15,
     paddingBottom:15,     
     borderRadius:10
+  },
+  labelsForm:{
+    align:"left",
+    marginRight:7,
+    fontFamily:"Hubot Sans, sans-serif"
   }
  
 });
@@ -69,6 +74,7 @@ class Searcher extends Component{
 
         if(this.props.isGlobal){
           return(<Paper className="Searcher">
+             <label for="outlined-full-width" className= {classes.labelsForm}>Cercador</label>
             <InputBase
                 id="outlined-full-width"                              
                 placeholder="Cerca moments... ex: Recerca"               
@@ -83,10 +89,9 @@ class Searcher extends Component{
         />
             </Paper>)
         }else{
-          return(<div className="Searcher">
+          return(<div className="Searcher">            
             <TextField 
-                id="outlined-full-width"
-                label="Cerca en aquest mandat"                
+                id="outlined-full-width"                                
                 placeholder="Cercar un moment..."               
                 fullWidth
                 color="secondary"
