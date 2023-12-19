@@ -73,7 +73,7 @@ class Searcher extends Component{
 
         if(this.props.isGlobal){
           return(<Paper className="Searcher">
-             <label for="outlined-full-width" className= {classes.labelsForm}>Cercador</label>
+             <label htmlFor="outlined-full-width" className= {classes.labelsForm}>Cercador</label>
             <InputBase
                 id="outlined-full-width"                              
                 placeholder="Cerca moments... ex: Recerca"               

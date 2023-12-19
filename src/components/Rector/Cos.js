@@ -74,6 +74,7 @@ const styles = theme => ({
     titolHistories:{
         paddingTop: 10,
         paddingBottom: 12,
+        fontSize:24,
         fontFamily:"Hubot Sans, sans-serif",
         fontWeight:"bold"
     }
@@ -218,7 +219,7 @@ class Cos extends Component {
                                         
                     <div className="histories">
                         <div className={classes.toolbar}></div>    
-                        <label for="outlined-full-width"><Typography className={classes.titolHistories} variant="h3" color="primary" align="center">
+                        <label htmlFor="outlined-full-width"><Typography className={classes.titolHistories} variant="h2" color="primary" align="center">
                             Moments del mandat
                         </Typography>
                         </label>
