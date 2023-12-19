@@ -153,8 +153,7 @@ class Cos extends Component {
                width: ampladaPlayer,        
                height: this.setzeNou(ampladaPlayer),                      
                playerVars:{                 
-                   autoplay: 1,            
-                   modestbranding:1,
+                   autoplay: 1,
                    widget_referrer:"Web Rectors i rectores",
                    rel: 0,
                    color:'#FFFFFF',
@@ -171,8 +170,7 @@ class Cos extends Component {
                 height: this.setzeNou(ampladaPlayer),                      
                 playerVars:{  
                     start:1,               
-                    autoplay: 1,            
-                    modestbranding:1,
+                    autoplay: 1,
                     widget_referrer:"Web Rectors i rectores",
                     rel: 0,
                     color:'#FFFFFF',
