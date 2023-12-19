@@ -4,7 +4,7 @@ import {withRouter} from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 
 //Components
-import {Grid,Typography} from '@material-ui/core/';
+import {Grid,Typography,Fade} from '@material-ui/core/';
 import GraellaArxiu from './GraellaArxiu';
 
 class Arxiu extends Component {
@@ -14,16 +14,16 @@ class Arxiu extends Component {
         const { classes,currentRector } = this.props;
         
         if(currentRector!==null){
-            return(<Grid container direction='column'>
+            return(<Fade in={this.props.in} timeout={{enter:this.props.animacio}}><Grid container direction='column'>
                 <Typography className={classes.titolSeccio} color="primary" align="left">
                 Videos destacats del mandat
                 </Typography>
                 <GraellaArxiu pausaVideoGeneral={this.props.pausaVideoGeneral} videos={currentRector.videos} in={this.props.in}/>
-            </Grid>)
+            </Grid></Fade>)
         }else{
             return(<Grid>
                 <Typography className={classes.titolSeccio} color="primary" align="left">
-                    Videos destacats del mandat
+                   
                 </Typography>                
             </Grid>)
         }

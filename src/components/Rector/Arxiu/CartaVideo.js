@@ -3,7 +3,6 @@ import { withStyles } from '@material-ui/core/styles';
 
 //Components Material Ui
 import {Card,CardActionArea,CardMedia,CardContent,Typography,Fade} from '@material-ui/core/';
-import LaunchRounded from '@material-ui/icons/LaunchRounded';
 
 class CartaVideo extends Component {
  
@@ -14,7 +13,7 @@ class CartaVideo extends Component {
         
         return(
             <Fade in={this.props.in} timeout={{enter:this.props.animacio}}>
-                    <CardActionArea className={classes.card} onClick={()=>{this.props.pausaVideoGeneral()}} href={`https://www.youtube.com/watch?v=${id}&sub_confirmation=1`} target="_blank">
+                    <CardActionArea className={classes.card} onClick={()=>{this.props.pausaVideoGeneral()}} href={`https://www.youtube.com/watch?v=${id}&sub_confirmation=1&rel=0`} target="_blank">
                         <Card>                           
                                 <CardMedia
                                     className={classes.media}
