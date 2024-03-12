@@ -1,5 +1,5 @@
 {
-  "short_name": "50 anys UAB",
+  "short_name": "Rectors i rectores",
   "name": "Rectors i rectores de la UAB",
   "icons": [
     {
@@ -44,7 +44,7 @@
     }
 
   ],
-  "start_url": "https://uab.cat/rectorsirectores/index.html",
+  "start_url": "https://www.uab.cat/rectorsirectores/#/",
   "display": "standalone",
   "theme_color": "#008539",
   "background_color": "#40ae33"

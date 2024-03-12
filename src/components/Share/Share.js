@@ -25,7 +25,7 @@ import {
 
 class Share extends Component {
     state={
-        currentUrl:"http://vicesalles.me",
+        currentUrl:"https://www.uab.cat/rectorsirectores/#/",
         currentTitle:"Rectors i rectores de la UAB",
         desplegat:false
     }
@@ -54,7 +54,7 @@ class Share extends Component {
             return(<Grid className={classes.botoShare}>                
                 <WhatsappShareButton children={<WhatsappIcon iconBgStyle={{fill:"#40ae33"}}/>} onShareWindowClose={this.clickHandler} title={this.state.currentTitle} url={this.state.currentUrl}/>
                 <TelegramShareButton children={<TelegramIcon iconBgStyle={{fill:"#40ae33"}}/>} onShareWindowClose={this.clickHandler} title={this.state.currentTitle} url={this.state.currentUrl}/>  
-                <TwitterShareButton children={<TwitterIcon iconBgStyle={{fill:"#40ae33"}}/>} onShareWindowClose={this.clickHandler} title={this.state.currentTitle} hashtags={['50anysUAB','UAB']} url={this.state.currentUrl}/>  
+                <TwitterShareButton children={<TwitterIcon iconBgStyle={{fill:"#40ae33"}}/>} onShareWindowClose={this.clickHandler} title={this.state.currentTitle} hashtags={['RectorsRectores','UAB']} url={this.state.currentUrl}/>  
                 <FacebookShareButton children={<FacebookIcon iconBgStyle={{fill:"#40ae33"}}/>} onShareWindowClose={this.clickHandler} quote={this.state.currentTitle} url={this.state.currentUrl}/> 
                 <LinkedinShareButton children={<LinkedinIcon iconBgStyle={{fill:"#40ae33"}}/>} onShareWindowClose={this.clickHandler} url={this.state.currentUrl}/> 
                 <RedditShareButton children={<RedditIcon iconBgStyle={{fill:"#40ae33"}}/>} onShareWindowClose={this.clickHandler} title={this.state.currentTitle} url={this.state.currentUrl}/> 
