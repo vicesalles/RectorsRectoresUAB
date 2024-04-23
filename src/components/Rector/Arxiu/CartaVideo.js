@@ -21,7 +21,7 @@ class CartaVideo extends Component {
                                     title={titol}
                                     />
                                 <CardContent>
-                                    <Typography className={classes.titolCarta} gutterBottom variant="h3">
+                                    <Typography className={classes.titolCarta} gutterBottom variant="body1">
                                         {titol}
                                     </Typography>                       
                                 </CardContent>                                        
