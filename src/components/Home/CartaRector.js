@@ -32,17 +32,10 @@ const styles = {
         fontSize:16
     },
     cartaRector:{
-        height:370,       
+        height:370,              
         "&:hover":{         
-            outline:1 ,      
-            borderTop: "solid 4px #008539",       
-            borderBottom: "solid 8px #008539", 
-            marginTop:-12,
-            elevation: 5
+            outline:"solid 6px #008539",  
         } 
-    },
-    areaCartaRector:{
-        
     }
 
     
