@@ -32,8 +32,20 @@ const styles = {
         fontSize:16
     },
     cartaRector:{
-        height:370
+        height:370,       
+        "&:hover":{         
+            outline:1 ,      
+            borderTop: "solid 4px #008539",       
+            borderBottom: "solid 8px #008539", 
+            marginTop:-12,
+            elevation: 5
+        } 
+    },
+    areaCartaRector:{
+        
     }
+
+    
    
 };
 
@@ -46,7 +58,7 @@ class CartaRector extends Component{
         
         return(<Grid item lg={3} md={6} xs={12} className={classes.fitxaRector}>       
             <Fade in={true} timeout={{enter:this.props.animacio}} >  
-            <CardActionArea href={`./#/r/${r.url}/`}>    
+            <CardActionArea className={classes.areaCartaRector} href={`./#/r/${r.url}/`}>    
                 <Card elevation={6} className={classes.cartaRector}>             
                           
                         <CardMedia image={`./img/xl/${r.url}.jpg`} title={r.cognoms} className={classes.fotoRector}/>                

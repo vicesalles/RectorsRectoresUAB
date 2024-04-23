@@ -122,6 +122,7 @@ h3{
   font-family: 'Courier New', Courier, monospace;
   padding-top: 3em;
   padding-bottom: 2em;
+  color: darkslategray;
   div{  
     display: flex;
     flex: 1;
@@ -133,10 +134,12 @@ h3{
     }  
   } 
   a{
+    color: darkslategray;
     padding-top: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     font-size: 11px;
-    text-decoration: none;
-    color: #FFFFFF;
+    text-decoration: none;    
     font-weight: bold;
   }
   a:hover{
